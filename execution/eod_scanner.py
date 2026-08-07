@@ -28,11 +28,11 @@ load_dotenv(dotenv_path=os.path.expanduser("~/Documents/algo-trading-bot/.env"))
 
 # ── config ─────────────────────────────────────────────────────────────────
 PORTFOLIO = {
-    "SBILIFE":    26460,
-    "APOLLOHOSP": 24780,
-    "ETERNAL":    21310,
-    "INDUSINDBK": 17040,
-    "GRASIM":     10420,
+    "APOLLOHOSP": 26200,
+    "GRASIM":     20250,
+    "SBILIFE":    18320,
+    "NESTLEIND":  18230,
+    "EICHERMOT":  17000,
 }
 
 STOP_LOSS_PCT  = 0.02
