@@ -1,0 +1,20 @@
+asyncio==3.4.3
+bidict==0.22.1
+certifi==2022.12.7
+charset-normalizer==3.4.9
+idna==2.10
+neo-api-client @ git+https://github.com/Kotak-Neo/Kotak-neo-api-v2.git@539b6022c2c5fe138d6d0a893bbe554cacca10b6
+numpy==2.1.0
+pandas==2.2.3
+pyjsparser==2.7.1
+PyJWT==2.6.0
+PyOTP==2.10.0
+python-dateutil==2.8.2
+python-dotenv==1.0.0
+pytz==2026.3.post1
+requests==2.32.3
+six==1.16.0
+tzdata==2026.3
+urllib3==1.26.14
+websocket-client==1.8.0
+websockets==8.1

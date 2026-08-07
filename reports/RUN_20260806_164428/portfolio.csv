@@ -1,0 +1,16 @@
+allocation_method,symbol,weight_pct,allocated_capital,expected_return_pct,sharpe_ratio,max_drawdown_pct,portfolio_return,weighted_drawdown
+equal_weight,APOLLOHOSP,20.0,20000.0,41.53,17.799,9.98,43.33,13.05
+equal_weight,ETERNAL,20.0,20000.0,68.0,1.408,19.0,43.33,13.05
+equal_weight,INDUSINDBK,20.0,20000.0,43.77,1.173,15.3,43.33,13.05
+equal_weight,SBILIFE,20.0,20000.0,43.99,1.149,9.9,43.33,13.05
+equal_weight,GRASIM,20.0,20000.0,19.38,0.895,11.08,43.33,13.05
+sharpe_weighted,APOLLOHOSP,79.37,79370.0,41.53,17.799,9.98,42.55,10.86
+sharpe_weighted,ETERNAL,6.28,6280.0,68.0,1.408,19.0,42.55,10.86
+sharpe_weighted,INDUSINDBK,5.23,5230.0,43.77,1.173,15.3,42.55,10.86
+sharpe_weighted,SBILIFE,5.12,5120.0,43.99,1.149,9.9,42.55,10.86
+sharpe_weighted,GRASIM,3.99,3990.0,19.38,0.895,11.08,42.55,10.86
+calmar_weighted,APOLLOHOSP,24.78,24780.0,41.53,17.799,9.98,45.89,12.9
+calmar_weighted,ETERNAL,21.31,21310.0,68.0,1.408,19.0,45.89,12.9
+calmar_weighted,INDUSINDBK,17.04,17040.0,43.77,1.173,15.3,45.89,12.9
+calmar_weighted,SBILIFE,26.46,26460.0,43.99,1.149,9.9,45.89,12.9
+calmar_weighted,GRASIM,10.42,10420.0,19.38,0.895,11.08,45.89,12.9

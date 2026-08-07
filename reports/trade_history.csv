@@ -1,0 +1,2 @@
+strategy,stock,entry_date,exit_date,direction,entry_price,exit_price,quantity,holding_days,pnl,return_pct,exit_reason
+Checklist_v1,RELIANCE,2024-01-01,2024-01-12,LONG,100,108,50,11,400,8.0,Signal
