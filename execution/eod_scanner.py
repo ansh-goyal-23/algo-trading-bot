@@ -122,53 +122,105 @@ def login():
     return client
 
 
-def fetch_today_ohlc(client) -> dict:
-    """
-    Fetch today's OHLC for all portfolio stocks via Kotak Neo quotes API.
-    Returns dict: symbol → {open, high, low, close, volume}
-    """
-    print("\n📡 Fetching today's OHLC from Kotak Neo...")
+def fetch_today_ohlc_kotak(client) -> dict:
+    """Fetch today's OHLC via Kotak Neo quotes API."""
     ohlc = {}
-
     for stock in PORTFOLIO:
         try:
             results = client.search_scrip(exchange_segment="nse_cm", symbol=stock)
             if not results:
-                print(f"  ⚠️  {stock}: token not found")
                 continue
-            match  = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
-            token  = str(match["pSymbol"])
-
-            quote  = client.quotes(
+            match = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
+            token = str(match["pSymbol"])
+            quote = client.quotes(
                 instrument_tokens=[{"instrument_token": token, "exchange_segment": "nse_cm"}],
                 quote_type="ohlc"
             )
-
-            # Kotak returns list or dict depending on SDK version
             data = quote if isinstance(quote, list) else quote.get("data", [quote])
             if not data:
-                print(f"  ⚠️  {stock}: no quote data returned")
                 continue
-
             q = data[0] if isinstance(data, list) else data
             ohlc[stock] = {
                 "date":   datetime.now().strftime("%Y-%m-%d"),
-                "open":   float(q.get("open",  q.get("o", 0))),
-                "high":   float(q.get("high",  q.get("h", 0))),
-                "low":    float(q.get("low",   q.get("l", 0))),
-                "close":  float(q.get("ltp",   q.get("c", 0))),  # ltp = latest price at 3:20
-                "volume": int(q.get("volume", q.get("v", 0))),
+                "open":   float(q.get("open",   q.get("o", 0))),
+                "high":   float(q.get("high",   q.get("h", 0))),
+                "low":    float(q.get("low",    q.get("l", 0))),
+                "close":  float(q.get("ltp",    q.get("c", 0))),
+                "volume": int(q.get("volume",  q.get("v", 0))),
             }
-            c = ohlc[stock]
-            chg = round((c["close"] - c["open"]) / c["open"] * 100, 2) if c["open"] else 0
-            direction = "🟢" if chg >= 0 else "🔴"
-            print(f"  {stock:12s} | O={c['open']:.2f} H={c['high']:.2f} "
-                  f"L={c['low']:.2f} C={c['close']:.2f} | {direction} {chg:+.2f}%")
-
         except Exception as e:
-            print(f"  ⚠️  {stock}: {e}")
-
+            print(f"  ⚠️  {stock} (Kotak): {e}")
     return ohlc
+
+
+def fetch_today_ohlc_yfinance() -> dict:
+    """Fallback: fetch today's OHLC via yfinance."""
+    import subprocess, json
+    script = """
+import sys, json
+sys.path.insert(0, '.')
+import yfinance as yf
+from datetime import datetime
+symbols = """ + str(list(PORTFOLIO.keys())) + """
+result = {}
+for sym in symbols:
+    try:
+        df = yf.download(sym + '.NS', period='2d', interval='1d', progress=False)
+        if df.empty:
+            continue
+        last = df.iloc[-1]
+        result[sym] = {
+            'date':   str(df.index[-1].date()),
+            'open':   float(last['Open']),
+            'high':   float(last['High']),
+            'low':    float(last['Low']),
+            'close':  float(last['Close']),
+            'volume': int(last['Volume']),
+        }
+    except Exception as e:
+        pass
+print(json.dumps(result))
+"""
+    venv_python = Path("venv-data/bin/python")
+    r = subprocess.run([str(venv_python), "-c", script],
+                       capture_output=True, text=True, cwd=".")
+    if r.returncode != 0:
+        return {}
+    try:
+        return json.loads(r.stdout.strip())
+    except:
+        return {}
+
+
+def fetch_today_ohlc(client) -> dict:
+    """
+    Fetch today's OHLC — tries Kotak Neo first, falls back to yfinance.
+    Filters out any stocks with zero/invalid prices.
+    """
+    print("\n📡 Fetching today's OHLC from Kotak Neo...")
+    ohlc = fetch_today_ohlc_kotak(client)
+
+    # filter valid entries
+    valid = {s: d for s, d in ohlc.items() if d["close"] > 0 and d["open"] > 0}
+    invalid = set(PORTFOLIO.keys()) - set(valid.keys())
+
+    if invalid:
+        print(f"  ⚠️  Kotak returned zeros for {invalid} — falling back to yfinance...")
+        yf_data = fetch_today_ohlc_yfinance()
+        for sym in invalid:
+            if sym in yf_data and yf_data[sym]["close"] > 0:
+                valid[sym] = yf_data[sym]
+                print(f"  ✅ {sym}: fetched from yfinance")
+
+    # print summary
+    print("\n  Today's OHLC:")
+    for stock, c in valid.items():
+        chg = round((c["close"] - c["open"]) / c["open"] * 100, 2) if c["open"] else 0
+        direction = "🟢" if chg >= 0 else "🔴"
+        print(f"  {stock:12s} | O={c['open']:.2f} H={c['high']:.2f} "
+              f"L={c['low']:.2f} C={c['close']:.2f} | {direction} {chg:+.2f}%")
+
+    return valid
 
 
 def run_signal_scan(today_ohlc: dict):
@@ -327,8 +379,14 @@ def main():
     client     = login()
     today_ohlc = fetch_today_ohlc(client)
 
+    # filter out stocks with zero/invalid OHLC (market closed or API error)
+    today_ohlc = {
+        sym: data for sym, data in today_ohlc.items()
+        if data["close"] > 0 and data["open"] > 0
+    }
     if not today_ohlc:
-        print("⚠️  No OHLC data fetched — cannot run signals.")
+        print("⚠️  No valid OHLC data — market may be closed or run after 3:30 PM.")
+        print("    EOD scanner must be run between 3:20–3:30 PM IST.")
         return
 
     # check stop losses first using today's low
