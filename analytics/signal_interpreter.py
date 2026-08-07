@@ -158,6 +158,15 @@ def interpret_live_signal(
     lines.append(f"\n  Conditions met: {score}/4 "
                  f"({'✅ Signal valid' if score >= 3 else '⚠️  Weak signal'})")
 
+    # trend and S/R context (informational, not part of scoring)
+    lines.append(f"\n  📈 Market Context (informational):")
+    lines.append(f"    Prior Trend  : {pattern_flags.get('prior_trend', 'unknown')}")
+    lines.append(f"    Near Support : {'✓' if pattern_flags.get('near_support') else '✗'}")
+    lines.append(f"    Near Resist  : {'✓' if pattern_flags.get('near_resistance') else '✗'}")
+    nearest = pattern_flags.get('nearest_sr_zone')
+    if nearest:
+        lines.append(f"    Nearest S/R  : ₹{nearest}")
+
     # risk parameters
     if signal == "BUY":
         stop = round(close * 0.98, 2)

@@ -1,32 +1,50 @@
 """
-Combines candlestick patterns + indicators into BUY/SELL/None signals,
-following the book's "grand checklist" idea (Module 2, §18.6):
-require multiple confirming conditions, not one indicator alone.
+Signal generation — combines candlestick patterns + indicators.
 
-Requires at least one candlestick pattern AND enough supporting
-indicator confirmations - patterns are the trigger, indicators are the filter.
+Prior trend and S/R are computed and shown as context in the
+signal interpreter but are NOT hard gates — backtesting showed
+they reduce performance on trending Nifty 50 stocks.
+
+Checklist (need 3/4, pattern is mandatory gate):
+  [MANDATORY] Candlestick pattern
+  [CONFIRM]   Price > EMA20
+  [CONFIRM]   RSI filter
+  [CONFIRM]   Volume above average
+
+Context columns available (not scored):
+  prior_trend   — uptrend/downtrend/pullback/rally/sideways
+  near_support  — True if price within 1.5% of support zone
+  near_resistance — True if price within 1.5% of resistance zone
+  nearest_sr_zone — nearest S/R price level
+
+Reference: Varsity Module 2
 """
 import pandas as pd
-from strategy.indicators import add_all_indicators
-from strategy.patterns import add_all_patterns
+from strategy.indicators         import add_all_indicators
+from strategy.patterns           import add_all_patterns
+from strategy.trend              import add_prior_trend
+from strategy.support_resistance import add_sr_context
 
 
-def build_features(df):
-    df = add_all_indicators(df.copy())
+def build_features(df: pd.DataFrame) -> pd.DataFrame:
+    df = add_all_indicators(df)
     df = add_all_patterns(df)
+    df = add_prior_trend(df)
+    df = add_sr_context(df)
     return df
 
 
-def generate_signals(df, min_confirmations=3):
-    df = build_features(df)
+def generate_signals(df: pd.DataFrame, min_confirmations: int = 3) -> pd.DataFrame:
+    df = build_features(df.copy())
 
     bullish_pattern = (
         df["bullish_engulfing"] | df["bullish_marubozu"]
-        | df["hammer"] | df["bullish_harami"]
+        | df["hammer"]          | df["bullish_harami"]
     )
     bearish_pattern = (
         df["bearish_engulfing"] | df["bearish_marubozu"]
-        | df["shooting_star"] | df["hanging_man"] | df["bearish_harami"]
+        | df["shooting_star"]   | df["hanging_man"]
+        | df["bearish_harami"]
     )
 
     long_score = (

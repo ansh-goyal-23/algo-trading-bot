@@ -275,6 +275,12 @@ for sym, today in today_candles.items():
                         'hanging_man','bearish_harami']
         patterns = {{col: bool(last.get(col, False)) for col in pattern_cols}}
 
+        # add trend and S/R context
+        patterns['prior_trend']      = str(last.get('prior_trend', 'unknown'))
+        patterns['near_support']     = bool(last.get('near_support', False))
+        patterns['near_resistance']  = bool(last.get('near_resistance', False))
+        patterns['nearest_sr_zone']  = float(last['nearest_sr_zone']) if 'nearest_sr_zone' in last.index and last['nearest_sr_zone'] else None
+
         results[sym] = {{
             'signal':           str(last.get('signal', 'None')),
             'close':            float(last['close']),
