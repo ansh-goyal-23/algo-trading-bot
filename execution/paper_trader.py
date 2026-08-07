@@ -340,10 +340,16 @@ def main():
             ltp    = float(tick.get("ltp", 0))
             on_tick(symbol, ltp, tick)
 
-    client.on_message = on_message
-    client.on_error   = lambda e: print("Feed error:", e)
+    last_tick_time = [datetime.now()]
+
+    def on_message_wrapper(message):
+        last_tick_time[0] = datetime.now()
+        on_message(message)
+
+    client.on_message = on_message_wrapper
+    client.on_error   = lambda e: print(f"⚠️  Feed error: {e}")
     client.on_open    = lambda m: print("WebSocket connected — paper trader running...\n")
-    client.on_close   = lambda m: print("WebSocket closed:", m)
+    client.on_close   = lambda m: print(f"⚠️  WebSocket closed: {m}")
 
     client.subscribe(instrument_tokens=instrument_tokens,
                      isIndex=False, isDepth=False)
@@ -368,6 +374,22 @@ def main():
                 print(f"Trades today : {len(paper_trades)}")
                 print(f"Log saved   → {LOG_FILE}")
                 break
+
+            # auto-reconnect if no tick for 60 seconds during market hours
+            if (MARKET_OPEN <= now <= MARKET_CLOSE):
+                seconds_since_tick = (datetime.now() - last_tick_time[0]).seconds
+                if seconds_since_tick > 60:
+                    print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting...")
+                    try:
+                        client.un_subscribe(instrument_tokens=instrument_tokens,
+                                           isIndex=False, isDepth=False)
+                    except:
+                        pass
+                    time.sleep(2)
+                    client.subscribe(instrument_tokens=instrument_tokens,
+                                    isIndex=False, isDepth=False)
+                    last_tick_time[0] = datetime.now()
+                    print("✅ Reconnected")
 
             time.sleep(1)
 

@@ -168,6 +168,7 @@ for sym in symbols:
         df = yf.download(sym + '.NS', period='2d', interval='1d', progress=False)
         if df.empty:
             continue
+        df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
         last = df.iloc[-1]
         result[sym] = {
             'date':   str(df.index[-1].date()),
