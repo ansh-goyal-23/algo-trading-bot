@@ -7,14 +7,18 @@ At 3:20 PM, treats the latest tick as the closing price for signal generation.
 
 from collections import defaultdict
 from datetime import datetime
+from pathlib import Path
 
 
 class TickAggregator:
     """
     Builds a daily OHLC candle from a stream of live ticks.
+    Persists candle state to disk on every tick so restarts
+    don't lose the day's accumulated OHLC.
     """
 
-    def __init__(self):
+    def __init__(self, persist_path: str = None):
+        self._persist_path = persist_path
         # symbol → {open, high, low, close, volume, tick_count}
         self._candles = defaultdict(lambda: {
             "open":       None,
@@ -26,6 +30,30 @@ class TickAggregator:
             "first_tick_time": None,
             "last_tick_time":  None,
         })
+        # reload from disk if file exists (handles restarts)
+        if persist_path and Path(persist_path).exists():
+            self._load()
+
+    def _load(self):
+        import json
+        try:
+            with open(self._persist_path) as f:
+                saved = json.load(f)
+            for sym, c in saved.items():
+                self._candles[sym] = c
+            print(f"📂 Reloaded OHLC state for {list(saved.keys())} from previous session")
+        except Exception as e:
+            print(f"⚠️  Could not reload OHLC state: {e}")
+
+    def _save(self):
+        if not self._persist_path:
+            return
+        import json
+        try:
+            with open(self._persist_path, "w") as f:
+                json.dump(dict(self._candles), f)
+        except Exception as e:
+            print(f"⚠️  Could not save OHLC state: {e}")
 
     def on_tick(self, symbol: str, ltp: float, volume: int = 0):
         c = self._candles[symbol]
@@ -40,6 +68,9 @@ class TickAggregator:
         c["volume"]       += volume
         c["tick_count"]   += 1
         c["last_tick_time"] = datetime.now().strftime("%H:%M:%S")
+
+        # persist every tick so restarts don't lose OHLC state
+        self._save()
 
     def get_candle(self, symbol: str) -> dict | None:
         c = self._candles.get(symbol)

@@ -51,8 +51,11 @@ MARKET_CLOSE        = dtime(15, 30)
 # ── state ───────────────────────────────────────────────────────────────────
 positions    = {}
 paper_trades = []
-aggregator   = TickAggregator()
+OHLC_STATE_FILE = LOG_DIR / f"ohlc_state_{SESSION_DATE}.json"
+aggregator   = TickAggregator(persist_path=str(OHLC_STATE_FILE))
+from datetime import datetime as _dt, time as _dtime
 signal_scan_done = False
+_restart_after_window = _dt.now().time() >= _dtime(15, 20)
 
 # load open positions from previous session
 if POSITION_FILE.exists():
@@ -71,6 +74,11 @@ if POSITION_FILE.exists():
 
 if LOG_FILE.exists():
     paper_trades = pd.read_csv(LOG_FILE).to_dict("records")
+else:
+    pd.DataFrame(columns=[
+        "date","timestamp","action","symbol",
+        "price","quantity","reason"
+    ]).to_csv(LOG_FILE, index=False)
 
 
 def save_positions():
@@ -340,6 +348,11 @@ def main():
     client.subscribe(instrument_tokens=instrument_tokens,
                      isIndex=False, isDepth=False)
     print("Live feed started")
+
+    if _restart_after_window and not signal_scan_done:
+        print("⚠️  Restarted after 3:20 PM — running signal scan now...")
+        signal_scan_done = True
+        run_signal_scan()
 
     try:
         while True:

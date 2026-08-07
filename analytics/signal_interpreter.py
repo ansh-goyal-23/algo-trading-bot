@@ -177,7 +177,13 @@ def interpret_live_signal(
 def analyze_historical(trade_history_path: str):
     """Analyze best and worst historical signals from trade_history.csv"""
     path = Path(trade_history_path)
-    df   = pd.read_csv(path)
+    if not path.exists():
+        print(f"No trade file found at {path}")
+        return
+    df = pd.read_csv(path)
+    if df.empty or "stock" not in df.columns:
+        print(f"No trades recorded yet in {path.name} — no signals fired today.")
+        return
     df["entry_date"] = pd.to_datetime(df["entry_date"])
     df["exit_date"]  = pd.to_datetime(df["exit_date"])
 
