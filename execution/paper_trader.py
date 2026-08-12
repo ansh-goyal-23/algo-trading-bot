@@ -45,7 +45,7 @@ POSITION_FILE       = LOG_DIR / "open_positions.csv"
 TICK_FILE           = LOG_DIR / f"ticks_{SESSION_DATE}.csv"
 
 MARKET_OPEN         = dtime(9, 15)
-SIGNAL_WINDOW_START = dtime(15, 20)
+SIGNAL_WINDOW_START = dtime(15, 10)  # before CAS auction starts at 3:15 PM
 MARKET_CLOSE        = dtime(15, 30)
 
 # ── state ───────────────────────────────────────────────────────────────────
