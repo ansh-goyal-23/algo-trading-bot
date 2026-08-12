@@ -10,8 +10,13 @@ totp = pyotp.TOTP(os.getenv("NEO_TOTP_SECRET")).now()
 client.totp_login(mobile_number=os.getenv("NEO_MOBILE"), ucc=os.getenv("NEO_UCC"), totp=totp)
 client.totp_validate(mpin=os.getenv("NEO_MPIN"))
 
-result = client.quotes(
-    instrument_tokens=[{"instrument_token": "21808", "exchange_segment": "nse_cm"}],
-    quote_type="ohlc"
-)
-print("RAW QUOTE RESPONSE:", result)
+# try different quote types
+for qt in ["ohlc", "ltp", "all"]:
+    try:
+        result = client.quotes(
+            instrument_tokens=[{"instrument_token": "157", "exchange_segment": "nse_cm"}],
+            quote_type=qt
+        )
+        print(f"quote_type='{qt}': {result}")
+    except Exception as e:
+        print(f"quote_type='{qt}' ERROR: {e}")

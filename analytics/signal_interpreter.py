@@ -122,7 +122,16 @@ def interpret_live_signal(
 
     # which pattern fired
     lines.append(f"\n  📖 Candlestick Pattern:")
-    fired = [k for k, v in pattern_flags.items() if v and k in PATTERN_BOOK]
+    bullish_patterns = ["bullish_engulfing", "bullish_marubozu", "hammer", "bullish_harami"]
+    bearish_patterns = ["bearish_engulfing", "bearish_marubozu", "shooting_star", "hanging_man", "bearish_harami"]
+
+    # only show relevant patterns based on signal direction
+    if signal == "BUY":
+        fired = [k for k, v in pattern_flags.items() if v and k in bullish_patterns]
+    elif signal in ("SELL", "SELL/EXIT"):
+        fired = [k for k, v in pattern_flags.items() if v and k in bearish_patterns]
+    else:
+        fired = [k for k, v in pattern_flags.items() if v and k in PATTERN_BOOK]
     if fired:
         for pat in fired:
             info = PATTERN_BOOK[pat]

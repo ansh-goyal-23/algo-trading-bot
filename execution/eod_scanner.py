@@ -140,13 +140,22 @@ def fetch_today_ohlc_kotak(client) -> dict:
             if not data:
                 continue
             q = data[0] if isinstance(data, list) else data
+            # Kotak nests OHLC inside q['ohlc'], LTP at q['ltp']
+            ohlc_data = q.get("ohlc", {})
+            ltp        = float(q.get("ltp", 0))
+            open_p     = float(ohlc_data.get("open",  0))
+            high_p     = float(ohlc_data.get("high",  0))
+            low_p      = float(ohlc_data.get("low",   0))
+            # use LTP as close (real-time price), not ohlc['close'] which is open price
+            close_p    = ltp if ltp > 0 else float(ohlc_data.get("close", 0))
+            volume     = int(q.get("last_volume", q.get("volume", 0)))
             ohlc[stock] = {
                 "date":   datetime.now().strftime("%Y-%m-%d"),
-                "open":   float(q.get("open",   q.get("o", 0))),
-                "high":   float(q.get("high",   q.get("h", 0))),
-                "low":    float(q.get("low",    q.get("l", 0))),
-                "close":  float(q.get("ltp",    q.get("c", 0))),
-                "volume": int(q.get("volume",  q.get("v", 0))),
+                "open":   open_p,
+                "high":   high_p,
+                "low":    low_p,
+                "close":  close_p,
+                "volume": volume,
             }
         except Exception as e:
             print(f"  ⚠️  {stock} (Kotak): {e}")
