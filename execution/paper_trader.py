@@ -62,10 +62,11 @@ if POSITION_FILE.exists():
     pos_df = pd.read_csv(POSITION_FILE)
     for _, row in pos_df.iterrows():
         positions[row["symbol"]] = {
-            "entry_price": row["entry_price"],
-            "quantity":    row["quantity"],
-            "stop_price":  row["stop_price"],
-            "entry_date":  row["entry_date"],
+            "entry_price":       row["entry_price"],
+            "quantity":          row["quantity"],
+            "stop_price":        row["stop_price"],
+            "entry_date":        row["entry_date"],
+            "partial_exit_done": bool(row.get("partial_exit_done", False)),
         }
     if positions:
         print(f"📂 Loaded {len(positions)} open positions from previous session:")
@@ -83,8 +84,18 @@ else:
 
 def save_positions():
     if positions:
-        pd.DataFrame([{"symbol": s, **p} for s, p in positions.items()]).to_csv(
-            POSITION_FILE, index=False)
+        rows = []
+        for s, p in positions.items():
+            row = {
+                "symbol":            s,
+                "entry_price":       p["entry_price"],
+                "quantity":          p["quantity"],
+                "stop_price":        p["stop_price"],
+                "entry_date":        p["entry_date"],
+                "partial_exit_done": p.get("partial_exit_done", False),
+            }
+            rows.append(row)
+        pd.DataFrame(rows).to_csv(POSITION_FILE, index=False)
     elif POSITION_FILE.exists():
         POSITION_FILE.unlink()
 
@@ -118,12 +129,43 @@ def check_stop_loss(symbol, ltp):
     if symbol not in positions:
         return
     pos = positions[symbol]
+
+    entry   = pos["entry_price"]
+    qty     = pos["quantity"]
+    target1 = round(entry * 1.04, 2)   # +4% — partial exit
+    target2 = round(entry * 1.06, 2)   # +6% — full exit
+
+    # stop loss check
     if ltp <= pos["stop_price"]:
-        pnl = round((ltp - pos["entry_price"]) * pos["quantity"], 2)
+        pnl = round((ltp - entry) * qty, 2)
         print(f"🚨 STOP LOSS HIT | {symbol} @ ₹{ltp:.2f} | PnL ₹{pnl}")
         positions.pop(symbol)
-        log_paper_order("SELL", symbol, ltp, pos["quantity"],
+        log_paper_order("SELL", symbol, ltp, qty,
                         f"STOP_LOSS | PnL=₹{pnl}")
+        return
+
+    # partial exit at +4% (sell 50%)
+    if ltp >= target1 and not pos.get("partial_exit_done"):
+        partial_qty = max(1, qty // 2)
+        pnl = round((ltp - entry) * partial_qty, 2)
+        print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | Selling {partial_qty} shares | PnL ₹{pnl}")
+        positions[symbol]["quantity"]          -= partial_qty
+        positions[symbol]["partial_exit_done"]  = True
+        # move stop to breakeven after partial exit
+        positions[symbol]["stop_price"]         = round(entry * 1.001, 2)
+        log_paper_order("SELL", symbol, ltp, partial_qty,
+                        f"TARGET_1_PARTIAL | PnL=₹{pnl} | stop moved to breakeven")
+        save_positions()
+        return
+
+    # full exit at +6%
+    if ltp >= target2 and pos.get("partial_exit_done"):
+        remaining_qty = qty
+        pnl = round((ltp - entry) * remaining_qty, 2)
+        print(f"🎯 TARGET 2 HIT (+6%) | {symbol} @ ₹{ltp:.2f} | Full exit | PnL ₹{pnl}")
+        positions.pop(symbol)
+        log_paper_order("SELL", symbol, ltp, remaining_qty,
+                        f"TARGET_2_FULL | PnL=₹{pnl}")
 
 
 def run_signal_scan():
@@ -180,6 +222,21 @@ for sym, today in today_candles.items():
         df['date'] = pd.to_datetime(df['date'])
         df = pd.concat([df, today_row], ignore_index=True)
         df = df.drop_duplicates(subset='date').sort_values('date').reset_index(drop=True)
+
+        # ensure minimum history for trend detection (need 30+ candles)
+        if len(df) < 30:
+            hist = yf.download(ticker, period='3mo', interval='1d', progress=False)
+            if not hist.empty:
+                hist = hist.reset_index()
+                hist.columns = [c[0] if isinstance(c, tuple) else c for c in hist.columns]
+                hist.columns = [c.lower() for c in hist.columns]
+                hist = hist[['date','open','high','low','close','volume']]
+                hist['date'] = pd.to_datetime(hist['date']).dt.tz_localize(None)
+                today_str = _dt.now().strftime('%Y-%m-%d')
+                hist = hist[hist['date'].dt.strftime('%Y-%m-%d') <= today_str]
+                df = pd.concat([hist, df], ignore_index=True)
+                df = df.drop_duplicates(subset='date', keep='last')
+                df = df.sort_values('date').reset_index(drop=True)
 
         sig_df = generate_signals(df)
         last   = sig_df.iloc[-1]
@@ -257,11 +314,13 @@ print(json.dumps(results))
                             f"SIGNAL | stop@{stop_price} | RSI={rsi:.1f}")
 
         elif sig == "SELL" and sym in positions:
-            # SELL signal = exit existing long position (not a short entry)
+            # SELL signal = exit remaining long position (not a short entry)
             pos = positions.pop(sym)
-            pnl = round((ltp - pos["entry_price"]) * pos["quantity"], 2)
-            log_paper_order("SELL", sym, ltp, pos["quantity"],
-                            f"SIGNAL_EXIT | PnL=₹{pnl}")
+            remaining_qty = pos["quantity"]
+            pnl = round((ltp - pos["entry_price"]) * remaining_qty, 2)
+            partial_note = " (remaining after partial exit)" if pos.get("partial_exit_done") else ""
+            log_paper_order("SELL", sym, ltp, remaining_qty,
+                            f"SIGNAL_EXIT{partial_note} | PnL=₹{pnl}")
 
         elif sig == "SELL" and sym not in positions:
             print(f"  ℹ️  {sym}: SELL signal but no open position — no action (long-only strategy)")
