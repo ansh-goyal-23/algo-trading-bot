@@ -1,0 +1,16 @@
+allocation_method,symbol,weight_pct,allocated_capital,expected_return_pct,sharpe_ratio,max_drawdown_pct,portfolio_return,weighted_drawdown
+equal_weight,APOLLOHOSP,20.0,20000.0,38.38,2.479,7.15,30.53,8.73
+equal_weight,NTPC,20.0,20000.0,37.74,2.396,14.93,30.53,8.73
+equal_weight,GRASIM,20.0,20000.0,28.8,2.055,8.36,30.53,8.73
+equal_weight,EICHERMOT,20.0,20000.0,27.95,1.492,5.71,30.53,8.73
+equal_weight,NESTLEIND,20.0,20000.0,19.79,1.021,7.5,30.53,8.73
+sharpe_weighted,APOLLOHOSP,26.25,26250.0,38.38,2.479,7.15,32.47,9.2
+sharpe_weighted,NTPC,25.37,25370.0,37.74,2.396,14.93,32.47,9.2
+sharpe_weighted,GRASIM,21.76,21760.0,28.8,2.055,8.36,32.47,9.2
+sharpe_weighted,EICHERMOT,15.8,15800.0,27.95,1.492,5.71,32.47,9.2
+sharpe_weighted,NESTLEIND,10.81,10810.0,19.79,1.021,7.5,32.47,9.2
+calmar_weighted,APOLLOHOSP,28.44,28440.0,38.38,2.479,7.15,31.24,8.09
+calmar_weighted,NTPC,13.39,13390.0,37.74,2.396,14.93,31.24,8.09
+calmar_weighted,GRASIM,18.25,18250.0,28.8,2.055,8.36,31.24,8.09
+calmar_weighted,EICHERMOT,25.93,25930.0,27.95,1.492,5.71,31.24,8.09
+calmar_weighted,NESTLEIND,13.98,13980.0,19.79,1.021,7.5,31.24,8.09
