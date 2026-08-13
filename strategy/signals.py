@@ -1,18 +1,19 @@
 """
 Signal generation — combines candlestick patterns + indicators.
 
-Prior trend and S/R are computed and shown as context in the
-signal interpreter but are NOT hard gates — backtesting showed
-they reduce performance on trending Nifty 50 stocks.
+S/R levels are computed and shown as context in the signal interpreter
+but are NOT a hard gate — backtesting showed they reduce performance on
+trending Nifty 50 stocks. Prior trend IS scored below (bullish trend
+favors BUY, bearish trend favors SELL) — it is not just context.
 
-Checklist (need 3/4, pattern is mandatory gate):
+Checklist (need 3/5, pattern is mandatory gate):
   [MANDATORY] Candlestick pattern
   [CONFIRM]   Price > EMA20
   [CONFIRM]   RSI filter
   [CONFIRM]   Volume above average
+  [CONFIRM]   Prior trend agrees with signal direction
 
 Context columns available (not scored):
-  prior_trend   — uptrend/downtrend/pullback/rally/sideways
   near_support  — True if price within 1.5% of support zone
   near_resistance — True if price within 1.5% of resistance zone
   nearest_sr_zone — nearest S/R price level

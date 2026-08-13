@@ -2,8 +2,9 @@
 Paper Trader — Positional Strategy.
 
 Workflow:
-  9:15 AM → 3:20 PM   Live feed: collect ticks, monitor stop losses
-  3:20 PM             Build OHLC from ticks → run signals → log paper orders
+  9:15 AM → 3:10 PM   Live feed: collect ticks, monitor stop losses
+  3:10 PM             Build OHLC from ticks → run signals → log paper orders
+                       (before the 3:15 PM CAS auction — SEBI change Aug 3 2026)
   Positions carry overnight. Long-only (no shorting on cash equity).
 
 Usage:
@@ -15,28 +16,20 @@ import os
 import sys
 import time
 import json
-import pyotp
 import subprocess
 import pandas as pd
 from datetime import datetime, time as dtime
 from pathlib import Path
 from dotenv import load_dotenv
-from neo_api_client import NeoAPI
 from execution.tick_aggregator import TickAggregator
+from execution.portfolio import (
+    PORTFOLIO, STOP_LOSS_PCT, RISK_PER_TRADE,
+    get_position_size, login, check_position_exit,
+)
 
 load_dotenv(dotenv_path=os.path.expanduser("~/Documents/algo-trading-bot/.env"))
 
 # ── config ─────────────────────────────────────────────────────────────────
-PORTFOLIO = {
-    "APOLLOHOSP": 26250,
-    "NTPC":       25370,
-    "GRASIM":     21760,
-    "EICHERMOT":  15800,
-    "NESTLEIND":  10810,
-}
-
-STOP_LOSS_PCT       = 0.02
-RISK_PER_TRADE      = 0.015
 LOG_DIR             = Path("reports/paper_trading")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 SESSION_DATE        = datetime.now().strftime("%Y%m%d")
@@ -117,66 +110,52 @@ def log_paper_order(action, symbol, price, quantity, reason=""):
     print(f"{emoji} PAPER {action} | {symbol} @ ₹{price:.2f} x {quantity} | {reason}")
 
 
-def get_position_size(symbol, price):
-    capital   = PORTFOLIO.get(symbol, 0)
-    risk_amt  = capital * RISK_PER_TRADE
-    stop_dist = price  * STOP_LOSS_PCT
-    size      = int(risk_amt / stop_dist)
-    return max(size, 1)
-
-
 def check_stop_loss(symbol, ltp):
     if symbol not in positions:
         return
-    pos = positions[symbol]
+    pos   = positions[symbol]
+    entry = pos["entry_price"]
 
-    entry   = pos["entry_price"]
-    qty     = pos["quantity"]
-    target1 = round(entry * 1.04, 2)   # +4% — partial exit
-    target2 = round(entry * 1.06, 2)   # +6% — full exit
+    result = check_position_exit(pos, low=ltp, high=ltp, close=ltp)
+    if result is None:
+        return
 
-    # stop loss check
-    if ltp <= pos["stop_price"]:
+    action, qty = result["action"], result["quantity"]
+
+    if action == "STOP":
         pnl = round((ltp - entry) * qty, 2)
         print(f"🚨 STOP LOSS HIT | {symbol} @ ₹{ltp:.2f} | PnL ₹{pnl}")
         positions.pop(symbol)
-        log_paper_order("SELL", symbol, ltp, qty,
-                        f"STOP_LOSS | PnL=₹{pnl}")
-        return
+        log_paper_order("SELL", symbol, ltp, qty, f"STOP_LOSS | PnL=₹{pnl}")
 
-    # partial exit at +4% (sell 50%)
-    if ltp >= target1 and not pos.get("partial_exit_done"):
-        partial_qty = max(1, qty // 2)
-        pnl = round((ltp - entry) * partial_qty, 2)
-        print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | Selling {partial_qty} shares | PnL ₹{pnl}")
-        positions[symbol]["quantity"]          -= partial_qty
-        positions[symbol]["partial_exit_done"]  = True
-        # move stop to breakeven after partial exit
-        positions[symbol]["stop_price"]         = round(entry * 1.001, 2)
-        log_paper_order("SELL", symbol, ltp, partial_qty,
+    elif action == "TARGET1_PARTIAL":
+        pnl = round((ltp - entry) * qty, 2)
+        print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | Selling {qty} shares | PnL ₹{pnl}")
+        log_paper_order("SELL", symbol, ltp, qty,
                         f"TARGET_1_PARTIAL | PnL=₹{pnl} | stop moved to breakeven")
         save_positions()
-        return
 
-    # full exit at +6%
-    if ltp >= target2 and pos.get("partial_exit_done"):
-        remaining_qty = qty
-        pnl = round((ltp - entry) * remaining_qty, 2)
+    elif action == "TARGET1_PROTECT":
+        # single-share position — can't split it, so just protect the gain
+        print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | qty=1, holding full position | stop moved to breakeven")
+        save_positions()
+
+    elif action == "TARGET2":
+        pnl = round((ltp - entry) * qty, 2)
         print(f"🎯 TARGET 2 HIT (+6%) | {symbol} @ ₹{ltp:.2f} | Full exit | PnL ₹{pnl}")
         positions.pop(symbol)
-        log_paper_order("SELL", symbol, ltp, remaining_qty,
-                        f"TARGET_2_FULL | PnL=₹{pnl}")
+        log_paper_order("SELL", symbol, ltp, qty, f"TARGET_2_FULL | PnL=₹{pnl}")
 
 
 def run_signal_scan():
     """
-    At 3:20 PM:
+    At 3:10 PM (before the CAS auction starts at 3:15 PM):
     1. Get today's OHLC from tick aggregator (close = latest tick)
     2. Fetch historical data via yfinance in venv-data
     3. Append today's candle → run generate_signals()
     4. Log paper orders + print signal interpretation
     """
-    print("\n⏰ 3:20 PM — Building OHLC from today's ticks...")
+    print("\n⏰ 3:10 PM — Building OHLC from today's ticks...")
     aggregator.summary()
 
     today_candles = aggregator.get_all_candles()
@@ -302,7 +281,10 @@ print(json.dumps(results))
         ltp = close
 
         if sig == "BUY" and sym not in positions:
-            qty        = get_position_size(sym, ltp)
+            qty = get_position_size(sym, ltp)
+            if qty < 1:
+                print(f"  ⚠️  {sym}: BUY signal but 1 share (₹{ltp:.2f}) exceeds allocated capital — skipping")
+                continue
             stop_price = round(ltp * (1 - STOP_LOSS_PCT), 2)
             positions[sym] = {
                 "entry_price": ltp,
@@ -442,8 +424,8 @@ def main():
                     try:
                         client.un_subscribe(instrument_tokens=instrument_tokens,
                                            isIndex=False, isDepth=False)
-                    except:
-                        pass
+                    except Exception as e:
+                        print(f"  ⚠️  un_subscribe failed (continuing to resubscribe): {e}")
                     time.sleep(2)
                     client.subscribe(instrument_tokens=instrument_tokens,
                                     isIndex=False, isDepth=False)

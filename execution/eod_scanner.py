@@ -1,42 +1,41 @@
 """
 End-of-Day Signal Scanner.
 
-Run this at 3:20 PM daily instead of keeping the paper trader
-running all day. Fetches today's OHLC via Kotak Neo quotes API,
+Run this at 3:10-3:15 PM daily instead of keeping the paper trader
+running all day — before the CAS auction starts at 3:15 PM (SEBI
+change Aug 3 2026). Fetches today's OHLC via Kotak Neo quotes API,
 appends to historical data, runs signals, logs paper orders.
+
+NOTE: this checks stop-loss AND the +4%/+6% partial-exit targets
+against today's OHLC (via execution.portfolio.check_position_exit),
+same rules paper_trader.py applies tick-by-tick. If positions are
+open, prefer running paper_trader.py for continuous intraday
+monitoring — this EOD-bar check can only catch a stop/target breach
+once per day, using the day's low/high as a proxy for intraday price.
 
 Usage:
     source venv/bin/activate
     python -m execution.eod_scanner
 
-Run at: 3:20 PM IST on trading days.
 Stop loss monitoring: only needed once you have open positions.
 """
 
 import os
 import sys
 import json
-import pyotp
 import subprocess
 import pandas as pd
 from datetime import datetime
 from pathlib import Path
 from dotenv import load_dotenv
-from neo_api_client import NeoAPI
+from execution.portfolio import (
+    PORTFOLIO, STOP_LOSS_PCT, RISK_PER_TRADE,
+    get_position_size, login, check_position_exit,
+)
 
 load_dotenv(dotenv_path=os.path.expanduser("~/Documents/algo-trading-bot/.env"))
 
 # ── config ─────────────────────────────────────────────────────────────────
-PORTFOLIO = {
-    "APOLLOHOSP": 26250,
-    "NTPC":       25370,
-    "GRASIM":     21760,
-    "EICHERMOT":  15800,
-    "NESTLEIND":  10810,
-}
-
-STOP_LOSS_PCT  = 0.02
-RISK_PER_TRADE = 0.015
 LOG_DIR        = Path("reports/paper_trading")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 SESSION_DATE   = datetime.now().strftime("%Y%m%d")
@@ -51,10 +50,11 @@ if POSITION_FILE.exists():
     pos_df = pd.read_csv(POSITION_FILE)
     for _, row in pos_df.iterrows():
         positions[row["symbol"]] = {
-            "entry_price": row["entry_price"],
-            "quantity":    row["quantity"],
-            "stop_price":  row["stop_price"],
-            "entry_date":  row["entry_date"],
+            "entry_price":       row["entry_price"],
+            "quantity":          row["quantity"],
+            "stop_price":        row["stop_price"],
+            "entry_date":        row["entry_date"],
+            "partial_exit_done": bool(row.get("partial_exit_done", False)),
         }
     if positions:
         print(f"📂 Open positions loaded:")
@@ -94,32 +94,6 @@ def log_paper_order(action, symbol, price, quantity, reason=""):
     save_positions()
     emoji = "🟢" if action == "BUY" else "🔴"
     print(f"{emoji} PAPER {action} | {symbol} @ ₹{price:.2f} x {quantity} | {reason}")
-
-
-def get_position_size(symbol, price):
-    capital   = PORTFOLIO.get(symbol, 0)
-    risk_amt  = capital * RISK_PER_TRADE
-    stop_dist = price  * STOP_LOSS_PCT
-    size      = int(risk_amt / stop_dist)
-    return max(size, 1)
-
-
-def login():
-    client = NeoAPI(
-        environment  = "prod",
-        consumer_key = os.getenv("NEO_CONSUMER_KEY"),
-        access_token = None,
-        neo_fin_key  = None,
-    )
-    totp = pyotp.TOTP(os.getenv("NEO_TOTP_SECRET")).now()
-    client.totp_login(
-        mobile_number=os.getenv("NEO_MOBILE"),
-        ucc=os.getenv("NEO_UCC"),
-        totp=totp
-    )
-    client.totp_validate(mpin=os.getenv("NEO_MPIN"))
-    print("Logged in successfully")
-    return client
 
 
 def fetch_today_ohlc_kotak(client) -> dict:
@@ -337,7 +311,10 @@ print(json.dumps(results))
         ltp = close
 
         if sig == "BUY" and sym not in positions:
-            qty        = get_position_size(sym, ltp)
+            qty = get_position_size(sym, ltp)
+            if qty < 1:
+                print(f"  ⚠️  {sym}: BUY signal but 1 share (₹{ltp:.2f}) exceeds allocated capital — skipping")
+                continue
             stop_price = round(ltp * (1 - STOP_LOSS_PCT), 2)
             positions[sym] = {
                 "entry_price": ltp,
@@ -360,32 +337,56 @@ print(json.dumps(results))
 
 def check_stop_losses(today_ohlc: dict):
     """
-    Check if today's low breached stop loss on any open position.
-    Uses today's low price (worst intraday price) for accuracy.
+    Check stop-loss and +4%/+6% partial-exit targets on open positions
+    using today's low/high as a proxy for intraday price (only one check
+    per day — paper_trader.py's tick monitoring is more accurate).
+    Exit fills are assumed at the trigger level (stop/target price) since
+    the exact intrabar fill isn't known from an OHLC bar.
     """
     if not positions:
         return
-    print("\n🛡️  Checking stop losses on open positions...")
+    print("\n🛡️  Checking stop losses and targets on open positions...")
     for sym, pos in list(positions.items()):
         if sym not in today_ohlc:
             continue
-        today_low = today_ohlc[sym]["low"]
-        close     = today_ohlc[sym]["close"]
-        if today_low <= pos["stop_price"]:
-            # stop was breached intraday — exit at stop price
-            exit_price = pos["stop_price"]
-            pnl = round((exit_price - pos["entry_price"]) * pos["quantity"], 2)
-            print(f"🚨 STOP LOSS HIT | {sym} | low={today_low} <= stop={pos['stop_price']} | PnL ₹{pnl}")
+        entry = pos["entry_price"]
+        low   = today_ohlc[sym]["low"]
+        high  = today_ohlc[sym]["high"]
+        close = today_ohlc[sym]["close"]
+
+        result = check_position_exit(pos, low=low, high=high, close=close)
+        if result is None:
+            print(f"  ✅ {sym} | low={low:.2f} > stop={pos['stop_price']:.2f} — position safe")
+            continue
+
+        action, qty, trigger_price = result["action"], result["quantity"], result["trigger_price"]
+
+        if action == "STOP":
+            pnl = round((trigger_price - entry) * qty, 2)
+            print(f"🚨 STOP LOSS HIT | {sym} | low={low} <= stop={pos['stop_price']} | PnL ₹{pnl}")
             positions.pop(sym)
-            log_paper_order("SELL", sym, exit_price, pos["quantity"],
-                            f"STOP_LOSS | PnL=₹{pnl}")
-        else:
-            print(f"  ✅ {sym} | low={today_low:.2f} > stop={pos['stop_price']:.2f} — position safe")
+            log_paper_order("SELL", sym, trigger_price, qty, f"STOP_LOSS | PnL=₹{pnl}")
+
+        elif action == "TARGET1_PARTIAL":
+            pnl = round((trigger_price - entry) * qty, 2)
+            print(f"🎯 TARGET 1 HIT (+4%) | {sym} | high={high:.2f} >= {trigger_price} | Selling {qty} shares | PnL ₹{pnl}")
+            log_paper_order("SELL", sym, trigger_price, qty,
+                            f"TARGET_1_PARTIAL | PnL=₹{pnl} | stop moved to breakeven")
+
+        elif action == "TARGET1_PROTECT":
+            print(f"🎯 TARGET 1 HIT (+4%) | {sym} | qty=1, holding full position | stop moved to breakeven")
+            save_positions()
+
+        elif action == "TARGET2":
+            pnl = round((trigger_price - entry) * qty, 2)
+            print(f"🎯 TARGET 2 HIT (+6%) | {sym} | high={high:.2f} >= {trigger_price} | Full exit | PnL ₹{pnl}")
+            positions.pop(sym)
+            log_paper_order("SELL", sym, trigger_price, qty, f"TARGET_2_FULL | PnL=₹{pnl}")
 
 
 def main():
     print("=" * 55)
-    print("  EOD SIGNAL SCANNER — 3:20 PM")
+    print("  EOD SIGNAL SCANNER — 3:10 PM")
     print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 55)
 
@@ -399,7 +400,7 @@ def main():
     }
     if not today_ohlc:
         print("⚠️  No valid OHLC data — market may be closed or run after 3:30 PM.")
-        print("    EOD scanner must be run between 3:20–3:30 PM IST.")
+        print("    EOD scanner should be run between 3:10–3:15 PM IST, before the CAS auction.")
         return
 
     # check stop losses first using today's low
