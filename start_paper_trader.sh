@@ -32,8 +32,14 @@ if [ -f "$POSITION_FILE" ]; then
         fi
 
         if [ $EXIT_CODE -eq 0 ]; then
-            echo "✅ Script exited cleanly"
-            break
+            # check if market is still open — if yes, restart anyway
+            NOW=$(date +%H%M)
+            if [ $NOW -lt 1530 ]; then
+                echo "⚠️  Script exited cleanly but market still open — restarting..."
+            else
+                echo "✅ Script exited cleanly"
+                break
+            fi
         fi
 
         echo "⚠️  Script crashed (exit code $EXIT_CODE) — restarting in 10 seconds..."
