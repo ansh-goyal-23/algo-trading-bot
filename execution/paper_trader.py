@@ -203,25 +203,27 @@ for sym, today in today_candles.items():
             'close':  today['close'],
             'volume': today['volume'],
         }}])
-        today_row['date'] = pd.to_datetime(today_row['date'])
-        df['date'] = pd.to_datetime(df['date'])
-        df = pd.concat([df, today_row], ignore_index=True)
-        df = df.drop_duplicates(subset='date').sort_values('date').reset_index(drop=True)
+        # always fetch full historical data for trend detection
+        # then append today's live candle on top
+        today_str = _dt.now().strftime('%Y-%m-%d')
+        hist = yf.download(ticker, period='6mo', interval='1d', progress=False)
+        if not hist.empty:
+            hist = hist.reset_index()
+            hist.columns = [c[0] if isinstance(c, tuple) else c for c in hist.columns]
+            hist.columns = [c.lower() for c in hist.columns]
+            hist = hist[['date','open','high','low','close','volume']]
+            hist['date'] = pd.to_datetime(hist['date']).dt.tz_localize(None)
+            hist = hist[hist['date'].dt.strftime('%Y-%m-%d') <= today_str]
+            # append today's live candle (overrides yfinance's incomplete today candle)
+            today_row['date'] = pd.to_datetime(today_row['date'])
+            df = pd.concat([hist, today_row], ignore_index=True)
+        else:
+            today_row['date'] = pd.to_datetime(today_row['date'])
+            df = today_row.copy()
 
-        # ensure minimum history for trend detection (need 30+ candles)
-        if len(df) < 30:
-            hist = yf.download(ticker, period='3mo', interval='1d', progress=False)
-            if not hist.empty:
-                hist = hist.reset_index()
-                hist.columns = [c[0] if isinstance(c, tuple) else c for c in hist.columns]
-                hist.columns = [c.lower() for c in hist.columns]
-                hist = hist[['date','open','high','low','close','volume']]
-                hist['date'] = pd.to_datetime(hist['date']).dt.tz_localize(None)
-                today_str = _dt.now().strftime('%Y-%m-%d')
-                hist = hist[hist['date'].dt.strftime('%Y-%m-%d') <= today_str]
-                df = pd.concat([hist, df], ignore_index=True)
-                df = df.drop_duplicates(subset='date', keep='last')
-                df = df.sort_values('date').reset_index(drop=True)
+        df['date'] = pd.to_datetime(df['date']).dt.tz_localize(None)
+        df = df.drop_duplicates(subset='date', keep='last')
+        df = df.sort_values('date').reset_index(drop=True)
 
         sig_df = generate_signals(df)
         last   = sig_df.iloc[-1]
