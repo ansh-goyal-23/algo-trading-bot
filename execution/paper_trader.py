@@ -133,6 +133,7 @@ def check_stop_loss(symbol, ltp):
         print(f"🚨 STOP LOSS HIT | {symbol} @ ₹{ltp:.2f} | PnL ₹{pnl}")
         positions.pop(symbol)
         log_paper_order("SELL", symbol, ltp, qty, f"STOP_LOSS | PnL=₹{pnl}")
+        save_positions()  # clear position file immediately after stop loss
 
     elif action == "TARGET1_PARTIAL":
         pnl = round((ltp - entry) * qty, 2)
@@ -151,6 +152,7 @@ def check_stop_loss(symbol, ltp):
         print(f"🎯 TARGET 2 HIT (+6%) | {symbol} @ ₹{ltp:.2f} | Full exit | PnL ₹{pnl}")
         positions.pop(symbol)
         log_paper_order("SELL", symbol, ltp, qty, f"TARGET_2_FULL | PnL=₹{pnl}")
+        save_positions()  # clear position file immediately after full exit
 
 
 def run_signal_scan():
