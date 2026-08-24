@@ -1,0 +1,2 @@
+date,timestamp,action,symbol,price,quantity,reason
+2026-08-24,2026-08-24 16:50:44,BUY,GRASIM,3308.0,4,SIGNAL | stop@3241.84 | RSI=59.7
