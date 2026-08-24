@@ -13,12 +13,23 @@ from pathlib import Path
 class TickAggregator:
     """
     Builds a daily OHLC candle from a stream of live ticks.
-    Persists candle state to disk on every tick so restarts
-    don't lose the day's accumulated OHLC.
+    Persists candle state on every tick so restarts don't lose the day's
+    accumulated OHLC.
+
+    Two persistence backends, chosen by which arguments are passed:
+      - persist_path (default, unchanged behavior): saves to a local JSON
+        file. Used by paper_trader.py when running locally.
+      - save_fn / load_fn: optional callables for a different backend
+        (e.g. Supabase, via execution.state_store) — used by run_daily.py
+        on Render, where the local filesystem doesn't persist between
+        cron runs. save_fn(dict_of_candles) -> None, load_fn() -> dict.
+        When both are given, they take priority over persist_path.
     """
 
-    def __init__(self, persist_path: str = None):
+    def __init__(self, persist_path: str = None, save_fn=None, load_fn=None):
         self._persist_path = persist_path
+        self._save_fn = save_fn
+        self._load_fn = load_fn
         # symbol → {open, high, low, close, volume, tick_count}
         self._candles = defaultdict(lambda: {
             "open":       None,
@@ -31,7 +42,16 @@ class TickAggregator:
             "last_tick_time":  None,
         })
         # reload from disk if file exists (handles restarts)
-        if persist_path and Path(persist_path).exists():
+        if load_fn:
+            try:
+                saved = load_fn() or {}
+                for sym, c in saved.items():
+                    self._candles[sym] = c
+                if saved:
+                    print(f"📂 Reloaded OHLC state for {list(saved.keys())} from previous run")
+            except Exception as e:
+                print(f"⚠️  Could not reload OHLC state via load_fn: {e}")
+        elif persist_path and Path(persist_path).exists():
             self._load()
 
     def _load(self):
@@ -46,6 +66,12 @@ class TickAggregator:
             print(f"⚠️  Could not reload OHLC state: {e}")
 
     def _save(self):
+        if self._save_fn:
+            try:
+                self._save_fn(dict(self._candles))
+            except Exception as e:
+                print(f"⚠️  Could not save OHLC state via save_fn: {e}")
+            return
         if not self._persist_path:
             return
         import json

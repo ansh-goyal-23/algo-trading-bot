@@ -1,0 +1,21 @@
+# "Live" venv for execution/run_daily.py on Render — Kotak Neo + Supabase.
+# Deliberately does NOT include pandas/yfinance/ta/scipy — those live in
+# requirements-render-data.txt, in a SEPARATE venv, because neo-api-client
+# hard-pins websockets==8.1 while yfinance requires websockets>=13.0.
+# That's a real conflict in the packages' own declared dependencies, not
+# a pin choice — installing both in one environment doesn't resolve
+# (confirmed by testing). See run_daily.py's module docstring and
+# DEPLOY.md for how the two venvs are built and bridged via subprocess.
+#
+# Also deliberately does NOT include the `supabase` SDK — it pulls in
+# `realtime`, which requires websockets>=11, hitting the SAME conflict
+# with neo-api-client's websockets==8.1 (confirmed by testing). Instead
+# execution/state_store.py talks to Supabase's REST API directly via
+# `requests`, which is already needed here for nothing extra.
+
+neo-api-client @ git+https://github.com/Kotak-Neo/Kotak-neo-api-v2.git@539b6022c2c5fe138d6d0a893bbe554cacca10b6
+pyotp==2.10.0
+websocket-client==1.8.0
+python-dotenv==1.0.0
+requests==2.32.3
+pytz==2026.3.post1

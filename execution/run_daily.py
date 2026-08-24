@@ -1,0 +1,479 @@
+"""
+Single daily entry point for unattended (Render Cron Job) execution.
+
+Fires once each weekday morning (~9:00 AM IST, before market open). It
+decides what to do based on whether there's an open position in Supabase:
+
+  - Open position(s) exist  -> run a full-day tick monitor (same idea as
+    paper_trader.py) from now until market close, so stop-loss and the
+    +4%/+6% partial-exit targets are caught intraday, not just once at EOD.
+  - Flat                    -> wait until the 3:10 PM signal window, then
+    run the EOD scan once (same idea as eod_scanner.py), then exit.
+
+This removes the "remember to run it at 3:10 PM" step by hand — see the
+project doc's Daily Log for how many times that got missed.
+
+DOES NOT MODIFY paper_trader.py or eod_scanner.py — those still work
+exactly as before for running locally on your Mac. This script
+reimplements the same flow against Supabase instead of local CSV/JSON
+files, because Render's cron containers don't keep a filesystem between
+runs. The trading-rule logic itself (stop-loss, partial exits, position
+sizing) is NOT reimplemented here — it's imported unchanged from
+execution/portfolio.py, the same module the local scripts use, so the
+rules can't drift between local and cloud runs.
+
+TWO VENVS, SAME AS LOCAL — NOT ONE. neo_api_client hard-pins
+websockets==8.1 in its own package metadata; yfinance requires
+websockets>=13.0. That's a real conflict between the two libraries'
+declared dependencies, not just a pin choice, so it can't be resolved by
+installing everything into one environment (this was tried and confirmed
+broken — see project doc, Daily Log). This script runs directly in the
+"live" venv (Kotak Neo, Supabase, no pandas/yfinance needed at all) and
+shells out to a SEPARATE "data" venv for anything yfinance/pandas-based —
+exactly the subprocess bridge paper_trader.py/eod_scanner.py already use
+locally (`venv-data/bin/python`), just pointed at a second venv Render's
+build step creates. See DEPLOY.md for the two-venv build/start commands.
+
+IMPORTANT — test locally before trusting this on Render:
+    source render-live-venv/bin/activate
+    python -m execution.run_daily
+(needs both render-live-venv/ and render-data-venv/ to exist locally,
+per DEPLOY.md Step 1)
+
+Usage:
+    python -m execution.run_daily
+"""
+
+import time
+import json
+import subprocess
+from datetime import datetime, time as dtime
+from pathlib import Path
+from dotenv import load_dotenv
+
+from execution.portfolio import (
+    PORTFOLIO, STOP_LOSS_PCT, get_position_size, login, check_position_exit,
+)
+from execution.tick_aggregator import TickAggregator
+from execution import state_store as store
+
+load_dotenv()
+
+MARKET_OPEN         = dtime(9, 15)
+SIGNAL_WINDOW_START = dtime(15, 10)
+MARKET_CLOSE        = dtime(15, 30)
+
+TODAY = datetime.now().strftime("%Y-%m-%d")
+
+# The "data" venv (yfinance/pandas/ta/scipy) — a sibling directory to
+# whichever venv is currently running this script. Render's build command
+# creates both at fixed relative paths (see DEPLOY.md); locally, name your
+# test venvs to match: render-live-venv/ and render-data-venv/.
+DATA_VENV_PYTHON = Path("render-data-venv/bin/python")
+
+
+def resolve_tokens(client):
+    instrument_tokens, token_to_name = [], {}
+    for stock in PORTFOLIO:
+        results = client.search_scrip(exchange_segment="nse_cm", symbol=stock)
+        if not results:
+            continue
+        match = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
+        token = str(match["pSymbol"])
+        instrument_tokens.append({"instrument_token": token, "exchange_segment": "nse_cm"})
+        token_to_name[token] = stock
+        print(f"Resolved {stock} -> {match['pTrdSymbol']} (token {token})")
+    return instrument_tokens, token_to_name
+
+
+# ── OHLC fetch (EOD path) — same approach as eod_scanner.py ────────────────
+def fetch_today_ohlc_kotak(client) -> dict:
+    ohlc = {}
+    for stock in PORTFOLIO:
+        try:
+            results = client.search_scrip(exchange_segment="nse_cm", symbol=stock)
+            if not results:
+                continue
+            match = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
+            token = str(match["pSymbol"])
+            quote = client.quotes(
+                instrument_tokens=[{"instrument_token": token, "exchange_segment": "nse_cm"}],
+                quote_type="ohlc",
+            )
+            data = quote if isinstance(quote, list) else quote.get("data", [quote])
+            if not data:
+                continue
+            q = data[0] if isinstance(data, list) else data
+            ohlc_data = q.get("ohlc", {})
+            ltp     = float(q.get("ltp", 0))
+            open_p  = float(ohlc_data.get("open", 0))
+            high_p  = float(ohlc_data.get("high", 0))
+            low_p   = float(ohlc_data.get("low", 0))
+            close_p = ltp if ltp > 0 else float(ohlc_data.get("close", 0))
+            volume  = int(q.get("last_volume", q.get("volume", 0)))
+            ohlc[stock] = {
+                "date": TODAY, "open": open_p, "high": high_p,
+                "low": low_p, "close": close_p, "volume": volume,
+            }
+        except Exception as e:
+            print(f"  ⚠️  {stock} (Kotak): {e}")
+    return ohlc
+
+
+def fetch_today_ohlc_yfinance() -> dict:
+    """Fallback OHLC fetch, run in the separate data venv via subprocess —
+    same bridge eod_scanner.py already uses locally."""
+    script = """
+import sys, json
+sys.path.insert(0, '.')
+import yfinance as yf
+symbols = """ + str(list(PORTFOLIO.keys())) + """
+result = {}
+for sym in symbols:
+    try:
+        df = yf.download(sym + '.NS', period='2d', interval='1d', progress=False)
+        if df.empty:
+            continue
+        df.columns = [c[0] if isinstance(c, tuple) else c for c in df.columns]
+        last = df.iloc[-1]
+        result[sym] = {
+            'date': str(df.index[-1].date()),
+            'open': float(last['Open']), 'high': float(last['High']),
+            'low': float(last['Low']), 'close': float(last['Close']),
+            'volume': int(last['Volume']),
+        }
+    except Exception:
+        pass
+print(json.dumps(result))
+"""
+    r = subprocess.run([str(DATA_VENV_PYTHON), "-c", script], capture_output=True, text=True, cwd=".")
+    if r.returncode != 0:
+        print("  ⚠️  yfinance subprocess failed:", r.stderr[-500:])
+        return {}
+    try:
+        return json.loads(r.stdout.strip())
+    except Exception as e:
+        print(f"  ⚠️  Could not parse yfinance subprocess output: {e}")
+        return {}
+
+
+def fetch_today_ohlc(client) -> dict:
+    print("\n📡 Fetching today's OHLC from Kotak Neo...")
+    ohlc = fetch_today_ohlc_kotak(client)
+    valid = {s: d for s, d in ohlc.items() if d["close"] > 0 and d["open"] > 0}
+    invalid = set(PORTFOLIO.keys()) - set(valid.keys())
+    if invalid:
+        print(f"  ⚠️  Kotak returned zeros for {invalid} — falling back to yfinance...")
+        yf_data = fetch_today_ohlc_yfinance()
+        for sym in invalid:
+            if sym in yf_data and yf_data[sym]["close"] > 0:
+                valid[sym] = yf_data[sym]
+                print(f"  ✅ {sym}: fetched from yfinance")
+    return valid
+
+
+# ── signal scan — strategy/signals.py rules, run in the DATA venv ─────────
+def run_signal_scan(today_candles: dict):
+    """
+    Fetch 6mo history via yfinance, append today's candle, run
+    generate_signals() — all inside the data-venv subprocess, since
+    strategy/indicators.py needs `ta` and strategy/trend.py needs `scipy`,
+    neither of which are (or should be) installed in the live venv.
+    Gets back {symbol: {signal, close, rsi}} as JSON, then acts on
+    BUY/SELL against Supabase-held positions back in THIS process (pure
+    Python from here — no pandas needed).
+    """
+    script = f"""
+import sys; sys.path.insert(0, '.')
+import yfinance as yf
+import pandas as pd
+import json
+from strategy.signals import generate_signals
+from analytics.signal_interpreter import interpret_live_signal
+
+today_candles = {json.dumps(today_candles)}
+results = {{}}
+
+for sym, today in today_candles.items():
+    try:
+        ticker = sym + '.NS'
+        hist = yf.download(ticker, period='6mo', interval='1d', progress=False)
+        if hist.empty:
+            results[sym] = {{'signal': 'ERROR', 'error': 'No historical data'}}
+            continue
+        hist = hist.reset_index()
+        hist.columns = [c[0] if isinstance(c, tuple) else c for c in hist.columns]
+        hist.columns = [c.lower() for c in hist.columns]
+        hist = hist[['date','open','high','low','close','volume']]
+        hist['date'] = pd.to_datetime(hist['date']).dt.tz_localize(None)
+
+        today_row = pd.DataFrame([{{
+            'date': today['date'], 'open': today['open'], 'high': today['high'],
+            'low': today['low'], 'close': today['close'], 'volume': today['volume'],
+        }}])
+        today_row['date'] = pd.to_datetime(today_row['date'])
+
+        df = pd.concat([hist, today_row], ignore_index=True)
+        df = df.drop_duplicates(subset='date', keep='last').sort_values('date').reset_index(drop=True)
+
+        sig_df = generate_signals(df)
+        last = sig_df.iloc[-1]
+
+        pattern_cols = ['bullish_engulfing','bullish_marubozu','hammer','bullish_harami',
+                        'bearish_engulfing','bearish_marubozu','shooting_star',
+                        'hanging_man','bearish_harami']
+        patterns = {{col: bool(last.get(col, False)) for col in pattern_cols}}
+
+        sig   = str(last.get('signal', 'None'))
+        close = float(last['close'])
+        rsi   = float(last['rsi'])   if 'rsi'   in last.index else 0
+        ema20 = float(last['ema20']) if 'ema20' in last.index else 0
+        vol   = bool(last.get('above_avg_volume', False))
+
+        # human-readable interpretation goes to stderr — stdout is JSON-only
+        print(interpret_live_signal(
+            symbol=sym, signal=sig if sig != 'None' else 'HOLD',
+            close=close, rsi=rsi, ema20=ema20,
+            above_avg_volume=vol, pattern_flags=patterns,
+        ), file=sys.stderr)
+
+        results[sym] = {{'signal': sig, 'close': close, 'rsi': rsi}}
+    except Exception as e:
+        results[sym] = {{'signal': 'ERROR', 'error': str(e)}}
+
+print(json.dumps(results))
+"""
+    result = subprocess.run(
+        [str(DATA_VENV_PYTHON), "-c", script], capture_output=True, text=True, cwd="."
+    )
+    if result.stderr:
+        print(result.stderr)  # the human-readable interpretations
+    if result.returncode != 0:
+        print("Signal scan subprocess error:", result.stderr[-800:])
+        return
+    try:
+        signals = json.loads(result.stdout.strip())
+    except Exception as e:
+        print(f"Failed to parse signal scan output: {e}")
+        return
+
+    positions = store.load_positions()
+    for sym, data in signals.items():
+        sig = data.get("signal")
+        if sig == "ERROR":
+            print(f"  ⚠️  {sym}: {data.get('error')}")
+            continue
+
+        ltp = data.get("close", 0)
+        rsi = data.get("rsi", 0)
+
+        if sig == "BUY" and sym not in positions:
+            qty = get_position_size(sym, ltp)
+            if qty < 1:
+                print(f"  ⚠️  {sym}: BUY signal but 1 share (₹{ltp:.2f}) exceeds allocated capital — skipping")
+                continue
+            stop_price = round(ltp * (1 - STOP_LOSS_PCT), 2)
+            pos = {
+                "entry_price": ltp, "quantity": qty, "stop_price": stop_price,
+                "entry_date": TODAY, "partial_exit_done": False,
+            }
+            store.save_position(sym, pos)
+            store.log_trade("BUY", sym, ltp, qty, f"SIGNAL | stop@{stop_price} | RSI={rsi:.1f}")
+            positions[sym] = pos
+
+        elif sig == "SELL" and sym in positions:
+            pos = positions.pop(sym)
+            pnl = round((ltp - pos["entry_price"]) * pos["quantity"], 2)
+            store.log_trade("SELL", sym, ltp, pos["quantity"], f"SIGNAL_EXIT | PnL=₹{pnl}")
+            store.delete_position(sym)
+
+        elif sig == "SELL" and sym not in positions:
+            print(f"  ℹ️  {sym}: SELL signal but no open position — no action (long-only)")
+
+
+def check_stop_losses_eod(today_ohlc: dict):
+    """EOD-bar stop/target check — same rule function as the intraday path,
+    using today's low/high as a proxy (one check per day)."""
+    positions = store.load_positions()
+    if not positions:
+        return
+    print("\n🛡️  Checking stop losses and targets on open positions...")
+    for sym, pos in positions.items():
+        if sym not in today_ohlc:
+            continue
+        low, high, close = today_ohlc[sym]["low"], today_ohlc[sym]["high"], today_ohlc[sym]["close"]
+        result = check_position_exit(pos, low=low, high=high, close=close)
+        if result is None:
+            print(f"  ✅ {sym} | low={low:.2f} > stop={pos['stop_price']:.2f} — position safe")
+            continue
+
+        action, qty, trigger = result["action"], result["quantity"], result["trigger_price"]
+        entry = pos["entry_price"]
+
+        if action == "STOP":
+            pnl = round((trigger - entry) * qty, 2)
+            print(f"🚨 STOP LOSS HIT | {sym} | low={low} <= stop={pos['stop_price']} | PnL ₹{pnl}")
+            store.log_trade("SELL", sym, trigger, qty, f"STOP_LOSS | PnL=₹{pnl}")
+            store.delete_position(sym)
+        elif action == "TARGET1_PARTIAL":
+            pnl = round((trigger - entry) * qty, 2)
+            print(f"🎯 TARGET 1 HIT (+4%) | {sym} | Selling {qty} shares | PnL ₹{pnl}")
+            store.log_trade("SELL", sym, trigger, qty, f"TARGET_1_PARTIAL | PnL=₹{pnl} | stop moved to breakeven")
+            store.save_position(sym, pos)  # check_position_exit already mutated pos in place
+        elif action == "TARGET1_PROTECT":
+            print(f"🎯 TARGET 1 HIT (+4%) | {sym} | qty=1, holding full position | stop moved to breakeven")
+            store.save_position(sym, pos)
+        elif action == "TARGET2":
+            pnl = round((trigger - entry) * qty, 2)
+            print(f"🎯 TARGET 2 HIT (+6%) | {sym} | Full exit | PnL ₹{pnl}")
+            store.log_trade("SELL", sym, trigger, qty, f"TARGET_2_FULL | PnL=₹{pnl}")
+            store.delete_position(sym)
+
+
+# ── path 1: flat — wait for the EOD window, scan once, exit ────────────────
+def run_eod_only():
+    now = datetime.now().time()
+    if now < SIGNAL_WINDOW_START:
+        wait_s = (
+            datetime.combine(datetime.today(), SIGNAL_WINDOW_START)
+            - datetime.combine(datetime.today(), now)
+        ).seconds
+        print(f"No open positions — waiting {wait_s}s until the {SIGNAL_WINDOW_START} signal window...")
+        time.sleep(wait_s)
+
+    client = login()
+    today_ohlc = fetch_today_ohlc(client)
+    today_ohlc = {s: d for s, d in today_ohlc.items() if d["close"] > 0 and d["open"] > 0}
+    if not today_ohlc:
+        print("⚠️  No valid OHLC data — market may be closed or something's wrong upstream.")
+        return
+
+    check_stop_losses_eod(today_ohlc)
+    run_signal_scan(today_ohlc)
+    print(f"\n✅ Scan complete. Open positions: {list(store.load_positions().keys()) or 'None'}")
+
+
+# ── path 2: position(s) open — monitor intraday until close ────────────────
+def run_full_day_monitor():
+    print("Open position(s) found — running full-day monitor from now until market close...")
+    client = login()
+    instrument_tokens, token_to_name = resolve_tokens(client)
+
+    aggregator = TickAggregator(
+        save_fn=lambda candles: store.save_ohlc_state(TODAY, candles),
+        load_fn=lambda: store.load_ohlc_state(TODAY),
+    )
+    signal_scan_done = [False]
+    last_tick_time = [datetime.now()]
+
+    def check_stop_loss(symbol, ltp):
+        positions = store.load_positions()
+        if symbol not in positions:
+            return
+        pos = positions[symbol]
+        result = check_position_exit(pos, low=ltp, high=ltp, close=ltp)
+        if result is None:
+            return
+        action, qty = result["action"], result["quantity"]
+        entry = pos["entry_price"]
+
+        if action == "STOP":
+            pnl = round((ltp - entry) * qty, 2)
+            print(f"🚨 STOP LOSS HIT | {symbol} @ ₹{ltp:.2f} | PnL ₹{pnl}")
+            store.log_trade("SELL", symbol, ltp, qty, f"STOP_LOSS | PnL=₹{pnl}")
+            store.delete_position(symbol)
+        elif action == "TARGET1_PARTIAL":
+            pnl = round((ltp - entry) * qty, 2)
+            print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | Selling {qty} shares | PnL ₹{pnl}")
+            store.log_trade("SELL", symbol, ltp, qty, f"TARGET_1_PARTIAL | PnL=₹{pnl} | stop moved to breakeven")
+            store.save_position(symbol, pos)
+        elif action == "TARGET1_PROTECT":
+            print(f"🎯 TARGET 1 HIT (+4%) | {symbol} @ ₹{ltp:.2f} | qty=1, holding | stop moved to breakeven")
+            store.save_position(symbol, pos)
+        elif action == "TARGET2":
+            pnl = round((ltp - entry) * qty, 2)
+            print(f"🎯 TARGET 2 HIT (+6%) | {symbol} @ ₹{ltp:.2f} | Full exit | PnL ₹{pnl}")
+            store.log_trade("SELL", symbol, ltp, qty, f"TARGET_2_FULL | PnL=₹{pnl}")
+            store.delete_position(symbol)
+
+    def on_message(message):
+        if not isinstance(message, dict) or message.get("type") != "stock_feed":
+            return
+        for tick in message.get("data", []):
+            if "ltp" not in tick:
+                continue
+            token = str(tick.get("tk"))
+            symbol = token_to_name.get(token, token)
+            try:
+                ltp = float(tick.get("ltp", 0))
+            except (TypeError, ValueError):
+                continue
+            now = datetime.now().time()
+            if not (MARKET_OPEN <= now <= MARKET_CLOSE):
+                continue
+            vol = int(tick.get("v", 0))
+            aggregator.on_tick(symbol, ltp, vol)
+            check_stop_loss(symbol, ltp)
+
+    def on_message_wrapper(message):
+        last_tick_time[0] = datetime.now()
+        on_message(message)
+
+    client.on_message = on_message_wrapper
+    client.on_error    = lambda e: print(f"⚠️  Feed error: {e}")
+    client.on_open      = lambda m: print("WebSocket connected — monitoring...\n")
+    client.on_close      = lambda m: print(f"⚠️  WebSocket closed: {m}")
+
+    client.subscribe(instrument_tokens=instrument_tokens, isIndex=False, isDepth=False)
+    print("Live feed started")
+
+    while True:
+        now = datetime.now().time()
+
+        if now >= SIGNAL_WINDOW_START and not signal_scan_done[0]:
+            signal_scan_done[0] = True
+            print("\n⏰ 3:10 PM — running signal scan from today's aggregated ticks...")
+            today_candles = aggregator.get_all_candles()
+            if today_candles:
+                run_signal_scan(today_candles)
+            else:
+                print("⚠️  No ticks collected today — cannot generate signals.")
+
+        if now > MARKET_CLOSE:
+            print("\n✅ Market closed. Run ending.")
+            print(f"Open positions carried forward: {list(store.load_positions().keys()) or 'None'}")
+            break
+
+        if MARKET_OPEN <= now <= MARKET_CLOSE:
+            seconds_since_tick = (datetime.now() - last_tick_time[0]).seconds
+            if seconds_since_tick > 60:
+                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting...")
+                try:
+                    client.un_subscribe(instrument_tokens=instrument_tokens, isIndex=False, isDepth=False)
+                except Exception as e:
+                    print(f"  ⚠️  un_subscribe failed (continuing to resubscribe): {e}")
+                time.sleep(2)
+                client.subscribe(instrument_tokens=instrument_tokens, isIndex=False, isDepth=False)
+                last_tick_time[0] = datetime.now()
+                print("✅ Reconnected")
+
+        time.sleep(1)
+
+
+def main():
+    print("=" * 55)
+    print("  RUN DAILY — unattended entry point (Render)")
+    print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print("=" * 55)
+
+    positions = store.load_positions()
+    print(f"Open positions in Supabase: {list(positions.keys()) or 'None'}")
+
+    if positions:
+        run_full_day_monitor()
+    else:
+        run_eod_only()
+
+
+if __name__ == "__main__":
+    main()
