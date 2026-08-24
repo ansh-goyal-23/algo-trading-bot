@@ -5,3 +5,5 @@ __pycache__/
 *.pyc
 .DS_Store
 render-test-venv/
+render-live-venv/
+render-data-venv/
