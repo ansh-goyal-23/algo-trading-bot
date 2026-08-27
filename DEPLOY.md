@@ -91,7 +91,7 @@ root with the live venv active — both venvs need to exist side by side:
 ```bash
 cd ~/Documents/algo-trading-bot
 source render-live-venv/bin/activate
-export SUPABASE_URL="https://soxpkhlfzvacwfjcxyuf.supabase.co"
+export SUPABASE_URL="https://itenopojyephpeuzwaho.supabase.co"
 export SUPABASE_KEY="<the SECRET key from Supabase dashboard -> Project Settings -> API — not the publishable one>"
 python -m execution.run_daily
 ```
@@ -169,7 +169,7 @@ rotated):
 | `NEO_UCC` | your Kotak UCC |
 | `NEO_MPIN` | your MPIN |
 | `NEO_TOTP_SECRET` | your TOTP setup key |
-| `SUPABASE_URL` | `https://soxpkhlfzvacwfjcxyuf.supabase.co` |
+| `SUPABASE_URL` | `https://itenopojyephpeuzwaho.supabase.co` |
 | `SUPABASE_KEY` | the **secret** key, from Supabase dashboard -> Project Settings -> API |
 
 ## Step 6 — Watch it closely for the first week

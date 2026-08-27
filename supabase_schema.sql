@@ -1,7 +1,7 @@
 -- Supabase schema for the algo-trading-bot project (unattended paper
 -- trading state — see DEPLOY.md). Recreates the three tables + RLS lockdown
 -- currently live in the "algo-trading-bot" Supabase project (ref
--- soxpkhlfzvacwfjcxyuf, region ap-south-1, https://soxpkhlfzvacwfjcxyuf.supabase.co).
+-- itenopojyephpeuzwaho, region ap-south-1, https://itenopojyephpeuzwaho.supabase.co).
 --
 -- This is a snapshot of that project's actual migration history (pulled
 -- straight from supabase_migrations.schema_migrations on 2026-08-25), kept

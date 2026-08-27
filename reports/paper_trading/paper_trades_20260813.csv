@@ -1,2 +1,0 @@
-date,timestamp,action,symbol,price,quantity,reason
-2026-08-13,2026-08-13 14:17:57,SELL,APOLLOHOSP,8575.0,2,STOP_LOSS | PnL=₹-351.0

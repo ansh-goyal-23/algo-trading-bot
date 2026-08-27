@@ -361,7 +361,12 @@ def resolve_tokens(client):
         results = client.search_scrip(exchange_segment="nse_cm", symbol=stock)
         if not results:
             continue
-        match = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
+        match = next(
+            (r for r in results if r.get("pGroup") == "EQ" and r.get("pSymbolName") == stock),
+            None,
+        )
+        if match is None:
+            raise ValueError(f"No exact EQ match found for symbol '{stock}'")
         token = str(match["pSymbol"])
         instrument_tokens.append({"instrument_token": token, "exchange_segment": "nse_cm"})
         token_to_name[token] = stock

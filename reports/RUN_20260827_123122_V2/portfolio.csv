@@ -1,0 +1,16 @@
+allocation_method,symbol,weight_pct,allocated_capital,expected_return_pct,sharpe_ratio,max_drawdown_pct,portfolio_return,weighted_drawdown
+equal_weight,APOLLOHOSP,20.0,20000.0,38.1,2.404,7.15,29.73,9.13
+equal_weight,NTPC,20.0,20000.0,38.2,2.351,14.93,29.73,9.13
+equal_weight,GRASIM,20.0,20000.0,26.61,2.075,8.36,29.73,9.13
+equal_weight,EICHERMOT,20.0,20000.0,27.95,1.492,5.71,29.73,9.13
+equal_weight,TATASTEEL,20.0,20000.0,17.81,0.815,9.49,29.73,9.13
+sharpe_weighted,APOLLOHOSP,26.31,26310.0,38.1,2.404,7.15,32.05,9.4
+sharpe_weighted,NTPC,25.73,25730.0,38.2,2.351,14.93,32.05,9.4
+sharpe_weighted,GRASIM,22.71,22710.0,26.61,2.075,8.36,32.05,9.4
+sharpe_weighted,EICHERMOT,16.33,16330.0,27.95,1.492,5.71,32.05,9.4
+sharpe_weighted,TATASTEEL,8.92,8920.0,17.81,0.815,9.49,32.05,9.4
+calmar_weighted,APOLLOHOSP,29.87,29870.0,38.1,2.404,7.15,31.15,8.33
+calmar_weighted,NTPC,14.34,14340.0,38.2,2.351,14.93,31.15,8.33
+calmar_weighted,GRASIM,17.84,17840.0,26.61,2.075,8.36,31.15,8.33
+calmar_weighted,EICHERMOT,27.43,27430.0,27.95,1.492,5.71,31.15,8.33
+calmar_weighted,TATASTEEL,10.52,10520.0,17.81,0.815,9.49,31.15,8.33

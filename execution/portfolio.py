@@ -10,11 +10,11 @@ import pyotp
 from neo_api_client import NeoAPI
 
 PORTFOLIO = {
-    "APOLLOHOSP": 26250,
-    "NTPC":       25370,
-    "GRASIM":     21760,
-    "EICHERMOT":  15800,
-    "NESTLEIND":  10810,
+    "APOLLOHOSP": 26310,
+    "NTPC":       25730,
+    "GRASIM":     22710,
+    "EICHERMOT":  16330,
+    "TATASTEEL":  8920,
 }
 
 STOP_LOSS_PCT  = 0.02

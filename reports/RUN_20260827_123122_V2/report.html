@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Backtest Report - RUN_20260827_123122_V2</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+          background: #0f1117; color: #e0e0e0; padding: 32px; }
+  h1 { font-size: 24px; color: #ffffff; margin-bottom: 4px; }
+  h2 { font-size: 16px; color: #90caf9; margin: 32px 0 12px; text-transform: uppercase;
+        letter-spacing: 1px; border-bottom: 1px solid #1e2a3a; padding-bottom: 6px; }
+  .meta { color: #888; font-size: 13px; margin-bottom: 32px; }
+  .cards { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 8px; }
+  .card { background: #1a1f2e; border: 1px solid #1e2a3a; border-radius: 10px;
+           padding: 20px 24px; min-width: 160px; flex: 1; }
+  .card .label { font-size: 11px; color: #888; text-transform: uppercase;
+                  letter-spacing: 0.5px; margin-bottom: 6px; }
+  .card .value { font-size: 26px; font-weight: 600; color: #ffffff; }
+  .card .value.green { color: #4caf50; }
+  .card .value.red   { color: #ef5350; }
+  .card .value.blue  { color: #90caf9; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
+  th { background: #1a1f2e; color: #90caf9; padding: 10px 12px; text-align: left;
+        font-weight: 500; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 9px 12px; border-bottom: 1px solid #1a1f2e; }
+  tr:hover td { background: #1a1f2e; }
+  .green { color: #4caf50; }
+  .red   { color: #ef5350; }
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 10px;
+            font-size: 11px; font-weight: 500; }
+  .badge.green { background: #1b3a2a; color: #4caf50; }
+  .badge.red   { background: #3a1b1b; color: #ef5350; }
+  .section { background: #13171f; border: 1px solid #1e2a3a; border-radius: 10px;
+              padding: 24px; margin-bottom: 24px; overflow-x: auto; }
+  .monthly-bar { display: inline-block; height: 12px; border-radius: 2px;
+                  vertical-align: middle; margin-right: 6px; }
+  footer { margin-top: 40px; font-size: 12px; color: #444; text-align: center; }
+</style>
+</head>
+<body>
+
+<h1>Backtest Report</h1>
+<div class="meta">Run ID: RUN_20260827_123122_V2 &nbsp;|&nbsp; Generated: 2026-08-27 12:32 &nbsp;|&nbsp;
+Strategy: ChecklistStrategy &nbsp;|&nbsp; Period: 2024-01 → 2026-08</div>
+
+<h2>Portfolio Summary</h2>
+<div class="cards">
+  <div class="card"><div class="label">Total Trades</div>
+    <div class="value blue">2200</div></div>
+  <div class="card"><div class="label">Win Rate</div>
+    <div class="value red">44.1%</div></div>
+  <div class="card"><div class="label">Total PnL</div>
+    <div class="value green">₹277,121.32</div></div>
+  <div class="card"><div class="label">Avg PnL / Trade</div>
+    <div class="value green">₹125.96</div></div>
+  <div class="card"><div class="label">Portfolio Sharpe</div>
+    <div class="value blue">2.323</div></div>
+  <div class="card"><div class="label">Profitable Stocks</div>
+    <div class="value blue">31 / 49</div></div>
+</div>
+
+<h2>Stock Rankings</h2>
+<div class="section">
+<table><thead><tr><th>rank</th><th>symbol</th><th>ending_capital</th><th>total_return_pct</th><th>total_trades</th><th>win_rate_pct</th><th>max_drawdown_pct</th><th>sharpe_ratio</th></tr></thead><tbody><tr><td>1</td><td>NTPC</td><td>138,201.80</td><td class="green">38.20</td><td>52</td><td>59.60</td><td>14.93</td><td>2.35</td></tr><tr><td>2</td><td>APOLLOHOSP</td><td>138,097.85</td><td class="green">38.10</td><td>43</td><td>60.50</td><td>7.15</td><td>2.40</td></tr><tr><td>3</td><td>EICHERMOT</td><td>127,947.39</td><td class="green">27.95</td><td>45</td><td>48.90</td><td>5.71</td><td>1.49</td></tr><tr><td>4</td><td>GRASIM</td><td>126,607.44</td><td class="green">26.61</td><td>47</td><td>46.80</td><td>8.36</td><td>2.08</td></tr><tr><td>5</td><td>HINDALCO</td><td>120,578.60</td><td class="green">20.58</td><td>47</td><td>46.80</td><td>18.48</td><td>0.41</td></tr><tr><td>6</td><td>HCLTECH</td><td>119,763.18</td><td class="green">19.76</td><td>47</td><td>51.10</td><td>18.26</td><td>0.38</td></tr><tr><td>7</td><td>TATASTEEL</td><td>117,814.87</td><td class="green">17.81</td><td>43</td><td>46.50</td><td>9.49</td><td>0.81</td></tr><tr><td>8</td><td>MARUTI</td><td>116,331.74</td><td class="green">16.33</td><td>37</td><td>48.60</td><td>11.30</td><td>0.74</td></tr><tr><td>9</td><td>ONGC</td><td>115,711.15</td><td class="green">15.71</td><td>55</td><td>43.60</td><td>15.29</td><td>0.63</td></tr><tr><td>10</td><td>NESTLEIND</td><td>115,650.73</td><td class="green">15.65</td><td>46</td><td>52.20</td><td>7.50</td><td>0.67</td></tr><tr><td>11</td><td>SBILIFE</td><td>113,137.08</td><td class="green">13.14</td><td>52</td><td>55.80</td><td>13.86</td><td>0.54</td></tr><tr><td>12</td><td>CIPLA</td><td>112,356.76</td><td class="green">12.36</td><td>44</td><td>45.50</td><td>9.53</td><td>0.70</td></tr><tr><td>13</td><td>BAJFINANCE</td><td>112,003.10</td><td class="green">12.00</td><td>51</td><td>47.10</td><td>7.93</td><td>0.35</td></tr><tr><td>14</td><td>LT</td><td>111,704.24</td><td class="green">11.70</td><td>36</td><td>47.20</td><td>13.07</td><td>0.38</td></tr><tr><td>15</td><td>ETERNAL</td><td>110,413.21</td><td class="green">10.41</td><td>45</td><td>42.20</td><td>19.67</td><td>0.37</td></tr></tbody></table>
+</div>
+
+<h2>Risk-Adjusted Performance</h2>
+<div class="section">
+<table><thead><tr><th>stock</th><th>total_return_pct</th><th>max_drawdown_pct</th><th>sharpe</th><th>calmar</th><th>max_dd_duration_days</th><th>rolling_win_rate_pct</th></tr></thead><tbody><tr><td>APOLLOHOSP</td><td>38.10</td><td>7.15</td><td>2.68</td><td class="green">5.33</td><td>65</td><td>60.00</td></tr><tr><td>EICHERMOT</td><td>27.95</td><td>5.71</td><td>1.86</td><td class="green">4.89</td><td>50</td><td>50.00</td></tr><tr><td>GRASIM</td><td>26.61</td><td>8.36</td><td>1.51</td><td class="green">3.18</td><td>63</td><td>50.00</td></tr><tr><td>NTPC</td><td>38.20</td><td>14.93</td><td>1.87</td><td class="green">2.56</td><td>125</td><td>80.00</td></tr><tr><td>NESTLEIND</td><td>15.65</td><td>7.50</td><td>1.40</td><td class="green">2.09</td><td>107</td><td>60.00</td></tr><tr><td>TATASTEEL</td><td>17.81</td><td>9.49</td><td>0.98</td><td class="green">1.88</td><td>51</td><td>40.00</td></tr><tr><td>BAJFINANCE</td><td>12.00</td><td>7.93</td><td>1.02</td><td class="green">1.51</td><td>40</td><td>50.00</td></tr><tr><td>MARUTI</td><td>16.33</td><td>11.30</td><td>1.02</td><td class="green">1.45</td><td>75</td><td>40.00</td></tr><tr><td>CIPLA</td><td>12.36</td><td>9.53</td><td>0.88</td><td class="green">1.30</td><td>141</td><td>50.00</td></tr><tr><td>HINDALCO</td><td>20.58</td><td>18.48</td><td>1.20</td><td class="green">1.11</td><td>275</td><td>80.00</td></tr><tr><td>HCLTECH</td><td>19.76</td><td>18.26</td><td>1.00</td><td class="green">1.08</td><td>63</td><td>10.00</td></tr><tr><td>ONGC</td><td>15.71</td><td>15.29</td><td>0.80</td><td class="green">1.03</td><td>257</td><td>50.00</td></tr><tr><td>SBILIFE</td><td>13.14</td><td>13.86</td><td>0.93</td><td class="green">0.95</td><td>201</td><td>70.00</td></tr><tr><td>LT</td><td>11.70</td><td>13.07</td><td>0.76</td><td class="green">0.90</td><td>76</td><td>20.00</td></tr><tr><td>INFY</td><td>7.11</td><td>10.99</td><td>0.66</td><td class="green">0.65</td><td>128</td><td>60.00</td></tr><tr><td>SBIN</td><td>7.39</td><td>11.73</td><td>0.64</td><td class="green">0.63</td><td>131</td><td>40.00</td></tr><tr><td>ULTRACEMCO</td><td>7.60</td><td>12.47</td><td>0.66</td><td class="green">0.61</td><td>145</td><td>50.00</td></tr><tr><td>SHRIRAMFIN</td><td>6.54</td><td>11.46</td><td>0.43</td><td class="green">0.57</td><td>118</td><td>50.00</td></tr><tr><td>ETERNAL</td><td>10.41</td><td>19.67</td><td>0.54</td><td class="green">0.53</td><td>64</td><td>40.00</td></tr><tr><td>BHARTIARTL</td><td>4.62</td><td>8.84</td><td>0.51</td><td class="green">0.52</td><td>78</td><td>20.00</td></tr></tbody></table>
+</div>
+
+<h2>Trade Quality Analysis</h2>
+<div class="section">
+<table><thead><tr><th>stock</th><th>total_trades</th><th>win_rate_pct</th><th>avg_win</th><th>avg_loss</th><th>rrr</th><th>expectancy</th><th>profit_factor</th><th>max_consec_losses</th><th>stop_loss_rate_pct</th></tr></thead><tbody><tr><td>NTPC</td><td>52</td><td>61.50</td><td>2,548.89</td><td>-2,027.42</td><td>1.26</td><td class="green">787.79</td><td>2.01</td><td>4</td><td>17.30</td></tr><tr><td>APOLLOHOSP</td><td>43</td><td>60.50</td><td>2,271.26</td><td>-1,102.86</td><td>2.06</td><td class="green">938.10</td><td>3.15</td><td>2</td><td>11.60</td></tr><tr><td>EICHERMOT</td><td>45</td><td>51.10</td><td>2,536.41</td><td>-1,284.32</td><td>1.97</td><td class="green">668.22</td><td>2.06</td><td>4</td><td>24.40</td></tr><tr><td>GRASIM</td><td>46</td><td>47.80</td><td>3,083.86</td><td>-1,603.22</td><td>1.92</td><td class="green">637.62</td><td>1.76</td><td>5</td><td>21.70</td></tr><tr><td>HINDALCO</td><td>46</td><td>47.80</td><td>2,850.25</td><td>-1,608.87</td><td>1.77</td><td class="green">523.01</td><td>1.62</td><td>7</td><td>23.90</td></tr><tr><td>HCLTECH</td><td>47</td><td>51.10</td><td>3,076.99</td><td>-2,236.88</td><td>1.38</td><td class="green">477.70</td><td>1.44</td><td>7</td><td>34.00</td></tr><tr><td>TATASTEEL</td><td>43</td><td>48.80</td><td>2,967.71</td><td>-1,922.57</td><td>1.54</td><td class="green">464.60</td><td>1.47</td><td>6</td><td>23.30</td></tr><tr><td>NESTLEIND</td><td>45</td><td>55.60</td><td>1,900.00</td><td>-1,383.13</td><td>1.37</td><td class="green">441.68</td><td>1.72</td><td>4</td><td>20.00</td></tr><tr><td>ONGC</td><td>55</td><td>43.60</td><td>3,186.57</td><td>-1,872.01</td><td>1.70</td><td class="green">334.21</td><td>1.32</td><td>5</td><td>27.30</td></tr><tr><td>MARUTI</td><td>37</td><td>48.60</td><td>2,741.53</td><td>-1,649.39</td><td>1.66</td><td class="green">485.40</td><td>1.57</td><td>6</td><td>21.60</td></tr><tr><td>SBILIFE</td><td>52</td><td>57.70</td><td>1,706.14</td><td>-1,610.88</td><td>1.06</td><td class="green">302.92</td><td>1.44</td><td>3</td><td>15.40</td></tr><tr><td>CIPLA</td><td>44</td><td>45.50</td><td>2,595.85</td><td>-1,559.08</td><td>1.66</td><td class="green">330.70</td><td>1.39</td><td>5</td><td>29.50</td></tr><tr><td>BAJFINANCE</td><td>51</td><td>47.10</td><td>1,841.69</td><td>-1,105.42</td><td>1.67</td><td class="green">282.21</td><td>1.48</td><td>4</td><td>21.60</td></tr><tr><td>LT</td><td>36</td><td>47.20</td><td>2,775.47</td><td>-1,771.48</td><td>1.57</td><td class="green">375.07</td><td>1.40</td><td>4</td><td>25.00</td></tr><tr><td>ETERNAL</td><td>45</td><td>42.20</td><td>3,852.61</td><td>-2,331.96</td><td>1.65</td><td class="green">278.45</td><td>1.21</td><td>7</td><td>44.40</td></tr><tr><td>INFY</td><td>39</td><td>53.80</td><td>2,059.36</td><td>-1,818.47</td><td>1.13</td><td class="green">268.64</td><td>1.32</td><td>3</td><td>23.10</td></tr><tr><td>SBIN</td><td>42</td><td>47.60</td><td>2,245.84</td><td>-1,606.27</td><td>1.40</td><td class="green">227.64</td><td>1.27</td><td>4</td><td>31.00</td></tr><tr><td>ULTRACEMCO</td><td>49</td><td>57.10</td><td>1,472.87</td><td>-1,524.04</td><td>0.97</td><td class="green">187.85</td><td>1.29</td><td>4</td><td>22.40</td></tr><tr><td>TECHM</td><td>42</td><td>47.60</td><td>2,525.10</td><td>-1,882.84</td><td>1.34</td><td class="green">215.70</td><td>1.22</td><td>3</td><td>28.60</td></tr><tr><td>BEL</td><td>43</td><td>53.50</td><td>2,570.92</td><td>-2,525.24</td><td>1.02</td><td class="green">200.91</td><td>1.17</td><td>3</td><td>27.90</td></tr></tbody></table>
+</div>
+
+<h2>Monthly PnL Breakdown</h2>
+<div class="section">
+<table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>month</th>
+      <th>bar</th>
+      <th>total_pnl</th>
+      <th>trade_count</th>
+      <th>win_rate_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2024-01</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-4,309</td>
+      <td>6</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>2024-02</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+33,125</td>
+      <td>65</td>
+      <td>40.00</td>
+    </tr>
+    <tr>
+      <td>2024-03</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+14,932</td>
+      <td>76</td>
+      <td>53.90</td>
+    </tr>
+    <tr>
+      <td>2024-04</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+26,017</td>
+      <td>54</td>
+      <td>48.10</td>
+    </tr>
+    <tr>
+      <td>2024-05</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+58,317</td>
+      <td>79</td>
+      <td>51.90</td>
+    </tr>
+    <tr>
+      <td>2024-06</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+108,452</td>
+      <td>74</td>
+      <td>63.50</td>
+    </tr>
+    <tr>
+      <td>2024-07</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+35,984</td>
+      <td>69</td>
+      <td>49.30</td>
+    </tr>
+    <tr>
+      <td>2024-08</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+43,679</td>
+      <td>49</td>
+      <td>59.20</td>
+    </tr>
+    <tr>
+      <td>2024-09</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+47,747</td>
+      <td>65</td>
+      <td>60.00</td>
+    </tr>
+    <tr>
+      <td>2024-10</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-99,660</td>
+      <td>107</td>
+      <td>29.90</td>
+    </tr>
+    <tr>
+      <td>2024-11</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-10,534</td>
+      <td>66</td>
+      <td>36.40</td>
+    </tr>
+    <tr>
+      <td>2024-12</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-29,504</td>
+      <td>80</td>
+      <td>35.00</td>
+    </tr>
+    <tr>
+      <td>2025-01</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-48,905</td>
+      <td>90</td>
+      <td>34.40</td>
+    </tr>
+    <tr>
+      <td>2025-02</td>
+      <td><span class="monthly-bar" style="width:13px;background:#ef5350"></span></td>
+      <td>-321</td>
+      <td>77</td>
+      <td>44.20</td>
+    </tr>
+    <tr>
+      <td>2025-03</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+75,917</td>
+      <td>61</td>
+      <td>62.30</td>
+    </tr>
+    <tr>
+      <td>2025-04</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+28,362</td>
+      <td>63</td>
+      <td>47.60</td>
+    </tr>
+    <tr>
+      <td>2025-05</td>
+      <td><span class="monthly-bar" style="width:82px;background:#4caf50"></span></td>
+      <td>+2,060</td>
+      <td>64</td>
+      <td>45.30</td>
+    </tr>
+    <tr>
+      <td>2025-06</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+11,192</td>
+      <td>74</td>
+      <td>40.50</td>
+    </tr>
+    <tr>
+      <td>2025-07</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-41,710</td>
+      <td>78</td>
+      <td>24.40</td>
+    </tr>
+    <tr>
+      <td>2025-08</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+34,055</td>
+      <td>70</td>
+      <td>54.30</td>
+    </tr>
+    <tr>
+      <td>2025-09</td>
+      <td><span class="monthly-bar" style="width:89px;background:#4caf50"></span></td>
+      <td>+2,237</td>
+      <td>76</td>
+      <td>40.80</td>
+    </tr>
+    <tr>
+      <td>2025-10</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+52,751</td>
+      <td>62</td>
+      <td>62.90</td>
+    </tr>
+    <tr>
+      <td>2025-11</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+11,708</td>
+      <td>54</td>
+      <td>51.90</td>
+    </tr>
+    <tr>
+      <td>2025-12</td>
+      <td><span class="monthly-bar" style="width:61px;background:#ef5350"></span></td>
+      <td>-1,537</td>
+      <td>74</td>
+      <td>41.90</td>
+    </tr>
+    <tr>
+      <td>2026-01</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-41,023</td>
+      <td>85</td>
+      <td>35.30</td>
+    </tr>
+    <tr>
+      <td>2026-02</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+55,274</td>
+      <td>77</td>
+      <td>57.10</td>
+    </tr>
+    <tr>
+      <td>2026-03</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-139,451</td>
+      <td>86</td>
+      <td>16.30</td>
+    </tr>
+    <tr>
+      <td>2026-04</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+92,042</td>
+      <td>77</td>
+      <td>62.30</td>
+    </tr>
+    <tr>
+      <td>2026-05</td>
+      <td><span class="monthly-bar" style="width:120px;background:#4caf50"></span></td>
+      <td>+23,728</td>
+      <td>54</td>
+      <td>44.40</td>
+    </tr>
+    <tr>
+      <td>2026-06</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-20,271</td>
+      <td>56</td>
+      <td>39.30</td>
+    </tr>
+    <tr>
+      <td>2026-07</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-18,119</td>
+      <td>65</td>
+      <td>38.50</td>
+    </tr>
+    <tr>
+      <td>2026-08</td>
+      <td><span class="monthly-bar" style="width:120px;background:#ef5350"></span></td>
+      <td>-25,111</td>
+      <td>67</td>
+      <td>26.90</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<footer>Generated by algo-trading-bot analytics pipeline</footer>
+</body>
+</html>

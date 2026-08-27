@@ -1,2 +1,0 @@
-date,timestamp,action,symbol,price,quantity,reason
-2026-08-14,2026-08-14 09:39:33,SELL,SBILIFE,1799.3,7,STOP_LOSS | PnL=₹-268.1

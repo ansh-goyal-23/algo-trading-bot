@@ -1,3 +1,0 @@
-date,timestamp,action,symbol,price,quantity,reason
-2026-08-12,2026-08-12 15:15:36,BUY,APOLLOHOSP,8750.5,2,SIGNAL | stop@8575.49 | RSI=45.4
-2026-08-12,2026-08-12 15:15:36,BUY,SBILIFE,1837.6,7,SIGNAL | stop@1800.85 | RSI=46.9

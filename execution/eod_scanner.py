@@ -104,7 +104,12 @@ def fetch_today_ohlc_kotak(client) -> dict:
             results = client.search_scrip(exchange_segment="nse_cm", symbol=stock)
             if not results:
                 continue
-            match = next((r for r in results if r.get("pGroup") == "EQ"), results[0])
+            match = next(
+                (r for r in results if r.get("pGroup") == "EQ" and r.get("pSymbolName") == stock),
+                None,
+            )
+            if match is None:
+                raise ValueError(f"No exact EQ match found for symbol '{stock}'")
             token = str(match["pSymbol"])
             quote = client.quotes(
                 instrument_tokens=[{"instrument_token": token, "exchange_segment": "nse_cm"}],
