@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 489, in <module>
+    main()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 485, in main
+    run_eod_only()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 362, in run_eod_only
+    run_signal_scan(today_ohlc)
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 256, in run_signal_scan
+    result = subprocess.run(
+             ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/subprocess.py", line 1024, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.11/subprocess.py", line 1901, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'render-data-venv/bin/python'
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-08-28 03:30:06
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 41991s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
