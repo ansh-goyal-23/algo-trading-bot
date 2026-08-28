@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 489, in <module>
+    main()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 485, in main
+    run_eod_only()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 352, in run_eod_only
+    time.sleep(wait_s)
+KeyboardInterrupt
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-08-27 07:41:05
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 26933s until the 15:10:00 signal window...
