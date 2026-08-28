@@ -66,10 +66,18 @@ MARKET_CLOSE        = dtime(15, 30)
 TODAY = datetime.now().strftime("%Y-%m-%d")
 
 # The "data" venv (yfinance/pandas/ta/scipy) — a sibling directory to
-# whichever venv is currently running this script. Render's build command
-# creates both at fixed relative paths (see DEPLOY.md); locally, name your
-# test venvs to match: render-live-venv/ and render-data-venv/.
-DATA_VENV_PYTHON = Path("render-data-venv/bin/python")
+# whichever venv is currently running this script. Different environments
+# have used different names for it (Render's build command created
+# render-data-venv/; the Mac and the GCP VM both use venv-data/) — try
+# each known name in order and fall back to whichever exists.
+_DATA_VENV_CANDIDATES = [
+    Path("venv-data/bin/python"),
+    Path("render-data-venv/bin/python"),
+]
+DATA_VENV_PYTHON = next(
+    (p for p in _DATA_VENV_CANDIDATES if p.exists()),
+    _DATA_VENV_CANDIDATES[0],
+)
 
 
 def resolve_tokens(client):
