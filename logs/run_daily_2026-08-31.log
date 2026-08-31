@@ -1,0 +1,149 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-08-31 03:30:06
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 41991s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹8838.50
+  RSI      : 52.2
+  EMA20    : ₹8799.97
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹330.05
+  RSI      : 33.5
+  EMA20    : ₹338.21
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/4):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹330.05
+    Stop Loss  : ₹323.45 (-2%)
+    Target 2:1 : ₹343.25 (+4%)
+    Target 3:1 : ₹349.85 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: GRASIM
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹3290.00
+  RSI      : 56.1
+  EMA20    : ₹3258.33
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹8059.00
+  RSI      : 60.9
+  EMA20    : ₹7982.43
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: TATASTEEL
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹186.50
+  RSI      : 48.8
+  EMA20    : ₹186.53
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/4):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+🟢 PAPER BUY | NTPC @ ₹330.05 x 58 | SIGNAL | stop@323.45 | RSI=33.5
+
+✅ Scan complete. Open positions: ['NTPC']
