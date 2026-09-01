@@ -1,0 +1,989 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-01 03:30:07
+=======================================================
+Open positions in Supabase: ['NTPC']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Resolved GRASIM -> GRASIM-EQ (token 1232)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved TATASTEEL -> TATASTEEL-EQ (token 3499)
+Live feed started
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 20213s — reconnecting...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+✅ Reconnected
+WebSocket connected — monitoring...
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+✅ Reconnected
+WebSocket connected — monitoring...
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+✅ Reconnected
+WebSocket connected — monitoring...
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+✅ Reconnected
+WebSocket connected — monitoring...
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: HTTPSConnectionPool(host='itenopojyephpeuzwaho.supabase.co', port=443): Read timed out. (read timeout=15)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+✅ Reconnected
+WebSocket connected — monitoring...
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+
+============================================================
+  SIGNAL INTERPRETATION: TATASTEEL
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹184.07
+  RSI      : 43.2
+  EMA20    : ₹186.11
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 1/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹7970.00
+  RSI      : 53.6
+  EMA20    : ₹7972.16
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 1/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹327.50
+  RSI      : 31.2
+  EMA20    : ₹336.96
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 0/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: GRASIM
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹3305.00
+  RSI      : 55.3
+  EMA20    : ₹3272.49
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹8755.00
+  RSI      : 47.9
+  EMA20    : ₹8804.17
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 1/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+⚠️  No ticks for 61s — reconnecting...
+The Data has been Un-Subscribed
+✅ Reconnected
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['NTPC']
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
