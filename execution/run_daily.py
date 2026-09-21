@@ -47,6 +47,7 @@ Usage:
 import time
 import json
 import subprocess
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 from datetime import datetime, time as dtime
 from pathlib import Path
 from dotenv import load_dotenv
@@ -372,6 +373,34 @@ def run_eod_only():
 
 
 # ── path 2: position(s) open — monitor intraday until close ────────────────
+_RECONNECT_EXECUTOR = ThreadPoolExecutor(max_workers=2, thread_name_prefix="ws-reconnect")
+
+
+def _call_with_timeout(fn, *args, timeout=15, **kwargs):
+    """
+    Run fn(*args, **kwargs) with a hard wall-clock timeout.
+
+    neo_api_client's subscribe()/un_subscribe() calls are synchronous and
+    can block forever on a dead TCP connection the server never sends a
+    clean close/RST for (observed 2026-09-21: process frozen for 1.5h+ at
+    0% CPU immediately after "Session has been Closed!", never reaching
+    the reconnect loop's own retry logic because the call itself never
+    returned). Running the call in a worker thread with .result(timeout=)
+    lets us treat a hang the same as any other reconnect failure instead
+    of freezing the whole monitor until the 8h hard-kill wrapper fires.
+
+    NOTE: on timeout the worker thread is NOT killed (Python has no clean
+    way to do that) -- it's abandoned and may eventually complete or leak.
+    That's an acceptable tradeoff here: the alternative is the entire
+    monitor process hanging for hours, which is strictly worse.
+    """
+    future = _RECONNECT_EXECUTOR.submit(fn, *args, **kwargs)
+    try:
+        return future.result(timeout=timeout)
+    except FutureTimeoutError:
+        raise TimeoutError(f"{getattr(fn, '__name__', fn)} did not return within {timeout}s")
+
+
 def run_full_day_monitor():
     print("Open position(s) found — running full-day monitor from now until market close...")
     client = login()
@@ -383,6 +412,7 @@ def run_full_day_monitor():
     )
     signal_scan_done = [False]
     last_tick_time = [datetime.now()]
+    consecutive_failures = [0]
 
     def check_stop_loss(symbol, ltp):
         positions = store.load_positions()
@@ -465,15 +495,56 @@ def run_full_day_monitor():
         if MARKET_OPEN <= now <= MARKET_CLOSE:
             seconds_since_tick = (datetime.now() - last_tick_time[0]).seconds
             if seconds_since_tick > 60:
-                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting...")
+                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting (attempt {consecutive_failures[0] + 1})...")
+                reconnect_ok = True
+
                 try:
-                    client.un_subscribe(instrument_tokens=instrument_tokens, isIndex=False, isDepth=False)
+                    _call_with_timeout(
+                        client.un_subscribe,
+                        instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                        timeout=15,
+                    )
                 except Exception as e:
-                    print(f"  ⚠️  un_subscribe failed (continuing to resubscribe): {e}")
+                    print(f"  ⚠️  un_subscribe failed/hung (continuing to resubscribe): {e}")
+
                 time.sleep(2)
-                client.subscribe(instrument_tokens=instrument_tokens, isIndex=False, isDepth=False)
-                last_tick_time[0] = datetime.now()
-                print("✅ Reconnected")
+
+                try:
+                    _call_with_timeout(
+                        client.subscribe,
+                        instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                        timeout=15,
+                    )
+                except Exception as e:
+                    print(f"  ⚠️  subscribe failed/hung: {e}")
+                    reconnect_ok = False
+
+                if reconnect_ok:
+                    consecutive_failures[0] = 0
+                    last_tick_time[0] = datetime.now()
+                    print("✅ Reconnected")
+                else:
+                    consecutive_failures[0] += 1
+                    print(f"  ⚠️  reconnect attempt {consecutive_failures[0]} failed")
+
+                    if consecutive_failures[0] >= 3:
+                        print("🔴 3 consecutive reconnect failures — forcing full re-login + resubscribe...")
+                        try:
+                            client = login()
+                            client.on_message = on_message_wrapper
+                            client.on_error   = lambda e: print(f"⚠️  Feed error: {e}")
+                            client.on_open    = lambda m: print("WebSocket connected — monitoring...\n")
+                            client.on_close   = lambda m: print(f"⚠️  WebSocket closed: {m}")
+                            _call_with_timeout(
+                                client.subscribe,
+                                instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                                timeout=15,
+                            )
+                            consecutive_failures[0] = 0
+                            last_tick_time[0] = datetime.now()
+                            print("✅ Re-logged in and reconnected")
+                        except Exception as e:
+                            print(f"  🔴 full re-login also failed: {e} — will retry next cycle")
 
         time.sleep(1)
 
