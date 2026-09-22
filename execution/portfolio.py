@@ -4,17 +4,37 @@ Shared portfolio config and position-management logic.
 Used by both paper_trader.py (continuous tick monitoring) and
 eod_scanner.py (EOD OHLC-based monitoring) so stop-loss/target rules
 and position sizing can't drift between the two entry points.
+
+Portfolio rebuilt 2026-09-22: full re-sweep of strategy parameters
+(min_confirmations/stop_loss_pct/risk_per_trade) confirmed the existing
+3 / 2% / 1.5% set is still optimal (avg Sharpe across all 49 Nifty50
+stocks, no better combo in the grid). Fresh V2 backtest run
+(RUN_20260922_115213_V2) against data refreshed through 2026-09-22,
+then portfolio_builder.py run WITHOUT the previous MAX_STOCKS=5 cap
+(same filters: return>=5%, drawdown<=20%, win rate>=35%, Sharpe>=0.3) —
+14 stocks qualified, Sharpe-weighted allocation chosen (highest simulated
+return of the three weighting schemes: 24.8% vs 18.7% equal-weight vs
+24.4% Calmar-weight).
 """
 import os
 import pyotp
 from neo_api_client import NeoAPI
 
 PORTFOLIO = {
-    "APOLLOHOSP": 26310,
-    "NTPC":       25730,
-    "GRASIM":     22710,
-    "EICHERMOT":  16330,
-    "TATASTEEL":  8920,
+    "NTPC":       17840,
+    "APOLLOHOSP": 17270,
+    "GRASIM":     13310,
+    "EICHERMOT":  10760,
+    "TATASTEEL":  6170,
+    "ONGC":       4930,
+    "SBILIFE":    4600,
+    "TECHM":      4330,
+    "CIPLA":      4310,
+    "INFY":       4230,
+    "NESTLEIND":  3740,
+    "HINDALCO":   2980,
+    "HCLTECH":    2800,
+    "MARUTI":     2740,
 }
 
 STOP_LOSS_PCT  = 0.02

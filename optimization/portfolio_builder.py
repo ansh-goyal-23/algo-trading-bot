@@ -23,7 +23,7 @@ MIN_RETURN_PCT    =  5.0   # at least 5% return
 MAX_DRAWDOWN_PCT  = 20.0   # no more than 20% drawdown
 MIN_WIN_RATE      = 35.0   # at least 35% win rate
 MIN_SHARPE        =  0.3   # positive risk-adjusted return
-MAX_STOCKS        =  5     # maximum portfolio size
+MAX_STOCKS        =  None  # maximum portfolio size (None = no cap, let filters decide)
 
 
 def load_data(run_dir: str) -> tuple:
@@ -54,7 +54,9 @@ def filter_candidates(df: pd.DataFrame) -> pd.DataFrame:
     ].copy()
 
     filtered = filtered.sort_values("sharpe_ratio", ascending=False)
-    return filtered.head(MAX_STOCKS).reset_index(drop=True)
+    if MAX_STOCKS is not None:
+        filtered = filtered.head(MAX_STOCKS)
+    return filtered.reset_index(drop=True)
 
 
 def equal_weight(candidates: pd.DataFrame, total_capital: float) -> pd.DataFrame:
