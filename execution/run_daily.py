@@ -413,6 +413,8 @@ def run_full_day_monitor():
     signal_scan_done = [False]
     last_tick_time = [datetime.now()]
     consecutive_failures = [0]
+    tick_count_at_last_reconnect = [0]
+    total_tick_count = [0]
 
     def check_stop_loss(symbol, ltp):
         positions = store.load_positions()
@@ -465,6 +467,7 @@ def run_full_day_monitor():
 
     def on_message_wrapper(message):
         last_tick_time[0] = datetime.now()
+        total_tick_count[0] += 1
         on_message(message)
 
     client.on_message = on_message_wrapper
@@ -495,56 +498,71 @@ def run_full_day_monitor():
         if MARKET_OPEN <= now <= MARKET_CLOSE:
             seconds_since_tick = (datetime.now() - last_tick_time[0]).seconds
             if seconds_since_tick > 60:
-                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting (attempt {consecutive_failures[0] + 1})...")
-                reconnect_ok = True
+                # Did the PREVIOUS reconnect attempt actually bring ticks back?
+                # We only know this now, one 60s cycle later -- if
+                # total_tick_count hasn't moved since we last tried
+                # reconnecting, that attempt was a silent no-op (subscribe()
+                # returned fine but delivered nothing), which is exactly
+                # what happened repeatedly on 2026-09-21 while the old
+                # exception-based check kept reporting "success". A true
+                # first-ever staleness event (tick_count_at_last_reconnect
+                # still at its initial 0 with ticks already flowing) is
+                # handled the same way and just costs one extra check.
+                previous_attempt_recovered_ticks = total_tick_count[0] > tick_count_at_last_reconnect[0]
 
-                try:
-                    _call_with_timeout(
-                        client.un_subscribe,
-                        instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
-                        timeout=15,
-                    )
-                except Exception as e:
-                    print(f"  ⚠️  un_subscribe failed/hung (continuing to resubscribe): {e}")
-
-                time.sleep(2)
-
-                try:
-                    _call_with_timeout(
-                        client.subscribe,
-                        instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
-                        timeout=15,
-                    )
-                except Exception as e:
-                    print(f"  ⚠️  subscribe failed/hung: {e}")
-                    reconnect_ok = False
-
-                if reconnect_ok:
+                if previous_attempt_recovered_ticks:
                     consecutive_failures[0] = 0
-                    last_tick_time[0] = datetime.now()
-                    print("✅ Reconnected")
                 else:
                     consecutive_failures[0] += 1
-                    print(f"  ⚠️  reconnect attempt {consecutive_failures[0]} failed")
 
-                    if consecutive_failures[0] >= 3:
-                        print("🔴 3 consecutive reconnect failures — forcing full re-login + resubscribe...")
-                        try:
-                            client = login()
-                            client.on_message = on_message_wrapper
-                            client.on_error   = lambda e: print(f"⚠️  Feed error: {e}")
-                            client.on_open    = lambda m: print("WebSocket connected — monitoring...\n")
-                            client.on_close   = lambda m: print(f"⚠️  WebSocket closed: {m}")
-                            _call_with_timeout(
-                                client.subscribe,
-                                instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
-                                timeout=15,
-                            )
-                            consecutive_failures[0] = 0
-                            last_tick_time[0] = datetime.now()
-                            print("✅ Re-logged in and reconnected")
-                        except Exception as e:
-                            print(f"  🔴 full re-login also failed: {e} — will retry next cycle")
+                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting (attempt {consecutive_failures[0]})...")
+
+                if consecutive_failures[0] >= 3:
+                    print("🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...")
+                    try:
+                        client = login()
+                        client.on_message = on_message_wrapper
+                        client.on_error   = lambda e: print(f"⚠️  Feed error: {e}")
+                        client.on_open    = lambda m: print("WebSocket connected — monitoring...\n")
+                        client.on_close   = lambda m: print(f"⚠️  WebSocket closed: {m}")
+                        _call_with_timeout(
+                            client.subscribe,
+                            instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                            timeout=15,
+                        )
+                        consecutive_failures[0] = 0
+                        print("✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)")
+                    except Exception as e:
+                        print(f"  🔴 full re-login also failed: {e} — will retry next cycle")
+                else:
+                    try:
+                        _call_with_timeout(
+                            client.un_subscribe,
+                            instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                            timeout=15,
+                        )
+                    except Exception as e:
+                        print(f"  ⚠️  un_subscribe failed/hung (continuing to resubscribe): {e}")
+
+                    time.sleep(2)
+
+                    try:
+                        _call_with_timeout(
+                            client.subscribe,
+                            instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
+                            timeout=15,
+                        )
+                        print("  subscribe() returned OK (will confirm ticks resume next cycle)")
+                    except Exception as e:
+                        print(f"  ⚠️  subscribe failed/hung: {e}")
+
+                # Record where the tick count stood AT this reconnect attempt,
+                # so next cycle's staleness check can tell whether it worked.
+                tick_count_at_last_reconnect[0] = total_tick_count[0]
+                # Push the staleness clock forward regardless of outcome --
+                # otherwise we'd re-fire this block every second instead of
+                # waiting a fresh 60s to judge the attempt fairly.
+                last_tick_time[0] = datetime.now()
 
         time.sleep(1)
 
