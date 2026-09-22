@@ -8,6 +8,9 @@ At 3:20 PM, treats the latest tick as the closing price for signal generation.
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
+from zoneinfo import ZoneInfo
+
+IST = ZoneInfo("Asia/Kolkata")
 
 
 class TickAggregator:
@@ -86,14 +89,14 @@ class TickAggregator:
 
         if c["open"] is None:
             c["open"]            = ltp
-            c["first_tick_time"] = datetime.now().strftime("%H:%M:%S")
+            c["first_tick_time"] = datetime.now(IST).strftime("%H:%M:%S")
 
         c["high"]          = max(c["high"] or ltp, ltp)
         c["low"]           = min(c["low"]  or ltp, ltp)
         c["close"]         = ltp
         c["volume"]       += volume
         c["tick_count"]   += 1
-        c["last_tick_time"] = datetime.now().strftime("%H:%M:%S")
+        c["last_tick_time"] = datetime.now(IST).strftime("%H:%M:%S")
 
         # persist every tick so restarts don't lose OHLC state
         self._save()
@@ -103,7 +106,7 @@ class TickAggregator:
         if not c or c["open"] is None:
             return None
         return {
-            "date":       datetime.now().strftime("%Y-%m-%d"),
+            "date":       datetime.now(IST).strftime("%Y-%m-%d"),
             "open":       c["open"],
             "high":       c["high"],
             "low":        c["low"],
