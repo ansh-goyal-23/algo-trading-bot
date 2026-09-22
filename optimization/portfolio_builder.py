@@ -68,11 +68,30 @@ def equal_weight(candidates: pd.DataFrame, total_capital: float) -> pd.DataFrame
 
 
 def sharpe_weighted(candidates: pd.DataFrame, total_capital: float) -> pd.DataFrame:
+    """
+    Weight capital by each stock's Sharpe ratio. Fixed 2026-09-22: the
+    original version divided by the raw (unclipped) sum of sharpe_ratio,
+    so a candidate that qualified under MIN_SHARPE at one risk_per_trade
+    setting but has negative risk-adjusted performance under the risk
+    setting actually used live (sizing scales with risk_per_trade, and a
+    stock's Sharpe is NOT invariant to it — larger positions amplify both
+    winners and losers, so a marginal stock can flip from positive to
+    negative Sharpe as risk_per_trade increases) would get a NEGATIVE
+    allocation_pct — meaningless for a long-only portfolio, and it also
+    silently inflates every other stock's weight by dividing by a smaller
+    sum than the positive-only total. Clip to zero for weighting purposes:
+    a negative-Sharpe candidate gets 0% allocation instead of distorting
+    everyone else's weight or going short.
+    """
     candidates = candidates.copy()
-    sharpe_sum = candidates["sharpe_ratio"].sum()
-    candidates["weight_pct"] = round(
-        candidates["sharpe_ratio"] / sharpe_sum * 100, 2
-    )
+    sharpe_clipped = candidates["sharpe_ratio"].clip(lower=0)
+    sharpe_sum = sharpe_clipped.sum()
+    if sharpe_sum <= 0:
+        # every candidate has non-positive Sharpe — nothing sensible to
+        # weight by; fall back to equal weight rather than dividing by zero
+        candidates["weight_pct"] = round(100 / len(candidates), 2)
+    else:
+        candidates["weight_pct"] = round(sharpe_clipped / sharpe_sum * 100, 2)
     candidates["allocated_capital"] = round(
         candidates["weight_pct"] / 100 * total_capital, 2
     )
@@ -80,13 +99,16 @@ def sharpe_weighted(candidates: pd.DataFrame, total_capital: float) -> pd.DataFr
 
 
 def calmar_weighted(candidates: pd.DataFrame, total_capital: float) -> pd.DataFrame:
+    """Same negative-weight guard as sharpe_weighted() — see its docstring."""
     candidates = candidates.copy()
     # use calmar if available, else fall back to sharpe
     weight_col = "calmar" if candidates["calmar"].notna().all() else "sharpe_ratio"
-    col_sum    = candidates[weight_col].sum()
-    candidates["weight_pct"] = round(
-        candidates[weight_col] / col_sum * 100, 2
-    )
+    col_clipped = candidates[weight_col].clip(lower=0)
+    col_sum     = col_clipped.sum()
+    if col_sum <= 0:
+        candidates["weight_pct"] = round(100 / len(candidates), 2)
+    else:
+        candidates["weight_pct"] = round(col_clipped / col_sum * 100, 2)
     candidates["allocated_capital"] = round(
         candidates["weight_pct"] / 100 * total_capital, 2
     )

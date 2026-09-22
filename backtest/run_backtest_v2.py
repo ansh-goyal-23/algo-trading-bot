@@ -12,7 +12,12 @@ class ChecklistStrategyV2(bt.Strategy):
     params = dict(
         min_confirmations=3,
         stop_loss_pct=0.02,    # 2% stop loss  (optimized)
-        risk_per_trade=0.015,  # risk 1.5% of capital per trade (optimized)
+        risk_per_trade=0.02,   # raised from 0.015 on 2026-09-22 — see
+                                # execution/portfolio.py's RISK_PER_TRADE
+                                # comment for the exit-variant sweep behind
+                                # this. Kept in sync with that value so
+                                # backtests here reflect what's actually
+                                # live rather than a stale default.
         target1_pct=0.04,      # +4% partial exit (50%)
         target2_pct=0.06,      # +6% full exit
     )

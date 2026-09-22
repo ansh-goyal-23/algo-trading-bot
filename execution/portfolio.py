@@ -5,48 +5,56 @@ Used by both paper_trader.py (continuous tick monitoring) and
 eod_scanner.py (EOD OHLC-based monitoring) so stop-loss/target rules
 and position sizing can't drift between the two entry points.
 
-Portfolio rebuilt 2026-09-22: full re-sweep of strategy parameters
-(min_confirmations/stop_loss_pct/risk_per_trade) confirmed the existing
-3 / 2% / 1.5% set is still optimal (avg Sharpe across all 49 Nifty50
-stocks, no better combo in the grid). Fresh V2 backtest run
-(RUN_20260922_115213_V2) against data refreshed through 2026-09-22,
-then portfolio_builder.py run WITHOUT the previous MAX_STOCKS=5 cap
-(same filters: return>=5%, drawdown<=20%, win rate>=35%, Sharpe>=0.3) —
-14 stocks qualified, Sharpe-weighted allocation chosen (highest simulated
-return of the three weighting schemes: 24.8% vs 18.7% equal-weight vs
-24.4% Calmar-weight).
+Portfolio rebuilt 2026-09-22 (superseding the same-day 14-stock reset
+below in git history): after raising RISK_PER_TRADE to 0.02, two bugs
+were found and fixed:
+  1. optimization/portfolio_builder.py's sharpe_weighted()/calmar_weighted()
+     had no floor on negative Sharpe/Calmar, so a stock that qualified
+     under one risk setting but went negative under another could get a
+     nonsensical negative weight and distort every other stock's weight.
+     Fixed by clipping negative values to 0 before weighting.
+  2. backtest/run_backtest_v2.py's ChecklistStrategyV2 still defaulted
+     risk_per_trade=0.015 even after the live value here became 0.02, so
+     the "production" backtest pipeline was silently testing a stale risk
+     level. Fixed the default to match live (0.02).
+Re-ran the full 49-stock backtest with both fixes (RUN_20260922_130143_V2)
+and re-ran portfolio_builder.py against it. TATASTEEL (Sharpe -0.339) and
+TECHM (Sharpe -1.478) now correctly fail the MIN_SHARPE>=0.3 filter at the
+live 2% risk setting and are excluded outright, rather than being kept in
+the portfolio with a mis-weighted allocation.
+Compared on these corrected, self-consistent numbers (2% risk-per-trade
+AND fixed weighting) across candidate sizes over 2024-01-01 to 2026-09-22:
+  - Top-5 Sharpe-weighted:   13.27% CAGR, 7.86% weighted max drawdown
+  - 13-stock Calmar-weighted: 11.71% CAGR, 9.58% weighted max drawdown
+  - 13-stock Sharpe-weighted: 10.89% CAGR, 10.09% weighted max drawdown
+  - 13-stock Equal-weighted:   8.77% CAGR, 11.77% weighted max drawdown
+Top-5 Sharpe-weighted wins on both CAGR and drawdown, so it's what's live:
+APOLLOHOSP, HINDALCO, POWERGRID, EICHERMOT, NTPC (weights 27.60/24.55/
+19.01/14.72/14.11%, from each stock's Sharpe ratio relative to the group).
 """
 import os
 import pyotp
 from neo_api_client import NeoAPI
 
 PORTFOLIO = {
-    "NTPC":       17840,
-    "APOLLOHOSP": 17270,
-    "GRASIM":     13310,
-    "EICHERMOT":  10760,
-    "TATASTEEL":  6170,
-    "ONGC":       4930,
-    "SBILIFE":    4600,
-    "TECHM":      4330,
-    "CIPLA":      4310,
-    "INFY":       4230,
-    "NESTLEIND":  3740,
-    "HINDALCO":   2980,
-    "HCLTECH":    2800,
-    "MARUTI":     2740,
+    "APOLLOHOSP": 27600,
+    "HINDALCO":   24550,
+    "POWERGRID":  19010,
+    "EICHERMOT":  14720,
+    "NTPC":       14110,
 }
 
 STOP_LOSS_PCT  = 0.02
 RISK_PER_TRADE = 0.02   # raised from 0.015 on 2026-09-22: exit-variant sweep
-                        # (reports/EXITVAR_20260922_123423) showed 2% risk-per-trade
-                        # lifts the top-5 Sharpe-weighted portfolio's backtested
-                        # return from 31.1% to 47.4% over the same 2024-01-01 to
-                        # 2026-09-22 window (~10.5%/yr -> ~15.3%/yr CAGR), with
-                        # weighted drawdown barely moving (9.50% -> 9.15%). Same
-                        # entries/exits/stop distance as before — this only scales
-                        # position size, so it also scales losses proportionally
-                        # if the backtested edge doesn't hold out-of-sample.
+                        # (reports/EXITVAR_20260922_123423) identified this as the
+                        # most robust improvement lever tested (exit/sizing only,
+                        # no shorting). Corrected top-5 Sharpe-weighted portfolio
+                        # backtest (RUN_20260922_130143_V2, self-consistent with
+                        # this setting) shows 40.42% total return / 13.27% CAGR
+                        # over 2024-01-01 to 2026-09-22, 7.86% weighted max
+                        # drawdown. Same entries/exits/stop distance as before —
+                        # this only scales position size, so it also scales
+                        # losses proportionally if the edge doesn't hold OOS.
 
 
 def get_position_size(symbol, price, portfolio=PORTFOLIO):
