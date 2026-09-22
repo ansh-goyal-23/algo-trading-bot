@@ -38,7 +38,15 @@ PORTFOLIO = {
 }
 
 STOP_LOSS_PCT  = 0.02
-RISK_PER_TRADE = 0.015
+RISK_PER_TRADE = 0.02   # raised from 0.015 on 2026-09-22: exit-variant sweep
+                        # (reports/EXITVAR_20260922_123423) showed 2% risk-per-trade
+                        # lifts the top-5 Sharpe-weighted portfolio's backtested
+                        # return from 31.1% to 47.4% over the same 2024-01-01 to
+                        # 2026-09-22 window (~10.5%/yr -> ~15.3%/yr CAGR), with
+                        # weighted drawdown barely moving (9.50% -> 9.15%). Same
+                        # entries/exits/stop distance as before — this only scales
+                        # position size, so it also scales losses proportionally
+                        # if the backtested edge doesn't hold out-of-sample.
 
 
 def get_position_size(symbol, price, portfolio=PORTFOLIO):

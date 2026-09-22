@@ -25,13 +25,28 @@ class ChecklistStrategyV2(bt.Strategy):
         self.target2      = None
         self.partial_done = False
         self.trade_log    = []
+        # Tag set right before placing a sell/close order so listeners
+        # (TradeCapture) can log the REAL reason instead of inferring it
+        # after the fact from price alone. Read once by notify_order and
+        # cleared there so it never leaks onto the next, unrelated fill.
+        self.pending_exit_reason = None
+        self.last_sell_reason    = None
+        self.last_sell_price     = None
+        self.last_sell_size      = None
 
     def log(self, txt):
         dt = self.datas[0].datetime.date(0)
         print(f"{dt} {txt}")
 
     def notify_order(self, order):
-        if order.status in [order.Completed]:
+        # notify_order fires multiple times per order (Submitted -> Accepted
+        # -> Completed, or a rejection/cancellation). Only the terminal
+        # states should clear self.order / pending_exit_reason — clearing on
+        # every call (including the early Submitted/Accepted notifications
+        # that arrive synchronously, before Completed) wiped
+        # pending_exit_reason before it was ever read here, which silently
+        # broke exit-reason tagging. Only react to substance on Completed.
+        if order.status == order.Completed:
             if order.isbuy():
                 self.entry_price  = order.executed.price
                 self.stop_price   = self.entry_price * (1 - self.p.stop_loss_pct)
@@ -41,7 +56,19 @@ class ChecklistStrategyV2(bt.Strategy):
                 self.log(f"BUY EXECUTED @ {order.executed.price:.2f} | stop={self.stop_price:.2f} | t1={self.target1:.2f} | t2={self.target2:.2f}")
             elif order.issell():
                 self.log(f"SELL EXECUTED @ {order.executed.price:.2f}")
-        self.order = None
+                # Record this fill's real reason + fields for TradeCapture to
+                # pick up, keyed by the order ref so partial and final exits
+                # on the same position each get their own tagged record even
+                # though backtrader only closes the Trade object once size
+                # reaches zero (see run_all_stocks_v2/TradeCapture).
+                self.last_sell_reason = self.pending_exit_reason
+                self.last_sell_price  = order.executed.price
+                self.last_sell_size   = order.executed.size
+            self.order = None
+            self.pending_exit_reason = None
+        elif order.status in (order.Canceled, order.Margin, order.Rejected, order.Expired):
+            self.order = None
+            self.pending_exit_reason = None
 
     def notify_trade(self, trade):
         if trade.isclosed:
@@ -63,6 +90,7 @@ class ChecklistStrategyV2(bt.Strategy):
             # stop loss check
             if self.stop_price and current_close <= self.stop_price:
                 self.log(f"STOP LOSS HIT @ {current_close:.2f}")
+                self.pending_exit_reason = "STOP_LOSS" if not self.partial_done else "STOP_LOSS_AFTER_PARTIAL"
                 self.order = self.close()
                 return
 
@@ -70,6 +98,7 @@ class ChecklistStrategyV2(bt.Strategy):
             if not self.partial_done and self.target1 and current_close >= self.target1:
                 partial_size = max(1, self.position.size // 2)
                 self.log(f"TARGET 1 HIT (+4%) @ {current_close:.2f} — selling {partial_size} shares")
+                self.pending_exit_reason = "TARGET1_PARTIAL"
                 self.order = self.sell(size=partial_size)
                 self.partial_done = True
                 # move stop to breakeven
@@ -79,11 +108,13 @@ class ChecklistStrategyV2(bt.Strategy):
             # full exit at target 2 (+6%)
             if self.partial_done and self.target2 and current_close >= self.target2:
                 self.log(f"TARGET 2 HIT (+6%) @ {current_close:.2f} — full exit")
+                self.pending_exit_reason = "TARGET2"
                 self.order = self.close()
                 return
 
             # exit on SELL signal
             if row is not None and row["signal"] == "SELL":
+                self.pending_exit_reason = "SIGNAL_AFTER_PARTIAL" if self.partial_done else "SIGNAL"
                 self.order = self.close()
 
     def get_row(self):
