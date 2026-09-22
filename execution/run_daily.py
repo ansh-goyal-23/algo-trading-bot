@@ -49,6 +49,7 @@ import json
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 from datetime import datetime, time as dtime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -60,11 +61,32 @@ from execution import state_store as store
 
 load_dotenv()
 
+IST = ZoneInfo("Asia/Kolkata")
+
+
+def now_ist() -> datetime:
+    """
+    Timezone-aware current time in IST.
+
+    The VM this runs on has its OS/Python clock set to UTC (confirmed
+    2026-09-22: /etc/timezone -> Etc/UTC, time.tzname -> ('UTC','UTC')).
+    MARKET_OPEN/MARKET_CLOSE below are IST wall-clock constants. Bare
+    datetime.now() returns naive UTC on this VM, so comparing it directly
+    against those constants was silently wrong for ~5 hours of every
+    trading day (real market hours only "looked open" to the old code
+    during UTC 09:15-15:30, i.e. IST 14:45-21:00 -- the last 45 minutes
+    of the session was the only overlap). Use this helper everywhere
+    instead of datetime.now() so the comparison is always correct
+    regardless of what timezone the host OS happens to be set to.
+    """
+    return datetime.now(IST)
+
+
 MARKET_OPEN         = dtime(9, 15)
 SIGNAL_WINDOW_START = dtime(15, 10)
 MARKET_CLOSE        = dtime(15, 30)
 
-TODAY = datetime.now().strftime("%Y-%m-%d")
+TODAY = now_ist().strftime("%Y-%m-%d")
 
 # The "data" venv (yfinance/pandas/ta/scipy) — a sibling directory to
 # whichever venv is currently running this script. Different environments
@@ -351,11 +373,11 @@ def check_stop_losses_eod(today_ohlc: dict):
 
 # ── path 1: flat — wait for the EOD window, scan once, exit ────────────────
 def run_eod_only():
-    now = datetime.now().time()
+    now = now_ist().time()
     if now < SIGNAL_WINDOW_START:
         wait_s = (
-            datetime.combine(datetime.today(), SIGNAL_WINDOW_START)
-            - datetime.combine(datetime.today(), now)
+            datetime.combine(now_ist().date(), SIGNAL_WINDOW_START)
+            - datetime.combine(now_ist().date(), now)
         ).seconds
         print(f"No open positions — waiting {wait_s}s until the {SIGNAL_WINDOW_START} signal window...")
         time.sleep(wait_s)
@@ -411,7 +433,7 @@ def run_full_day_monitor():
         load_fn=lambda: store.load_ohlc_state(TODAY),
     )
     signal_scan_done = [False]
-    last_tick_time = [datetime.now()]
+    last_tick_time = [now_ist()]
     consecutive_failures = [0]
     tick_count_at_last_reconnect = [0]
     total_tick_count = [0]
@@ -458,7 +480,7 @@ def run_full_day_monitor():
                 ltp = float(tick.get("ltp", 0))
             except (TypeError, ValueError):
                 continue
-            now = datetime.now().time()
+            now = now_ist().time()
             if not (MARKET_OPEN <= now <= MARKET_CLOSE):
                 continue
             vol = int(tick.get("v", 0))
@@ -466,7 +488,7 @@ def run_full_day_monitor():
             check_stop_loss(symbol, ltp)
 
     def on_message_wrapper(message):
-        last_tick_time[0] = datetime.now()
+        last_tick_time[0] = now_ist()
         total_tick_count[0] += 1
         on_message(message)
 
@@ -479,7 +501,7 @@ def run_full_day_monitor():
     print("Live feed started")
 
     while True:
-        now = datetime.now().time()
+        now = now_ist().time()
 
         if now >= SIGNAL_WINDOW_START and not signal_scan_done[0]:
             signal_scan_done[0] = True
@@ -496,7 +518,7 @@ def run_full_day_monitor():
             break
 
         if MARKET_OPEN <= now <= MARKET_CLOSE:
-            seconds_since_tick = (datetime.now() - last_tick_time[0]).seconds
+            seconds_since_tick = (now_ist() - last_tick_time[0]).seconds
             if seconds_since_tick > 60:
                 # Did the PREVIOUS reconnect attempt actually bring ticks back?
                 # We only know this now, one 60s cycle later -- if
@@ -562,7 +584,7 @@ def run_full_day_monitor():
                 # Push the staleness clock forward regardless of outcome --
                 # otherwise we'd re-fire this block every second instead of
                 # waiting a fresh 60s to judge the attempt fairly.
-                last_tick_time[0] = datetime.now()
+                last_tick_time[0] = now_ist()
 
         time.sleep(1)
 
@@ -570,7 +592,7 @@ def run_full_day_monitor():
 def main():
     print("=" * 55)
     print("  RUN DAILY — unattended entry point (Render)")
-    print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"  {now_ist().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 55)
 
     positions = store.load_positions()
