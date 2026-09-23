@@ -1,0 +1,145 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-23 09:00:06
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22192s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹8835.50
+  RSI      : 51.3
+  EMA20    : ₹8816.80
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/4):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 3/4 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹973.00
+  RSI      : 40.4
+  EMA20    : ₹996.61
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/4):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹265.95
+  RSI      : 46.3
+  EMA20    : ₹267.16
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/4):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 2/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹7427.00
+  RSI      : 31.7
+  EMA20    : ₹7624.79
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 0/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹327.80
+  RSI      : 43.8
+  EMA20    : ₹330.15
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/4):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+
+  Conditions met: 1/4 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ❓ unknown
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+  ℹ️  HINDALCO: SELL signal but no open position — no action (long-only)
+  ℹ️  POWERGRID: SELL signal but no open position — no action (long-only)
+
+✅ Scan complete. Open positions: None
