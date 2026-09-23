@@ -265,6 +265,13 @@ for sym, today in today_candles.items():
                         'hanging_man','bearish_harami']
         patterns = {{col: bool(last.get(col, False)) for col in pattern_cols}}
 
+        # add trend context (fixed 2026-09-23 — was missing here, unlike the
+        # matching lines in eod_scanner.py/paper_trader.py's subprocess
+        # scripts, which is why every live log line showed "Prior Trend:
+        # unknown" even though generate_signals() was computing and using
+        # it correctly in the real BUY/SELL decision the whole time)
+        patterns['prior_trend'] = str(last.get('prior_trend', 'unknown'))
+
         sig   = str(last.get('signal', 'None'))
         close = float(last['close'])
         rsi   = float(last['rsi'])   if 'rsi'   in last.index else 0

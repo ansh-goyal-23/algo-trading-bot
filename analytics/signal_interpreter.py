@@ -141,8 +141,19 @@ def interpret_live_signal(
     else:
         lines.append(f"    No named pattern detected — signal from indicators only")
 
-    # indicator checklist
-    lines.append(f"\n  📊 Indicator Checklist (need 3/4):")
+    # indicator checklist — pattern is a mandatory gate (checked separately
+    # before this function is even reached for a real BUY/SELL, since
+    # strategy/signals.py requires it as a precondition) but also counts as
+    # 1 of the 5 scored points here, matching generate_signals()'s own
+    # long_score/short_score exactly: pattern + price-vs-EMA20 + RSI +
+    # volume + trend, need >=3 of 5. Fixed 2026-09-23: this checklist used
+    # to only tally 4 of the 5 conditions strategy/signals.py actually
+    # scores (it omitted trend entirely), so "Conditions met: X/4" could
+    # under-report what really drove a signal, and the separate "Trend
+    # Context" section below showed alignment without it ever affecting
+    # the printed score. Trend is now the 5th scored line here, and both
+    # sections read from the same `trend_pass` value so they can't disagree.
+    lines.append(f"\n  📊 Indicator Checklist (need 3/5, pattern mandatory):")
     score = 0
 
     pat_pass = bool(fired)
@@ -164,22 +175,29 @@ def interpret_live_signal(
                  f"{INDICATOR_EXPLANATIONS['vol_above' if vol_pass else 'vol_below']}")
     if vol_pass: score += 1
 
-    lines.append(f"\n  Conditions met: {score}/4 "
+    prior_trend = pattern_flags.get('prior_trend', 'unknown')
+    trend_pass = (
+        (signal == 'BUY' and prior_trend in ('downtrend', 'pullback')) or
+        (signal in ('SELL', 'SELL/EXIT') and prior_trend in ('uptrend', 'rally'))
+    )
+    trend_note = (
+        f"prior trend '{prior_trend}' favors this direction" if trend_pass
+        else f"prior trend '{prior_trend}' does not favor this direction"
+    )
+    lines.append(f"    [{'✓' if trend_pass else '✗'}] Trend filter   — {trend_note}")
+    if trend_pass: score += 1
+
+    lines.append(f"\n  Conditions met: {score}/5 "
                  f"({'✅ Signal valid' if score >= 3 else '⚠️  Weak signal'})")
 
-    # trend context
-    prior_trend = pattern_flags.get('prior_trend', 'unknown')
+    # trend context (detail view — uses the same trend_pass computed above)
     trend_emoji = {
         'uptrend': '📈', 'downtrend': '📉',
         'pullback': '🔄', 'rally': '🔄', 'sideways': '➡️'
     }.get(prior_trend, '❓')
     lines.append(f"\n  📈 Trend Context:")
     lines.append(f"    Prior Trend  : {trend_emoji} {prior_trend}")
-    trend_aligned = (
-        (signal == 'BUY'  and prior_trend in ('downtrend', 'pullback')) or
-        (signal == 'SELL' and prior_trend in ('uptrend', 'rally'))
-    )
-    lines.append(f"    Trend aligned: {'✅ Yes — higher conviction' if trend_aligned else '⚠️  No — trade against trend context'}")
+    lines.append(f"    Trend aligned: {'✅ Yes — higher conviction' if trend_pass else '⚠️  No — trade against trend context'}")
 
     # risk parameters
     if signal == "BUY":
