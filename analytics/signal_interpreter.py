@@ -106,11 +106,47 @@ def interpret_live_signal(
     winning_trade: bool = None,
     pnl: float = None,
 ) -> str:
+    bullish_patterns = ["bullish_engulfing", "bullish_marubozu", "hammer", "bullish_harami"]
+    bearish_patterns = ["bearish_engulfing", "bearish_marubozu", "shooting_star", "hanging_man", "bearish_harami"]
+    has_bullish_pattern = any(pattern_flags.get(k) for k in bullish_patterns)
+    has_bearish_pattern = any(pattern_flags.get(k) for k in bearish_patterns)
+
+    # Fixed 2026-09-24: `signal` is one of 'BUY', 'SELL'/'SELL/EXIT', or
+    # 'HOLD' (no real signal -- mandatory candlestick-pattern gate not met,
+    # or the score fell short of the 3/5 threshold even with a pattern
+    # present). This function used to only special-case 'BUY' and treat
+    # every other value, including a genuine no-signal HOLD, as if it were
+    # a real SELL/EXIT -- misleadingly labeling e.g. HINDALCO/NTPC as
+    # "SELL/EXIT" on 2026-09-24 when neither actually generated a signal
+    # at all (both failed the pattern gate outright, confirmed by their own
+    # "[X] Candlestick pattern" line and sub-3 score). `eval_direction`
+    # now reflects what's actually being assessed: BUY/SELL for a real
+    # signal, still BUY/SELL for a HOLD where a pattern fired but the
+    # score fell short (so the checklist below stays meaningful instead of
+    # disappearing), or None when no pattern fired in either direction.
+    if signal == "BUY":
+        eval_direction = "BUY"
+    elif signal in ("SELL", "SELL/EXIT"):
+        eval_direction = "SELL"
+    elif has_bullish_pattern:
+        eval_direction = "BUY"
+    elif has_bearish_pattern:
+        eval_direction = "SELL"
+    else:
+        eval_direction = None
+
     lines = []
     lines.append(f"\n{'='*60}")
     lines.append(f"  SIGNAL INTERPRETATION: {symbol}")
     lines.append(f"{'='*60}")
-    lines.append(f"  Signal   : {'🟢 BUY' if signal == 'BUY' else '🔴 SELL/EXIT'}")
+
+    if signal == "BUY":
+        signal_label = "🟢 BUY"
+    elif signal in ("SELL", "SELL/EXIT"):
+        signal_label = "🔴 SELL/EXIT"
+    else:
+        signal_label = "⚪ HOLD -- no signal"
+    lines.append(f"  Signal   : {signal_label}")
     lines.append(f"  Price    : ₹{close:.2f}")
     lines.append(f"  RSI      : {rsi:.1f}")
     lines.append(f"  EMA20    : ₹{ema20:.2f}")
@@ -120,18 +156,15 @@ def interpret_live_signal(
         outcome = "✅ Winner" if winning_trade else "❌ Loser"
         lines.append(f"  Outcome  : {outcome} | PnL ₹{pnl:,.2f}")
 
-    # which pattern fired
+    # which pattern fired -- based on eval_direction, not the raw signal
+    # string, so a near-miss HOLD still shows the pattern that fired
     lines.append(f"\n  📖 Candlestick Pattern:")
-    bullish_patterns = ["bullish_engulfing", "bullish_marubozu", "hammer", "bullish_harami"]
-    bearish_patterns = ["bearish_engulfing", "bearish_marubozu", "shooting_star", "hanging_man", "bearish_harami"]
-
-    # only show relevant patterns based on signal direction
-    if signal == "BUY":
+    if eval_direction == "BUY":
         fired = [k for k, v in pattern_flags.items() if v and k in bullish_patterns]
-    elif signal in ("SELL", "SELL/EXIT"):
+    elif eval_direction == "SELL":
         fired = [k for k, v in pattern_flags.items() if v and k in bearish_patterns]
     else:
-        fired = [k for k, v in pattern_flags.items() if v and k in PATTERN_BOOK]
+        fired = []
     if fired:
         for pat in fired:
             info = PATTERN_BOOK[pat]
@@ -139,20 +172,30 @@ def interpret_live_signal(
             lines.append(f"    Meaning : {info['meaning']}")
             lines.append(f"    Bias    : {info['bias']}")
     else:
-        lines.append(f"    No named pattern detected — signal from indicators only")
+        lines.append(f"    No named pattern detected -- no directional signal today")
 
-    # indicator checklist — pattern is a mandatory gate (checked separately
-    # before this function is even reached for a real BUY/SELL, since
-    # strategy/signals.py requires it as a precondition) but also counts as
-    # 1 of the 5 scored points here, matching generate_signals()'s own
-    # long_score/short_score exactly: pattern + price-vs-EMA20 + RSI +
-    # volume + trend, need >=3 of 5. Fixed 2026-09-23: this checklist used
-    # to only tally 4 of the 5 conditions strategy/signals.py actually
-    # scores (it omitted trend entirely), so "Conditions met: X/4" could
-    # under-report what really drove a signal, and the separate "Trend
-    # Context" section below showed alignment without it ever affecting
-    # the printed score. Trend is now the 5th scored line here, and both
-    # sections read from the same `trend_pass` value so they can't disagree.
+    if eval_direction is None:
+        lines.append(f"\n  ℹ️  No candlestick pattern fired in either direction -- "
+                     f"the mandatory gate wasn't met, so BUY/SELL scoring doesn't "
+                     f"apply. Price/RSI/volume/trend above are shown for reference only.")
+        lines.append("")
+        return "\n".join(lines)
+
+    if signal not in ("BUY", "SELL", "SELL/EXIT"):
+        lines.append(f"\n  ⚠️  Near-miss only: a {'bullish' if eval_direction == 'BUY' else 'bearish'} "
+                     f"pattern fired but the score below didn't reach the 3/5 threshold -- "
+                     f"no trade was taken.")
+
+    # indicator checklist -- matches strategy/signals.py's long_score/
+    # short_score exactly: pattern + price-vs-EMA20 + RSI + volume + trend,
+    # need >=3 of 5. Fixed 2026-09-24: the price-vs-EMA20 check used to
+    # always treat "close > ema20" as a pass regardless of eval_direction
+    # (unlike RSI and trend, which already flipped correctly) -- so a real
+    # SELL evaluation with price above EMA20 (common right at a bearish
+    # reversal, before price has broken down) was wrongly counted as a
+    # confirming point instead of a failing one. Confirmed this overcounted
+    # APOLLOHOSP's 2026-09-24 SELL by 1 point (displayed 4/5, but the real
+    # short_score in strategy/signals.py is 3/5 for that exact case).
     lines.append(f"\n  📊 Indicator Checklist (need 3/5, pattern mandatory):")
     score = 0
 
@@ -160,46 +203,48 @@ def interpret_live_signal(
     lines.append(f"    [{'✓' if pat_pass else '✗'}] Candlestick pattern")
     if pat_pass: score += 1
 
-    ema_pass = close > ema20
-    lines.append(f"    [{'✓' if ema_pass else '✗'}] Price > EMA20  — "
-                 f"{INDICATOR_EXPLANATIONS['ema_above' if ema_pass else 'ema_below']}")
+    price_above_ema = close > ema20
+    ema_pass = price_above_ema if eval_direction == "BUY" else not price_above_ema
+    ema_symbol = ">" if eval_direction == "BUY" else "<"
+    lines.append(f"    [{'✓' if ema_pass else '✗'}] Price {ema_symbol} EMA20  -- "
+                 f"{INDICATOR_EXPLANATIONS['ema_above' if price_above_ema else 'ema_below']}")
     if ema_pass: score += 1
 
-    rsi_pass = rsi < 60 if signal == "BUY" else rsi > 40
-    lines.append(f"    [{'✓' if rsi_pass else '✗'}] RSI filter     — "
-                 f"{INDICATOR_EXPLANATIONS['rsi_buy' if signal == 'BUY' else 'rsi_sell']}")
+    rsi_pass = rsi < 60 if eval_direction == "BUY" else rsi > 40
+    lines.append(f"    [{'✓' if rsi_pass else '✗'}] RSI filter     -- "
+                 f"{INDICATOR_EXPLANATIONS['rsi_buy' if eval_direction == 'BUY' else 'rsi_sell']}")
     if rsi_pass: score += 1
 
     vol_pass = above_avg_volume
-    lines.append(f"    [{'✓' if vol_pass else '✗'}] Volume filter  — "
+    lines.append(f"    [{'✓' if vol_pass else '✗'}] Volume filter  -- "
                  f"{INDICATOR_EXPLANATIONS['vol_above' if vol_pass else 'vol_below']}")
     if vol_pass: score += 1
 
     prior_trend = pattern_flags.get('prior_trend', 'unknown')
     trend_pass = (
-        (signal == 'BUY' and prior_trend in ('downtrend', 'pullback')) or
-        (signal in ('SELL', 'SELL/EXIT') and prior_trend in ('uptrend', 'rally'))
+        (eval_direction == 'BUY' and prior_trend in ('downtrend', 'pullback')) or
+        (eval_direction == 'SELL' and prior_trend in ('uptrend', 'rally'))
     )
     trend_note = (
         f"prior trend '{prior_trend}' favors this direction" if trend_pass
         else f"prior trend '{prior_trend}' does not favor this direction"
     )
-    lines.append(f"    [{'✓' if trend_pass else '✗'}] Trend filter   — {trend_note}")
+    lines.append(f"    [{'✓' if trend_pass else '✗'}] Trend filter   -- {trend_note}")
     if trend_pass: score += 1
 
     lines.append(f"\n  Conditions met: {score}/5 "
                  f"({'✅ Signal valid' if score >= 3 else '⚠️  Weak signal'})")
 
-    # trend context (detail view — uses the same trend_pass computed above)
+    # trend context (detail view -- uses the same trend_pass computed above)
     trend_emoji = {
         'uptrend': '📈', 'downtrend': '📉',
         'pullback': '🔄', 'rally': '🔄', 'sideways': '➡️'
     }.get(prior_trend, '❓')
     lines.append(f"\n  📈 Trend Context:")
     lines.append(f"    Prior Trend  : {trend_emoji} {prior_trend}")
-    lines.append(f"    Trend aligned: {'✅ Yes — higher conviction' if trend_pass else '⚠️  No — trade against trend context'}")
+    lines.append(f"    Trend aligned: {'✅ Yes -- higher conviction' if trend_pass else '⚠️  No -- trade against trend context'}")
 
-    # risk parameters
+    # risk parameters -- only for a real, actionable BUY (not a near-miss)
     if signal == "BUY":
         stop = round(close * 0.98, 2)
         target_1r = round(close * 1.04, 2)   # 2:1 RRR
