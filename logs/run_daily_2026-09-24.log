@@ -1,0 +1,165 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-24 09:00:07
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22190s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹9069.00
+  RSI      : 60.7
+  EMA20    : ₹8862.55
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hanging Man (Chapter 6)
+    Meaning : Hammer shape appearing in an uptrend. Warning that bulls are losing control. Potential top formation.
+    Bias    : Bearish Warning — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+    [✓] Trend filter   — prior trend 'uptrend' favors this direction
+
+  Conditions met: 4/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📈 uptrend
+    Trend aligned: ✅ Yes — higher conviction
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹1003.80
+  RSI      : 51.0
+  EMA20    : ₹997.92
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✗] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   — prior trend 'rally' does not favor this direction
+
+  Conditions met: 2/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 rally
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹270.20
+  RSI      : 53.0
+  EMA20    : ₹267.71
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  — Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     — RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   — prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No — trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹270.20
+    Stop Loss  : ₹264.80 (-2%)
+    Target 2:1 : ₹281.01 (+4%)
+    Target 3:1 : ₹286.41 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹7470.00
+  RSI      : 35.7
+  EMA20    : ₹7613.76
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+    [✓] Trend filter   — prior trend 'downtrend' favors this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📉 downtrend
+    Trend aligned: ✅ Yes — higher conviction
+
+  🎯 Trade Plan:
+    Entry      : ₹7470.00
+    Stop Loss  : ₹7320.60 (-2%)
+    Target 2:1 : ₹7768.80 (+4%)
+    Target 3:1 : ₹7918.20 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹326.00
+  RSI      : 41.4
+  EMA20    : ₹329.60
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected — signal from indicators only
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✗] Candlestick pattern
+    [✗] Price > EMA20  — Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     — RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  — Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   — prior trend 'sideways' does not favor this direction
+
+  Conditions met: 1/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No — trade against trend context
+
+
+  ℹ️  APOLLOHOSP: SELL signal but no open position — no action (long-only)
+🟢 PAPER BUY | POWERGRID @ ₹270.20 x 70 | SIGNAL | stop@264.8 | RSI=53.0
+🟢 PAPER BUY | EICHERMOT @ ₹7470.00 x 1 | SIGNAL | stop@7320.6 | RSI=35.7
+
+✅ Scan complete. Open positions: ['POWERGRID', 'EICHERMOT']
