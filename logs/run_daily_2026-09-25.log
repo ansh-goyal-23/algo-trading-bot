@@ -1,0 +1,146 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-25 09:00:08
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'EICHERMOT']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 284s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+WebSocket connected — monitoring...
+
+🚨 STOP LOSS HIT | EICHERMOT @ ₹7320.50 | PnL ₹-149.5
+🔴 PAPER SELL | EICHERMOT @ ₹7320.50 x 1 | STOP_LOSS | PnL=₹-149.5
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7345.50
+  RSI      : 30.6
+  EMA20    : ₹7576.88
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹268.90
+  RSI      : 51.2
+  EMA20    : ₹267.44
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Harami (Chapter 7)
+    Meaning : Small bullish candle inside a larger bearish candle. Downtrend losing momentum. Early sign of reversal but needs confirmation.
+    Bias    : Mildly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹268.90
+    Stop Loss  : ₹263.52 (-2%)
+    Target 2:1 : ₹279.66 (+4%)
+    Target 3:1 : ₹285.03 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹325.65
+  RSI      : 41.2
+  EMA20    : ₹329.28
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹977.40
+  RSI      : 43.7
+  EMA20    : ₹994.08
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8879.00
+  RSI      : 51.9
+  EMA20    : ₹8848.57
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['POWERGRID']
+⚠️  WebSocket closed: The Session has been Closed!
