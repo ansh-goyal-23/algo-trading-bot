@@ -1,0 +1,122 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-28 09:00:08
+=======================================================
+Open positions in Supabase: ['POWERGRID']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 282s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+WebSocket connected — monitoring...
+
+🚨 STOP LOSS HIT | POWERGRID @ ₹264.80 | PnL ₹-378.0
+🔴 PAPER SELL | POWERGRID @ ₹264.80 x 70 | STOP_LOSS | PnL=₹-378.0
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7208.00
+  RSI      : 26.3
+  EMA20    : ₹7542.99
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹262.95
+  RSI      : 43.5
+  EMA20    : ₹267.07
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bearish Marubozu (Chapter 5)
+    Meaning : Long bearish candle with no wicks. Bears in complete control. Strong signal to exit long positions.
+    Bias    : Strongly Bearish — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹956.90
+  RSI      : 38.8
+  EMA20    : ₹990.51
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8852.00
+  RSI      : 50.6
+  EMA20    : ₹8849.75
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹321.85
+  RSI      : 36.2
+  EMA20    : ₹328.65
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+  ℹ️  POWERGRID: SELL signal but no open position — no action (long-only)
+
+✅ Market closed. Run ending.
+Open positions carried forward: None
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Connection to remote host was lost.
+⚠️  WebSocket closed: The Session has been Closed!
