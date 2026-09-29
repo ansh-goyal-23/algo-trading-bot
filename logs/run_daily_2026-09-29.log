@@ -1,0 +1,108 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-29 09:00:08
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22189s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹8860.00
+  RSI      : 51.0
+  EMA20    : ₹8851.42
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'uptrend' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📈 uptrend
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹8860.00
+    Stop Loss  : ₹8682.80 (-2%)
+    Target 2:1 : ₹9214.40 (+4%)
+    Target 3:1 : ₹9391.60 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹955.90
+  RSI      : 38.6
+  EMA20    : ₹987.13
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹261.85
+  RSI      : 42.3
+  EMA20    : ₹266.48
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7213.50
+  RSI      : 26.5
+  EMA20    : ₹7512.09
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹321.10
+  RSI      : 35.3
+  EMA20    : ₹327.87
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🟢 PAPER BUY | APOLLOHOSP @ ₹8860.00 x 3 | SIGNAL | stop@8682.8 | RSI=51.0
+
+✅ Scan complete. Open positions: ['APOLLOHOSP']
