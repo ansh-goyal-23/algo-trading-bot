@@ -1,0 +1,121 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-09-30 09:00:07
+=======================================================
+Open positions in Supabase: ['APOLLOHOSP']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+WebSocket connected — monitoring...
+
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 260s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+WebSocket connected — monitoring...
+
+🚨 STOP LOSS HIT | APOLLOHOSP @ ₹8610.00 | PnL ₹-750.0
+🔴 PAPER SELL | APOLLOHOSP @ ₹8610.00 x 3 | STOP_LOSS | PnL=₹-750.0
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹259.15
+  RSI      : 39.3
+  EMA20    : ₹265.75
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹319.10
+  RSI      : 35.0
+  EMA20    : ₹327.24
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7156.50
+  RSI      : 24.7
+  EMA20    : ₹7475.25
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹947.20
+  RSI      : 36.6
+  EMA20    : ₹983.26
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8091.00
+  RSI      : 29.0
+  EMA20    : ₹8761.68
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bearish Marubozu (Chapter 5)
+    Meaning : Long bearish candle with no wicks. Bears in complete control. Strong signal to exit long positions.
+    Bias    : Strongly Bearish — EXIT signal
+
+  ⚠️  Near-miss only: a bearish pattern fired but the score below didn't reach the 3/5 threshold -- no trade was taken.
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'pullback' does not favor this direction
+
+  Conditions met: 2/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 pullback
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+
+✅ Market closed. Run ending.
+Open positions carried forward: None
+⚠️  WebSocket closed: The Session has been Closed!
