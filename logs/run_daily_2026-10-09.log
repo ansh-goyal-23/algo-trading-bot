@@ -1,0 +1,2482 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-09 09:00:07
+=======================================================
+Open positions in Supabase: ['APOLLOHOSP']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 876s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:11:34 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19506,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47a8a4c4e77fc38-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:34:38 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19535,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47aac154f8ac0b2-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:36:44 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19759,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47aaf293ba9a434-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:43:02 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19626,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ab8608a1811fb-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:49:19 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19379,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ac197ad097e6b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 04:56:39 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19285,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47acc5609f79d03-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:09:14 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19556,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47adec40e4189e0-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:11:20 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19384,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ae1d7f88adacc-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:13:26 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19384,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ae4e9df90cb9d-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:15:32 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19482,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ae7fba884e28b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:29:10 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19728,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47afbf47d77619b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:36:30 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19405,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b06b4f83e113a-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:37:33 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19503,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b083d5b9291ef-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:38:36 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19703,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b09c6f87e7dd6-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:45:56 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19350,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b14885a51c9f2-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:47:00 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19629,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b16175c7cee24-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 05:53:18 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19608,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b1f4edc5755fa-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:05:53 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19560,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b31be7eabc959-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:11:07 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19257,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b396dcb75118b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:12:10 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19500,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b3af5cd3b1407-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:17:25 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19481,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b42a57d7810df-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:20:34 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19266,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b4740eca949a7-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:22:40 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19744,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b4a52bffd4e06-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:32:06 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19410,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b582488a6356a-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:41:32 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19644,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b65f95a4ebae6-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:45:44 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19686,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b6c1f5ab1f163-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:47:49 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19291,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b6f30cb37118b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:56:13 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19294,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b7b796c6d1279-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 06:59:22 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19645,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b80150d66fc38-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:05:39 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19535,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b894d1df47a66-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:06:42 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19633,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47b8ad6db56f165-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:22:26 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19445,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47ba1e228ed7073-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:31:53 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19623,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bafb5d8bce260-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:38:10 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19328,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bb8eda8ed071e-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:42:22 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19421,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bbf132ea311cd-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:45:30 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19250,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bc3aedb90540f-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:50:45 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19727,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bcb5baaf6dadc-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 07:57:18 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19546,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bd4f46f2e9e4c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:01:30 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19542,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bdb1a09a28052-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:07:48 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19739,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47be451cbd452a6-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:18:16 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19467,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bf3ad38891177-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:25:37 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19550,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47bfe6f78f81855-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:31:54 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19335,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c07a77dc652a6-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:32:58 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19466,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c09313d9fdadb-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 08:37:09 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19446,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c0f553ecd72ea-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:00:14 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19602,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c31212ee4f4ae-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:24:21 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19373,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c547a9b79f85d-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:25:24 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19496,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c56044ab1116b-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:29:36 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19637,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c5c2a1edceabc-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:35:55 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19591,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c65686a35eb69-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:39:03 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19268,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c6a03b9c87aad-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+⚠️  No ticks collected today — cannot generate signals.
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:41:09 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19525,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c6d15bb76ba2c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:54:48 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19659,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c810f8c49f163-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 09:57:56 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19405,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c85ab28a198b9-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 3)...
+🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['APOLLOHOSP']
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Fri, 09 Oct 2026 10:00:02 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19967,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a47c88bd3f607a44-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+[run_daily_and_push] WARNING: run_daily.py hit the 8h timeout and was killed — investigate for a hang.
