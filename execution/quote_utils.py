@@ -177,3 +177,18 @@ def fill_volume(candle: dict, fallback_row: dict | None, today: str) -> bool:
         return False
     candle["volume"] = vol
     return True
+
+
+def session_confirmed(rows: dict | None, today: str):
+    """
+    Dynamic "was there a market session today?" check from yfinance daily rows.
+
+    Returns True  -- at least one row is dated ``today``;
+            False -- rows came back but NONE is dated today (no session today:
+                     holiday / special closure -- yfinance just repeats the last
+                     session's row);
+            None  -- no rows at all (yfinance down/empty): cannot tell.
+    """
+    if not rows:
+        return None
+    return any(str(r.get("date")) == today for r in rows.values() if r)

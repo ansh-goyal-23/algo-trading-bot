@@ -59,6 +59,7 @@ from execution.portfolio import (
 from execution.tick_aggregator import TickAggregator
 from execution import state_store as store
 from execution import quote_utils
+from execution import market_calendar
 
 load_dotenv()
 
@@ -212,6 +213,16 @@ def fetch_today_ohlc(client) -> dict:
 
     # yfinance: needed for volume on every valid candle, and as fallback for the rest
     yf_data = fetch_today_ohlc_yfinance()
+
+    # Dynamic holiday guard (catches closures the static calendar doesn't list):
+    # yfinance returned rows but none is dated today => no session today.
+    if quote_utils.session_confirmed(yf_data, TODAY) is False:
+        print(f"  🚫 No market session today ({TODAY}): yfinance's latest rows are all older — "
+              f"treating as a holiday/closure; NO scan and NO trades.")
+        return {}
+    if not yf_data:
+        print("  ⚠️  yfinance returned nothing — market session for today could not be confirmed "
+              "(proceeding on Kotak data only)")
 
     for sym in sorted(invalid):
         cand, why = quote_utils.accept_fallback_candle(yf_data.get(sym), TODAY)
@@ -625,6 +636,16 @@ def main():
     print("  RUN DAILY — unattended entry point (Render)")
     print(f"  {now_ist().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 55)
+
+    # Holiday guard: the weekday cron also fires on NSE holidays (2026-10-02 booked
+    # phantom stop-outs from stale snapshot ticks). Skip the whole run.
+    reason = market_calendar.holiday_reason(now_ist().date())
+    if reason:
+        print(f"🛑 {reason} — market closed today. Skipping run (no monitoring, no scan, no trades).")
+        return
+    if not market_calendar.calendar_covers(now_ist().date()):
+        print(f"⚠️  NSE holiday list is not maintained for {now_ist().year} — only the dynamic "
+              f"session check protects against holidays. Update execution/market_calendar.py.")
 
     positions = store.load_positions()
     print(f"Open positions in Supabase: {list(positions.keys()) or 'None'}")

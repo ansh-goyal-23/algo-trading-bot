@@ -33,6 +33,7 @@ from execution.portfolio import (
     get_position_size, login, check_position_exit,
 )
 from execution import quote_utils
+from execution import market_calendar
 
 load_dotenv(dotenv_path=os.path.expanduser("~/Documents/algo-trading-bot/.env"))
 
@@ -190,6 +191,15 @@ def fetch_today_ohlc(client) -> dict:
     invalid = set(PORTFOLIO.keys()) - set(valid.keys())
 
     yf_data = fetch_today_ohlc_yfinance()
+
+    # Dynamic holiday guard: yfinance rows exist but none is dated today => no session.
+    if quote_utils.session_confirmed(yf_data, today) is False:
+        print(f"  🚫 No market session today ({today}): yfinance's latest rows are all older — "
+              f"treating as a holiday/closure; NO scan and NO trades.")
+        return {}
+    if not yf_data:
+        print("  ⚠️  yfinance returned nothing — market session for today could not be confirmed "
+              "(proceeding on Kotak data only)")
 
     for sym in sorted(invalid):
         cand, why = quote_utils.accept_fallback_candle(yf_data.get(sym), today)
@@ -397,6 +407,14 @@ def main():
     print("  EOD SIGNAL SCANNER — 3:10 PM")
     print(f"  {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("=" * 55)
+
+    reason = market_calendar.holiday_reason(datetime.now().date())
+    if reason:
+        print(f"🛑 {reason} — market closed today. Skipping scan (no trades).")
+        return
+    if not market_calendar.calendar_covers(datetime.now().date()):
+        print(f"⚠️  NSE holiday list is not maintained for {datetime.now().year} — only the dynamic "
+              f"session check protects against holidays. Update execution/market_calendar.py.")
 
     client     = login()
     today_ohlc = fetch_today_ohlc(client)

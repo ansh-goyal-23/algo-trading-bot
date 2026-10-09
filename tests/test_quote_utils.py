@@ -6,6 +6,8 @@ import unittest
 
 from execution import quote_utils as q
 from config.excluded_trades import EXCLUDED_TRADE_IDS, filter_valid_trades
+from execution import market_calendar as mc
+from datetime import date
 
 # Real response captured from the VM on 2026-10-09 (quote_type="ohlc", APOLLOHOSP):
 # no 'ltp', no volume, and 'close' is the PREVIOUS close (7666 is below today's low).
@@ -109,9 +111,48 @@ class ExcludedTrades(unittest.TestCase):
     def test_filter_drops_only_excluded_ids(self):
         rows = [{"id": i} for i in range(2, 13)]
         kept = [r["id"] for r in filter_valid_trades(rows)]
-        self.assertEqual(kept, [2, 3, 4, 5, 6, 7])
+        self.assertEqual(kept, [2, 3, 4, 5])
         self.assertEqual(len(rows), 11)  # input untouched
-        self.assertEqual(set(EXCLUDED_TRADE_IDS), {8, 9, 10, 11, 12})
+        self.assertEqual(set(EXCLUDED_TRADE_IDS), {6, 7, 8, 9, 10, 11, 12})
+
+
+class SessionConfirmed(unittest.TestCase):
+    def test_true_when_any_row_is_today(self):
+        rows = {"A": {"date": "2026-10-08"}, "B": {"date": TODAY}}
+        self.assertIs(q.session_confirmed(rows, TODAY), True)
+
+    def test_false_when_rows_exist_but_none_today(self):  # holiday signature
+        rows = {"A": {"date": "2026-10-01"}, "B": {"date": "2026-10-01"}}
+        self.assertIs(q.session_confirmed(rows, "2026-10-02"), False)
+
+    def test_none_when_no_rows(self):
+        self.assertIsNone(q.session_confirmed({}, TODAY))
+        self.assertIsNone(q.session_confirmed(None, TODAY))
+
+
+class MarketCalendar(unittest.TestCase):
+    def test_known_holidays_blocked(self):
+        self.assertEqual(mc.holiday_reason(date(2026, 10, 2)), "NSE holiday: Mahatma Gandhi Jayanti")
+        self.assertEqual(mc.holiday_reason(date(2026, 10, 20)), "NSE holiday: Dussehra")
+        self.assertEqual(mc.holiday_reason(date(2026, 12, 25)), "NSE holiday: Christmas")
+
+    def test_weekends_blocked(self):
+        self.assertEqual(mc.holiday_reason(date(2026, 10, 10)), "weekend")  # Saturday
+        self.assertEqual(mc.holiday_reason(date(2026, 10, 11)), "weekend")  # Sunday
+
+    def test_normal_trading_days_allowed(self):
+        for d in (date(2026, 10, 1), date(2026, 10, 5), date(2026, 10, 8), date(2026, 10, 9), date(2026, 10, 12)):
+            self.assertIsNone(mc.holiday_reason(d), d)
+
+    def test_every_listed_holiday_is_a_weekday_in_a_maintained_year(self):
+        for iso in mc.NSE_HOLIDAYS:
+            d = date.fromisoformat(iso)
+            self.assertLess(d.weekday(), 5, iso)
+            self.assertTrue(mc.calendar_covers(d), iso)
+
+    def test_calendar_coverage_flag(self):
+        self.assertTrue(mc.calendar_covers(date(2026, 6, 1)))
+        self.assertFalse(mc.calendar_covers(date(2027, 1, 4)))
 
 
 if __name__ == "__main__":
