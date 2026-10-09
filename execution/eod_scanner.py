@@ -32,6 +32,7 @@ from execution.portfolio import (
     PORTFOLIO, STOP_LOSS_PCT, RISK_PER_TRADE,
     get_position_size, login, check_position_exit,
 )
+from execution import quote_utils
 
 load_dotenv(dotenv_path=os.path.expanduser("~/Documents/algo-trading-bot/.env"))
 
@@ -111,31 +112,22 @@ def fetch_today_ohlc_kotak(client) -> dict:
             if match is None:
                 raise ValueError(f"No exact EQ match found for symbol '{stock}'")
             token = str(match["pSymbol"])
-            quote = client.quotes(
-                instrument_tokens=[{"instrument_token": token, "exchange_segment": "nse_cm"}],
-                quote_type="ohlc"
-            )
-            data = quote if isinstance(quote, list) else quote.get("data", [quote])
-            if not data:
+            inst = [{"instrument_token": token, "exchange_segment": "nse_cm"}]
+            ohlc_resp = client.quotes(instrument_tokens=inst, quote_type="ohlc")
+            # quote_type="ohlc" has NO ltp (and ohlc['close'] is the PREVIOUS
+            # close) -- the real close must come from an LTP quote. Fixed
+            # 2026-10-09; see execution/quote_utils.py.
+            try:
+                ltp_resp = client.quotes(instrument_tokens=inst, quote_type="ltp")
+            except Exception as e:
+                print(f"  ⚠️  {stock} (Kotak): ltp quote failed: {e}")
+                ltp_resp = None
+            candle, why = quote_utils.build_kotak_candle(
+                ohlc_resp, ltp_resp, datetime.now().strftime("%Y-%m-%d"))
+            if candle is None:
+                print(f"  ⚠️  {stock} (Kotak): quote rejected — {why}")
                 continue
-            q = data[0] if isinstance(data, list) else data
-            # Kotak nests OHLC inside q['ohlc'], LTP at q['ltp']
-            ohlc_data = q.get("ohlc", {})
-            ltp        = float(q.get("ltp", 0))
-            open_p     = float(ohlc_data.get("open",  0))
-            high_p     = float(ohlc_data.get("high",  0))
-            low_p      = float(ohlc_data.get("low",   0))
-            # use LTP as close (real-time price), not ohlc['close'] which is open price
-            close_p    = ltp if ltp > 0 else float(ohlc_data.get("close", 0))
-            volume     = int(q.get("last_volume", q.get("volume", 0)))
-            ohlc[stock] = {
-                "date":   datetime.now().strftime("%Y-%m-%d"),
-                "open":   open_p,
-                "high":   high_p,
-                "low":    low_p,
-                "close":  close_p,
-                "volume": volume,
-            }
+            ohlc[stock] = candle
         except Exception as e:
             print(f"  ⚠️  {stock} (Kotak): {e}")
     return ohlc
@@ -183,23 +175,34 @@ print(json.dumps(result))
 
 def fetch_today_ohlc(client) -> dict:
     """
-    Fetch today's OHLC — tries Kotak Neo first, falls back to yfinance.
-    Filters out any stocks with zero/invalid prices.
+    Today's validated daily candles. Kotak supplies open/high/low + a real LTP
+    close (rejected if the LTP is missing or the candle is inconsistent);
+    yfinance supplies volume (Kotak's ohlc quote has none) and is the fallback
+    for any symbol Kotak couldn't give a valid candle for -- accepted only if
+    dated today and internally consistent. Symbols with no valid candle are
+    skipped (logged loudly); we never scan/trade on bad data.
     """
     print("\n📡 Fetching today's OHLC from Kotak Neo...")
+    today = datetime.now().strftime("%Y-%m-%d")
     ohlc = fetch_today_ohlc_kotak(client)
 
-    # filter valid entries
-    valid = {s: d for s, d in ohlc.items() if d["close"] > 0 and d["open"] > 0}
+    valid = {s: d for s, d in ohlc.items() if quote_utils.candle_is_valid(d)}
     invalid = set(PORTFOLIO.keys()) - set(valid.keys())
 
-    if invalid:
-        print(f"  ⚠️  Kotak returned zeros for {invalid} — falling back to yfinance...")
-        yf_data = fetch_today_ohlc_yfinance()
-        for sym in invalid:
-            if sym in yf_data and yf_data[sym]["close"] > 0:
-                valid[sym] = yf_data[sym]
-                print(f"  ✅ {sym}: fetched from yfinance")
+    yf_data = fetch_today_ohlc_yfinance()
+
+    for sym in sorted(invalid):
+        cand, why = quote_utils.accept_fallback_candle(yf_data.get(sym), today)
+        if cand is not None:
+            valid[sym] = cand
+            print(f"  ✅ {sym}: no valid Kotak candle — using yfinance")
+        else:
+            print(f"  🚫 {sym}: NO valid candle today (Kotak rejected; yfinance: {why}) — skipping this symbol")
+
+    for sym, candle in valid.items():
+        if candle.get("volume", 0) <= 0:
+            if not quote_utils.fill_volume(candle, yf_data.get(sym), today):
+                print(f"  ⚠️  {sym}: volume unavailable for today — volume checklist point is unreliable")
 
     # print summary
     print("\n  Today's OHLC:")
@@ -207,7 +210,7 @@ def fetch_today_ohlc(client) -> dict:
         chg = round((c["close"] - c["open"]) / c["open"] * 100, 2) if c["open"] else 0
         direction = "🟢" if chg >= 0 else "🔴"
         print(f"  {stock:12s} | O={c['open']:.2f} H={c['high']:.2f} "
-              f"L={c['low']:.2f} C={c['close']:.2f} | {direction} {chg:+.2f}%")
+              f"L={c['low']:.2f} C={c['close']:.2f} V={c.get('volume', 0)} | {direction} {chg:+.2f}%")
 
     return valid
 

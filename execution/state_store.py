@@ -123,11 +123,20 @@ def log_trade(action: str, symbol: str, price: float, quantity: int, reason: str
     print(f"{emoji} PAPER {action} | {symbol} @ ₹{price:.2f} x {quantity} | {reason}")
 
 
-def get_trades(trade_date: str = None) -> list:
+def get_trades(trade_date: str = None, include_invalid: bool = False) -> list:
+    """
+    Trades, oldest first. By default rows listed in config/excluded_trades.py
+    (stale-quote entries, holiday phantom exits) are filtered out so they never
+    reach performance numbers; pass include_invalid=True for the raw audit trail.
+    """
     params = {"select": "*", "order": "ts"}
     if trade_date:
         params["trade_date"] = f"eq.{trade_date}"
-    return _get("trades", params=params)
+    rows = _get("trades", params=params)
+    if include_invalid:
+        return rows
+    from config.excluded_trades import filter_valid_trades
+    return filter_valid_trades(rows)
 
 
 # ── intraday OHLC-building state ────────────────────────────────────────────
