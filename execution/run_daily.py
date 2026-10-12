@@ -47,6 +47,7 @@ Usage:
 import time
 import json
 import subprocess
+import threading
 from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 from datetime import datetime, time as dtime
 from zoneinfo import ZoneInfo
@@ -60,6 +61,7 @@ from execution.tick_aggregator import TickAggregator
 from execution import state_store as store
 from execution import quote_utils
 from execution import market_calendar
+from execution import rest_fallback
 
 load_dotenv()
 
@@ -480,7 +482,29 @@ def run_full_day_monitor():
     tick_count_at_last_reconnect = [0]
     total_tick_count = [0]
 
+    # REST fallback (execution/rest_fallback.py): when the websocket stops delivering
+    # ticks (Kotak `mlhsm` outage 2026-10-05..12), poll REST LTP for the held positions
+    # so stop/target checks keep working, and build the 3:10 PM scan from REST candles.
+    stock_tick_count = [0]
+    rest = rest_fallback.RestFallback()
+    stop_lock = threading.Lock()  # websocket thread and REST poller must not both close a position
+    sym_to_inst = {
+        token_to_name[i["instrument_token"]]: i
+        for i in instrument_tokens if i["instrument_token"] in token_to_name
+    }
+
+    def rest_ltp(symbol):
+        resp = rest_fallback.call_with_timeout(
+            client.quotes, rest_fallback.CALL_TIMEOUT_S,
+            instrument_tokens=[sym_to_inst[symbol]], quote_type="ltp",
+        )
+        return quote_utils.parse_ltp(resp)
+
     def check_stop_loss(symbol, ltp):
+        with stop_lock:
+            _check_stop_loss_impl(symbol, ltp)
+
+    def _check_stop_loss_impl(symbol, ltp):
         positions = store.load_positions()
         if symbol not in positions:
             return
@@ -525,6 +549,7 @@ def run_full_day_monitor():
             now = now_ist().time()
             if not (MARKET_OPEN <= now <= MARKET_CLOSE):
                 continue
+            stock_tick_count[0] += 1
             vol = int(tick.get("v", 0))
             aggregator.on_tick(symbol, ltp, vol)
             check_stop_loss(symbol, ltp)
@@ -549,7 +574,23 @@ def run_full_day_monitor():
             signal_scan_done[0] = True
             print("\n⏰ 3:10 PM — running signal scan from today's aggregated ticks...")
             today_candles = aggregator.get_all_candles()
-            if today_candles:
+            if rest.needs_rest_scan(len(today_candles)):
+                print(f"📡 Websocket coverage insufficient today ({rest.summary()}) — "
+                      f"building the scan from REST quotes instead of ticks...")
+                try:
+                    rest_candles = fetch_today_ohlc(client)
+                except Exception as e:
+                    print(f"  🔴 REST candle fetch failed: {e}")
+                    rest_candles = {}
+                if rest_candles:
+                    check_stop_losses_eod(rest_candles)
+                    run_signal_scan(rest_candles)
+                elif today_candles:
+                    print("  ⚠️  REST candles unavailable — falling back to the partial tick candles")
+                    run_signal_scan(today_candles)
+                else:
+                    print("⚠️  No ticks collected today and REST quotes unavailable — cannot generate signals.")
+            elif today_candles:
                 run_signal_scan(today_candles)
             else:
                 print("⚠️  No ticks collected today — cannot generate signals.")
@@ -560,6 +601,28 @@ def run_full_day_monitor():
             break
 
         if MARKET_OPEN <= now <= MARKET_CLOSE:
+            # ── REST fallback: keep stops alive when the websocket isn't delivering ──
+            _t = time.monotonic()
+            _change = rest.observe(_t, stock_tick_count[0])
+            if _change == "activated":
+                print(f"📡 Websocket delivered <{rest.min_ticks} ticks in the last {rest.window_s:.0f}s — "
+                      f"REST fallback ON (polling LTP every {rest.poll_every_s:.0f}s for held positions)")
+            elif _change == "deactivated":
+                print("✅ Websocket ticks flowing again — REST fallback OFF")
+            if rest.due(_t):
+                _held = [s_ for s_ in store.load_positions() if s_ in sym_to_inst]
+                if _held:
+                    _prices = rest.poll(_t, _held, rest_ltp)
+                    for _sym, _px in _prices.items():
+                        check_stop_loss(_sym, _px)
+                    if rest.last_errors:
+                        print(f"  ⚠️  REST poll issues: {'; '.join(rest.last_errors)}")
+                    if rest.polls % 10 == 1:
+                        print(f"  📡 REST poll #{rest.polls}: " +
+                              (", ".join(f"{k}=₹{v:.2f}" for k, v in _prices.items()) or "no usable prices"))
+                else:
+                    rest.poll(_t, [], rest_ltp)  # nothing held: just advance the poll timer
+
             seconds_since_tick = (now_ist() - last_tick_time[0]).seconds
             if seconds_since_tick > 60:
                 # Did the PREVIOUS reconnect attempt actually bring ticks back?
