@@ -189,7 +189,13 @@ class FakeClient:
         self.ltp_fn = ltp_fn
         self.quote_calls = 0
         self.on_message = None
-    def subscribe(self, **kw): pass
+        self.subscribes = 0
+        self.snapshot_on_subscribe = False   # emit a burst of ticks right after every subscribe()
+    def subscribe(self, **kw):
+        self.subscribes += 1
+        if self.snapshot_on_subscribe and self.on_message and self.clock.now().hour >= 9:
+            self.on_message({"type": "stock_feed", "data": [
+                {"tk": "157", "ltp": 8100.0, "v": 0} for _ in range(10)]})
     def un_subscribe(self, **kw): pass
     def quotes(self, instrument_tokens, quote_type):
         self.quote_calls += 1
@@ -210,10 +216,12 @@ class FakeStore:
     def save_ohlc_state(self, d, c): pass
 
 
-def run_monitor(ltp_fn, positions, tick_feed=None, start_clock=(9, 14, 50)):
+def run_monitor(ltp_fn, positions, tick_feed=None, start_clock=(9, 14, 50), snapshot_on_subscribe=False):
     """Run the real run_full_day_monitor() on a simulated clock. Returns a result dict."""
     clock = Clock(datetime(2026, 10, 13, *start_clock, tzinfo=IST))
     client = FakeClient(ltp_fn); client.clock = clock
+    client.snapshot_on_subscribe = snapshot_on_subscribe
+    client.logins = 0
     store = FakeStore(positions)
     rec = {"eod_checks": [], "scans": []}
 
@@ -227,7 +235,10 @@ def run_monitor(ltp_fn, positions, tick_feed=None, start_clock=(9, 14, 50)):
                                          "fetch_today_ohlc", "check_stop_losses_eod", "run_signal_scan")}
     saved_time = (rd.time.sleep, rd.time.monotonic)
     try:
-        rd.login = lambda: client
+        def _login():
+            client.logins += 1
+            return client
+        rd.login = _login
         rd.resolve_tokens = lambda c: ([{"instrument_token": t, "exchange_segment": "nse_cm"} for t in TOKENS], dict(TOKENS))
         rd.TickAggregator = FakeAgg
         rd.store = store
@@ -328,6 +339,46 @@ class MonitorIntegration(unittest.TestCase):
         self.assertEqual(r["store"].trades, [])
         self.assertIn("REST poll issues", r["log"])
         self.assertIn("Market closed. Run ending.", r["log"])
+
+
+class ReloginCap(unittest.TestCase):
+    """Forced re-logins: backed off and capped (was ~119/day during the 2026-10 mlhsm outage)."""
+
+    def test_dead_feed_all_day_is_capped(self):
+        r = run_monitor(lambda s, n: 8100.0, POS())
+        relogins = r["client"].logins - 1       # first login is the startup one
+        self.assertEqual(relogins, 10, r["log"][-2000:])
+        self.assertIn("re-login cap reached", r["log"])
+        self.assertIn("Market closed. Run ending.", r["log"])
+
+    def test_snapshot_burst_after_resubscribe_does_not_hide_a_dead_feed(self):
+        r = run_monitor(lambda s, n: 8100.0, POS(), snapshot_on_subscribe=True)
+        self.assertGreaterEqual(r["client"].logins - 1, 1, "escalation must still happen")
+        self.assertLessEqual(r["client"].logins - 1, 10)
+
+    def test_first_relogin_waits_for_three_failed_attempts_then_backs_off(self):
+        r = run_monitor(lambda s, n: 8100.0, POS())
+        lines = [l for l in r["log"].splitlines() if "forcing full re-login" in l]
+        self.assertEqual(len(lines), 10)
+        self.assertIn("(1/10)", lines[0])
+        self.assertIn("(10/10)", lines[-1])
+
+    def test_feed_that_comes_back_stops_the_escalation(self):
+        def feed(now):  # dead until 10:00, healthy afterwards
+            if now.hour < 10 or now.hour >= 16:
+                return []
+            return [{"type": "stock_feed", "data": [{"tk": "157", "ltp": 8100.0, "v": 5}]}]
+        r = run_monitor(lambda s, n: 8100.0, POS(), tick_feed=feed)
+        self.assertLessEqual(r["client"].logins - 1, 4)   # 09:18, 09:23, 09:33, 09:53 then ticks return
+        self.assertNotIn("re-login cap reached", r["log"])
+
+    def test_healthy_feed_never_relogs_in(self):
+        def feed(now):
+            if not (9 <= now.hour < 16):
+                return []
+            return [{"type": "stock_feed", "data": [{"tk": "157", "ltp": 8100.0, "v": 5}]}]
+        r = run_monitor(lambda s, n: 1 / 0, POS(), tick_feed=feed)
+        self.assertEqual(r["client"].logins, 1)
 
 
 if __name__ == "__main__":

@@ -62,6 +62,8 @@ from execution import state_store as store
 from execution import quote_utils
 from execution import market_calendar
 from execution import rest_fallback
+from execution import reconnect_policy
+from execution import shutdown_guard
 
 load_dotenv()
 
@@ -89,6 +91,7 @@ def now_ist() -> datetime:
 MARKET_OPEN         = dtime(9, 15)
 SIGNAL_WINDOW_START = dtime(15, 10)
 MARKET_CLOSE        = dtime(15, 30)
+WATCHDOG_EXIT_IST   = dtime(16, 0)   # force-exit if still running this long after close (shutdown_guard)
 
 TODAY = now_ist().strftime("%Y-%m-%d")
 
@@ -478,9 +481,8 @@ def run_full_day_monitor():
     )
     signal_scan_done = [False]
     last_tick_time = [now_ist()]
-    consecutive_failures = [0]
-    tick_count_at_last_reconnect = [0]
     total_tick_count = [0]
+    policy = reconnect_policy.ReconnectPolicy()
 
     # REST fallback (execution/rest_fallback.py): when the websocket stops delivering
     # ticks (Kotak `mlhsm` outage 2026-10-05..12), poll REST LTP for the held positions
@@ -623,29 +625,23 @@ def run_full_day_monitor():
                 else:
                     rest.poll(_t, [], rest_ltp)  # nothing held: just advance the poll timer
 
+            policy.sample(time.monotonic(), stock_tick_count[0])
             seconds_since_tick = (now_ist() - last_tick_time[0]).seconds
             if seconds_since_tick > 60:
-                # Did the PREVIOUS reconnect attempt actually bring ticks back?
-                # We only know this now, one 60s cycle later -- if
-                # total_tick_count hasn't moved since we last tried
-                # reconnecting, that attempt was a silent no-op (subscribe()
-                # returned fine but delivered nothing), which is exactly
-                # what happened repeatedly on 2026-09-21 while the old
-                # exception-based check kept reporting "success". A true
-                # first-ever staleness event (tick_count_at_last_reconnect
-                # still at its initial 0 with ticks already flowing) is
-                # handled the same way and just costs one extra check.
-                previous_attempt_recovered_ticks = total_tick_count[0] > tick_count_at_last_reconnect[0]
+                # Decide what to do about the stale feed (execution/reconnect_policy.py).
+                # Recovery is judged on real ticks that arrived AFTER the settle period
+                # of the previous attempt -- the snapshot burst that follows any
+                # (re)subscribe no longer counts -- and full re-logins are backed off
+                # (5 -> 10 -> 20 -> 30 min) and capped per run, instead of one every
+                # ~3 minutes all session (119/day during the 2026-10-05..13 outage).
+                _t = time.monotonic()
+                action = policy.decide(_t, stock_tick_count[0])
 
-                if previous_attempt_recovered_ticks:
-                    consecutive_failures[0] = 0
-                else:
-                    consecutive_failures[0] += 1
-
-                print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting (attempt {consecutive_failures[0]})...")
-
-                if consecutive_failures[0] >= 3:
-                    print("🔴 3 consecutive reconnect attempts produced zero new ticks — forcing full re-login + resubscribe...")
+                if action == "relogin":
+                    print(f"⚠️  No ticks for {seconds_since_tick}s — {policy.failures} consecutive reconnect "
+                          f"attempts produced no sustained ticks — forcing full re-login + resubscribe "
+                          f"({policy.relogins + 1}/{policy.max_relogins})...")
+                    policy.record_relogin(_t)
                     try:
                         client = login()
                         client.on_message = on_message_wrapper
@@ -657,11 +653,22 @@ def run_full_day_monitor():
                             instrument_tokens=instrument_tokens, isIndex=False, isDepth=False,
                             timeout=15,
                         )
-                        consecutive_failures[0] = 0
                         print("✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)")
                     except Exception as e:
-                        print(f"  🔴 full re-login also failed: {e} — will retry next cycle")
+                        print(f"  🔴 full re-login also failed: {e}")
+                elif action in ("wait", "exhausted"):
+                    # Quiet: log the first time and then every 10th held-back cycle.
+                    if policy.skipped % 10 == 1:
+                        if action == "exhausted":
+                            print(f"⚠️  No ticks for {seconds_since_tick}s — re-login cap reached "
+                                  f"({policy.summary()}); not retrying the feed again today "
+                                  f"(REST fallback {'ON' if rest.active else 'standing by'}).")
+                        else:
+                            print(f"⚠️  No ticks for {seconds_since_tick}s — next full re-login allowed in "
+                                  f"{policy.seconds_until_relogin(_t):.0f}s ({policy.summary()}); "
+                                  f"REST fallback {'ON' if rest.active else 'standing by'}.")
                 else:
+                    print(f"⚠️  No ticks for {seconds_since_tick}s — reconnecting (attempt {policy.failures})...")
                     try:
                         _call_with_timeout(
                             client.un_subscribe,
@@ -683,12 +690,11 @@ def run_full_day_monitor():
                     except Exception as e:
                         print(f"  ⚠️  subscribe failed/hung: {e}")
 
-                # Record where the tick count stood AT this reconnect attempt,
-                # so next cycle's staleness check can tell whether it worked.
-                tick_count_at_last_reconnect[0] = total_tick_count[0]
-                # Push the staleness clock forward regardless of outcome --
-                # otherwise we'd re-fire this block every second instead of
-                # waiting a fresh 60s to judge the attempt fairly.
+                # Remember where the tick count stood at this attempt so the next
+                # cycle can tell whether it worked, and push the staleness clock
+                # forward regardless of outcome -- otherwise this block would re-fire
+                # every second instead of waiting a fresh 60s to judge fairly.
+                policy.note_attempt(time.monotonic(), stock_tick_count[0])
                 last_tick_time[0] = now_ist()
 
         time.sleep(1)
@@ -719,5 +725,18 @@ def main():
         run_eod_only()
 
 
+def _watchdog_seconds():
+    """Seconds from now until WATCHDOG_EXIT_IST today, or None if already past (manual late run)."""
+    n = now_ist()
+    deadline = n.replace(hour=WATCHDOG_EXIT_IST.hour, minute=WATCHDOG_EXIT_IST.minute, second=0, microsecond=0)
+    secs = (deadline - n).total_seconds()
+    return secs if secs > 60 else None
+
+
 if __name__ == "__main__":
-    main()
+    # Never leave the process hanging on abandoned websocket/executor threads after
+    # the run is done (6/6 days Oct 5-12 ran until the 8h timeout) -- see shutdown_guard.py.
+    _wd = _watchdog_seconds()
+    if _wd:
+        shutdown_guard.start_watchdog(_wd, label="run_daily")
+    shutdown_guard.run_and_exit(main)
