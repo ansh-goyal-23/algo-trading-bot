@@ -1,0 +1,317 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-14 09:00:07
+=======================================================
+Open positions in Supabase: ['POWERGRID']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 03:30:42 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19333,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a38150da51e17c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 877s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 03:45:22 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19692,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a396c81e63f15d-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹249.55
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #11: POWERGRID=₹249.05
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹248.50
+⚠️  No ticks for 61s — next full re-login allowed in 167s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹248.20
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 04:03:58 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19331,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a3b206e9c832fd-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹248.55
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹248.60
+  📡 REST poll #61: POWERGRID=₹249.40
+⚠️  No ticks for 61s — next full re-login allowed in 91s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹248.75
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 04:24:31 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19737,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a3d01f3a05ba2c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹248.95
+  📡 REST poll #91: POWERGRID=₹248.95
+⚠️  No ticks for 61s — next full re-login allowed in 1245s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #101: POWERGRID=₹248.90
+  📡 REST poll #111: POWERGRID=₹248.70
+⚠️  No ticks for 61s — next full re-login allowed in 631s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹248.80
+  📡 REST poll #131: POWERGRID=₹248.30
+⚠️  No ticks for 61s — next full re-login allowed in 15s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 04:55:18 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19726,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a3fd365ea36216-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: POWERGRID=₹248.60
+  📡 REST poll #151: POWERGRID=₹248.75
+⚠️  No ticks for 61s — next full re-login allowed in 1183s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹248.65
+  📡 REST poll #171: POWERGRID=₹249.25
+⚠️  No ticks for 61s — next full re-login allowed in 568s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹249.10
+  📡 REST poll #191: POWERGRID=₹249.55
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #201: POWERGRID=₹250.00
+  📡 REST poll #211: POWERGRID=₹249.80
+⚠️  No ticks for 61s — next full re-login allowed in 1124s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: POWERGRID=₹249.70
+  📡 REST poll #231: POWERGRID=₹249.95
+⚠️  No ticks for 61s — next full re-login allowed in 509s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: POWERGRID=₹249.50
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #251: POWERGRID=₹249.40
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1675s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #261: POWERGRID=₹249.15
+  📡 REST poll #271: POWERGRID=₹248.70
+⚠️  No ticks for 61s — next full re-login allowed in 1060s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: POWERGRID=₹248.70
+  📡 REST poll #291: POWERGRID=₹249.00
+⚠️  No ticks for 61s — next full re-login allowed in 446s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: POWERGRID=₹249.45
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #311: POWERGRID=₹249.65
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 06:27:34 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19704,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a484645a54b266-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: POWERGRID=₹250.00
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: POWERGRID=₹250.00
+  📡 REST poll #341: POWERGRID=₹249.95
+⚠️  No ticks for 61s — next full re-login allowed in 1001s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: POWERGRID=₹249.85
+  📡 REST poll #361: POWERGRID=₹250.35
+⚠️  No ticks for 61s — next full re-login allowed in 388s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: POWERGRID=₹250.35
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #381: POWERGRID=₹250.75
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1553s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: POWERGRID=₹250.55
+  📡 REST poll #401: POWERGRID=₹250.25
+⚠️  No ticks for 61s — next full re-login allowed in 937s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: POWERGRID=₹250.30
+  📡 REST poll #421: POWERGRID=₹250.65
+⚠️  No ticks for 61s — next full re-login allowed in 322s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: POWERGRID=₹250.55
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 14 Oct 2026 07:29:01 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19374,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4a4de68b9d1e82a-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #441: POWERGRID=₹250.10
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: POWERGRID=₹249.80
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #461: POWERGRID=₹249.10
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: POWERGRID=₹249.05
+  📡 REST poll #481: POWERGRID=₹248.90
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: POWERGRID=₹249.00
+  📡 REST poll #501: POWERGRID=₹248.95
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: POWERGRID=₹248.85
+  📡 REST poll #521: POWERGRID=₹248.90
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: POWERGRID=₹249.35
+  📡 REST poll #541: POWERGRID=₹249.75
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: POWERGRID=₹250.00
+  📡 REST poll #561: POWERGRID=₹249.75
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: POWERGRID=₹249.40
+  📡 REST poll #581: POWERGRID=₹249.40
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: POWERGRID=₹249.35
+  📡 REST poll #601: POWERGRID=₹249.35
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: POWERGRID=₹249.55
+  📡 REST poll #621: POWERGRID=₹249.50
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: POWERGRID=₹249.40
+  📡 REST poll #641: POWERGRID=₹249.50
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: POWERGRID=₹249.35
+  📡 REST poll #661: POWERGRID=₹249.30
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: POWERGRID=₹249.15
+  📡 REST poll #681: POWERGRID=₹249.05
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: POWERGRID=₹249.15
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 696 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7825.50 H=7889.50 L=7697.00 C=7766.00 V=516435 | 🔴 -0.76%
+  HINDALCO     | O=899.20 H=899.90 L=882.55 C=883.95 V=2727788 | 🔴 -1.70%
+  POWERGRID    | O=250.50 H=251.20 L=247.90 C=249.25 V=12514554 | 🔴 -0.50%
+  EICHERMOT    | O=7135.00 H=7154.50 L=7040.00 C=7046.50 V=423085 | 🔴 -1.24%
+  NTPC         | O=311.00 H=316.05 L=309.90 C=314.25 V=10971114 | 🟢 +1.05%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ POWERGRID | low=247.90 > stop=243.73 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7766.00
+  RSI      : 33.9
+  EMA20    : ₹8237.42
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹883.95
+  RSI      : 31.6
+  EMA20    : ₹937.08
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹249.25
+  RSI      : 36.5
+  EMA20    : ₹257.01
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Bearish Harami (Chapter 7)
+    Meaning : Small bearish candle inside a larger bullish candle. Uptrend losing momentum. Early reversal warning.
+    Bias    : Mildly Bearish — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7046.50
+  RSI      : 39.9
+  EMA20    : ₹7210.42
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹314.25
+  RSI      : 40.1
+  EMA20    : ₹319.52
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🔴 PAPER SELL | POWERGRID @ ₹249.25 x 76 | SIGNAL_EXIT | PnL=₹41.8
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+
+✅ Market closed. Run ending.
+Open positions carried forward: None
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
