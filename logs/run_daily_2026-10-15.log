@@ -1,0 +1,165 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-15 09:00:09
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22188s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7812.00 H=7966.50 L=7767.50 C=7873.00 V=414270 | 🟢 +0.78%
+  HINDALCO     | O=869.00 H=897.85 L=857.15 C=892.20 V=5407413 | 🟢 +2.67%
+  POWERGRID    | O=248.20 H=251.20 L=247.70 C=248.85 V=11907928 | 🟢 +0.26%
+  EICHERMOT    | O=7082.50 H=7270.50 L=7050.00 C=7212.50 V=406795 | 🟢 +1.84%
+  NTPC         | O=312.95 H=317.95 L=311.80 C=314.00 V=9640143 | 🟢 +0.34%
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹7873.00
+  RSI      : 36.7
+  EMA20    : ₹8207.71
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Engulfing (Chapter 6)
+    Meaning : A large bullish candle completely engulfs the previous bearish candle. Signals strong reversal of downtrend. Bulls have overpowered bears.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✓] Trend filter   -- prior trend 'downtrend' favors this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📉 downtrend
+    Trend aligned: ✅ Yes -- higher conviction
+
+  🎯 Trade Plan:
+    Entry      : ₹7873.00
+    Stop Loss  : ₹7715.54 (-2%)
+    Target 2:1 : ₹8187.92 (+4%)
+    Target 3:1 : ₹8345.38 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹892.20
+  RSI      : 34.9
+  EMA20    : ₹932.68
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹248.85
+  RSI      : 36.2
+  EMA20    : ₹256.21
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹7212.50
+  RSI      : 47.0
+  EMA20    : ₹7213.72
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Engulfing (Chapter 6)
+    Meaning : A large bullish candle completely engulfs the previous bearish candle. Signals strong reversal of downtrend. Bulls have overpowered bears.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'rally' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 rally
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹7212.50
+    Stop Loss  : ₹7068.25 (-2%)
+    Target 2:1 : ₹7501.00 (+4%)
+    Target 3:1 : ₹7645.25 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹314.00
+  RSI      : 39.8
+  EMA20    : ₹318.94
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+🟢 PAPER BUY | APOLLOHOSP @ ₹7873.00 x 3 | SIGNAL | stop@7715.54 | RSI=36.7
+  ℹ️  POWERGRID: SELL signal but no open position — no action (long-only)
+🟢 PAPER BUY | EICHERMOT @ ₹7212.50 x 2 | SIGNAL | stop@7068.25 | RSI=47.0
+  ℹ️  NTPC: SELL signal but no open position — no action (long-only)
+
+✅ Scan complete. Open positions: ['APOLLOHOSP', 'EICHERMOT']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
