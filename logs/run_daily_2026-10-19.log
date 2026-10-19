@@ -1,0 +1,328 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-19 09:00:09
+=======================================================
+Open positions in Supabase: ['APOLLOHOSP', 'EICHERMOT']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 874s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: APOLLOHOSP=₹7869.00, EICHERMOT=₹7370.50
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 19 Oct 2026 03:47:28 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19371,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4ccccc0abfe13f8-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #11: APOLLOHOSP=₹7875.50, EICHERMOT=₹7381.00
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 19 Oct 2026 03:53:41 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19373,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4ccd5d82a4d9675-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: APOLLOHOSP=₹7821.00, EICHERMOT=₹7330.00
+⚠️  No ticks for 61s — next full re-login allowed in 167s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: APOLLOHOSP=₹7815.00, EICHERMOT=₹7343.00
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: APOLLOHOSP=₹7858.50, EICHERMOT=₹7378.00
+⚠️  No ticks for 61s — next full re-login allowed in 705s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: APOLLOHOSP=₹7830.00, EICHERMOT=₹7354.00
+  📡 REST poll #61: APOLLOHOSP=₹7835.50, EICHERMOT=₹7382.50
+⚠️  No ticks for 61s — next full re-login allowed in 85s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: APOLLOHOSP=₹7836.50, EICHERMOT=₹7388.00
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: APOLLOHOSP=₹7815.00, EICHERMOT=₹7364.00
+  📡 REST poll #91: APOLLOHOSP=₹7839.00, EICHERMOT=₹7385.50
+⚠️  No ticks for 61s — next full re-login allowed in 1246s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: APOLLOHOSP=₹7825.00, EICHERMOT=₹7378.50
+  📡 REST poll #111: APOLLOHOSP=₹7832.00, EICHERMOT=₹7383.00
+⚠️  No ticks for 61s — next full re-login allowed in 630s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: APOLLOHOSP=₹7829.00, EICHERMOT=₹7390.50
+  📡 REST poll #131: APOLLOHOSP=₹7824.00, EICHERMOT=₹7393.00
+⚠️  No ticks for 61s — next full re-login allowed in 14s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #141: APOLLOHOSP=₹7823.00, EICHERMOT=₹7390.00
+  📡 REST poll #151: APOLLOHOSP=₹7824.50, EICHERMOT=₹7405.50
+⚠️  No ticks for 61s — next full re-login allowed in 1183s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: APOLLOHOSP=₹7808.00, EICHERMOT=₹7423.50
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #171: APOLLOHOSP=₹7803.00, EICHERMOT=₹7403.00
+⚠️  No ticks for 61s — next full re-login allowed in 569s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: APOLLOHOSP=₹7796.50, EICHERMOT=₹7401.00
+  📡 REST poll #191: APOLLOHOSP=₹7804.00, EICHERMOT=₹7430.50
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 19 Oct 2026 05:26:12 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19255,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a4cd5d61ba6934ab-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: APOLLOHOSP=₹7811.00, EICHERMOT=₹7430.50
+  📡 REST poll #211: APOLLOHOSP=₹7810.50, EICHERMOT=₹7419.00
+⚠️  No ticks for 61s — next full re-login allowed in 1121s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: APOLLOHOSP=₹7815.00, EICHERMOT=₹7430.00
+  📡 REST poll #231: APOLLOHOSP=₹7791.50, EICHERMOT=₹7424.00
+⚠️  No ticks for 61s — next full re-login allowed in 503s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: APOLLOHOSP=₹7794.00, EICHERMOT=₹7420.00
+  📡 REST poll #251: APOLLOHOSP=₹7790.50, EICHERMOT=₹7413.50
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1675s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #261: APOLLOHOSP=₹7788.00, EICHERMOT=₹7407.50
+  📡 REST poll #271: APOLLOHOSP=₹7779.00, EICHERMOT=₹7400.00
+⚠️  No ticks for 61s — next full re-login allowed in 1060s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: APOLLOHOSP=₹7773.50, EICHERMOT=₹7395.00
+  📡 REST poll #291: APOLLOHOSP=₹7778.50, EICHERMOT=₹7404.50
+⚠️  No ticks for 61s — next full re-login allowed in 441s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: APOLLOHOSP=₹7782.50, EICHERMOT=₹7413.00
+  📡 REST poll #311: APOLLOHOSP=₹7782.50, EICHERMOT=₹7410.50
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: APOLLOHOSP=₹7773.00, EICHERMOT=₹7400.00
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: APOLLOHOSP=₹7763.00, EICHERMOT=₹7385.00
+  📡 REST poll #341: APOLLOHOSP=₹7764.50, EICHERMOT=₹7398.00
+⚠️  No ticks for 61s — next full re-login allowed in 997s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: APOLLOHOSP=₹7756.50, EICHERMOT=₹7385.00
+  📡 REST poll #361: APOLLOHOSP=₹7752.00, EICHERMOT=₹7371.00
+⚠️  No ticks for 61s — next full re-login allowed in 382s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: APOLLOHOSP=₹7749.50, EICHERMOT=₹7370.50
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #381: APOLLOHOSP=₹7757.00, EICHERMOT=₹7377.50
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 63s — next full re-login allowed in 1547s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: APOLLOHOSP=₹7754.00, EICHERMOT=₹7368.00
+  📡 REST poll #401: APOLLOHOSP=₹7756.50, EICHERMOT=₹7361.00
+⚠️  No ticks for 61s — next full re-login allowed in 932s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: APOLLOHOSP=₹7745.00, EICHERMOT=₹7382.00
+  📡 REST poll #421: APOLLOHOSP=₹7745.50, EICHERMOT=₹7378.50
+⚠️  No ticks for 61s — next full re-login allowed in 315s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: APOLLOHOSP=₹7744.50, EICHERMOT=₹7371.50
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #441: APOLLOHOSP=₹7736.50, EICHERMOT=₹7370.50
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: APOLLOHOSP=₹7748.00, EICHERMOT=₹7372.50
+  📡 REST poll #461: APOLLOHOSP=₹7747.50, EICHERMOT=₹7370.50
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: APOLLOHOSP=₹7744.50, EICHERMOT=₹7374.00
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #481: APOLLOHOSP=₹7738.00, EICHERMOT=₹7370.50
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: APOLLOHOSP=₹7730.00, EICHERMOT=₹7361.00
+  📡 REST poll #501: APOLLOHOSP=₹7725.00, EICHERMOT=₹7371.00
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: APOLLOHOSP=₹7730.00, EICHERMOT=₹7367.00
+  📡 REST poll #521: APOLLOHOSP=₹7730.00, EICHERMOT=₹7373.50
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: APOLLOHOSP=₹7725.00, EICHERMOT=₹7362.00
+  📡 REST poll #541: APOLLOHOSP=₹7728.00, EICHERMOT=₹7361.00
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: APOLLOHOSP=₹7726.00, EICHERMOT=₹7365.00
+  📡 REST poll #561: APOLLOHOSP=₹7731.00, EICHERMOT=₹7364.50
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: APOLLOHOSP=₹7725.00, EICHERMOT=₹7366.50
+  📡 REST poll #581: APOLLOHOSP=₹7722.50, EICHERMOT=₹7367.50
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: APOLLOHOSP=₹7725.00, EICHERMOT=₹7368.50
+  📡 REST poll #601: APOLLOHOSP=₹7722.00, EICHERMOT=₹7364.50
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: APOLLOHOSP=₹7721.00, EICHERMOT=₹7355.00
+  📡 REST poll #621: APOLLOHOSP=₹7716.50, EICHERMOT=₹7360.50
+🚨 STOP LOSS HIT | APOLLOHOSP @ ₹7713.00 | PnL ₹-480.0
+🔴 PAPER SELL | APOLLOHOSP @ ₹7713.00 x 3 | STOP_LOSS | PnL=₹-480.0
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: EICHERMOT=₹7360.00
+  📡 REST poll #641: EICHERMOT=₹7376.00
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: EICHERMOT=₹7372.50
+  📡 REST poll #661: EICHERMOT=₹7370.00
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: EICHERMOT=₹7382.00
+  📡 REST poll #681: EICHERMOT=₹7363.00
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: EICHERMOT=₹7350.00
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 694 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7880.50 H=7895.00 L=7695.00 C=7694.00 V=386265 | 🔴 -2.37%
+  HINDALCO     | O=908.50 H=916.70 L=899.65 C=900.35 V=1840789 | 🔴 -0.90%
+  POWERGRID    | O=250.00 H=253.35 L=249.15 C=249.60 V=8324260 | 🔴 -0.16%
+  EICHERMOT    | O=7320.00 H=7438.50 L=7308.00 C=7354.00 V=469889 | 🟢 +0.46%
+  NTPC         | O=313.20 H=316.40 L=308.10 C=308.45 V=7398374 | 🔴 -1.52%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ EICHERMOT | low=7308.00 > stop=7068.25 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7694.00
+  RSI      : 33.1
+  EMA20    : ₹8132.70
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹900.35
+  RSI      : 38.6
+  EMA20    : ₹927.60
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹249.60
+  RSI      : 37.8
+  EMA20    : ₹255.16
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  ⚠️  Near-miss only: a bearish pattern fired but the score below didn't reach the 3/5 threshold -- no trade was taken.
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 2/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹7354.00
+  RSI      : 52.7
+  EMA20    : ₹7234.15
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price < EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✓] Trend filter   -- prior trend 'rally' favors this direction
+
+  Conditions met: 4/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 rally
+    Trend aligned: ✅ Yes -- higher conviction
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹308.45
+  RSI      : 34.7
+  EMA20    : ₹317.67
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🔴 PAPER SELL | EICHERMOT @ ₹7354.00 x 2 | SIGNAL_EXIT | PnL=₹283.0
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+
+✅ Market closed. Run ending.
+Open positions carried forward: None
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
