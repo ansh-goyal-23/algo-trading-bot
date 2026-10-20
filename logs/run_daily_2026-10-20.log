@@ -1,0 +1,6 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-20 09:00:09
+=======================================================
+🛑 NSE holiday: Dussehra — market closed today. Skipping run (no monitoring, no scan, no trades).
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
