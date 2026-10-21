@@ -1,0 +1,124 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-21 09:00:07
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22190s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7750.00 H=7780.00 L=7560.00 C=7598.00 V=225810 | 🔴 -1.96%
+  HINDALCO     | O=902.00 H=912.05 L=885.00 C=887.00 V=2932625 | 🔴 -1.66%
+  POWERGRID    | O=253.50 H=253.60 L=246.70 C=248.45 V=9995444 | 🔴 -1.99%
+  EICHERMOT    | O=7360.50 H=7416.00 L=7088.50 C=7116.50 V=541351 | 🔴 -3.31%
+  NTPC         | O=309.00 H=310.45 L=301.10 C=303.15 V=8110522 | 🔴 -1.89%
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7598.00
+  RSI      : 31.3
+  EMA20    : ₹8082.29
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹887.00
+  RSI      : 35.8
+  EMA20    : ₹923.74
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹248.45
+  RSI      : 36.5
+  EMA20    : ₹254.59
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bearish Engulfing (Chapter 6)
+    Meaning : A large bearish candle completely engulfs the previous bullish candle. Signals strong reversal of uptrend. Bears overpowering bulls.
+    Bias    : Strongly Bearish — EXIT signal
+
+  ⚠️  Near-miss only: a bearish pattern fired but the score below didn't reach the 3/5 threshold -- no trade was taken.
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✗] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 2/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹7116.50
+  RSI      : 43.7
+  EMA20    : ₹7222.52
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Bearish Engulfing (Chapter 6)
+    Meaning : A large bearish candle completely engulfs the previous bullish candle. Signals strong reversal of uptrend. Bears overpowering bulls.
+    Bias    : Strongly Bearish — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✓] Trend filter   -- prior trend 'rally' favors this direction
+
+  Conditions met: 5/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 rally
+    Trend aligned: ✅ Yes -- higher conviction
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹303.15
+  RSI      : 30.4
+  EMA20    : ₹316.33
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+  ℹ️  EICHERMOT: SELL signal but no open position — no action (long-only)
+
+✅ Scan complete. Open positions: None
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
