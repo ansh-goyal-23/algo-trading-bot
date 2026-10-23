@@ -1,0 +1,116 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-23 09:00:10
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22188s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7600.00 H=7740.00 L=7550.00 C=7701.50 V=479658 | 🟢 +1.34%
+  HINDALCO     | O=871.05 H=873.75 L=852.00 C=866.75 V=7416215 | 🔴 -0.49%
+  POWERGRID    | O=248.05 H=248.60 L=242.30 C=245.40 V=5274083 | 🔴 -1.07%
+  EICHERMOT    | O=7099.50 H=7100.00 L=6911.00 C=6988.50 V=344622 | 🔴 -1.56%
+  NTPC         | O=302.10 H=302.80 L=292.05 C=295.55 V=8235675 | 🔴 -2.17%
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7701.50
+  RSI      : 35.7
+  EMA20    : ₹8005.01
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹866.75
+  RSI      : 31.7
+  EMA20    : ₹915.48
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Hammer (Chapter 6)
+    Meaning : Small body at top, long lower wick. Sellers pushed price down but buyers recovered strongly. Bullish reversal at support.
+    Bias    : Bullish Reversal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹866.75
+    Stop Loss  : ₹849.41 (-2%)
+    Target 2:1 : ₹901.42 (+4%)
+    Target 3:1 : ₹918.75 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹245.40
+  RSI      : 34.2
+  EMA20    : ₹253.47
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹6988.50
+  RSI      : 39.5
+  EMA20    : ₹7192.55
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹295.55
+  RSI      : 25.2
+  EMA20    : ₹313.16
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🟢 PAPER BUY | HINDALCO @ ₹866.75 x 28 | SIGNAL | stop@849.41 | RSI=31.7
+
+✅ Scan complete. Open positions: ['HINDALCO']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
