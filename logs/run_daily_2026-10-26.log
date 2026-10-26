@@ -1,0 +1,325 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-26 09:00:08
+=======================================================
+Open positions in Supabase: ['HINDALCO']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 26 Oct 2026 03:30:45 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19359,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a50661de5d761242-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 875s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: HINDALCO=₹858.70
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #11: HINDALCO=₹852.90
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: HINDALCO=₹854.40
+⚠️  No ticks for 61s — next full re-login allowed in 166s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: HINDALCO=₹859.10
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 26 Oct 2026 04:03:58 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19571,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a506928aec82616d-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: HINDALCO=₹863.40
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: HINDALCO=₹866.55
+  📡 REST poll #61: HINDALCO=₹871.60
+⚠️  No ticks for 61s — next full re-login allowed in 91s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: HINDALCO=₹871.30
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: HINDALCO=₹880.00
+  📡 REST poll #91: HINDALCO=₹882.40
+⚠️  No ticks for 61s — next full re-login allowed in 1242s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: HINDALCO=₹883.80
+  📡 REST poll #111: HINDALCO=₹883.10
+⚠️  No ticks for 61s — next full re-login allowed in 627s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: HINDALCO=₹886.65
+  📡 REST poll #131: HINDALCO=₹886.35
+⚠️  No ticks for 61s — next full re-login allowed in 13s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #141: HINDALCO=₹885.50
+  📡 REST poll #151: HINDALCO=₹885.60
+⚠️  No ticks for 61s — next full re-login allowed in 1182s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: HINDALCO=₹884.35
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #171: HINDALCO=₹884.70
+⚠️  No ticks for 61s — next full re-login allowed in 566s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: HINDALCO=₹882.95
+  📡 REST poll #191: HINDALCO=₹883.40
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1736s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: HINDALCO=₹883.45
+  📡 REST poll #211: HINDALCO=₹883.35
+⚠️  No ticks for 61s — next full re-login allowed in 1117s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: HINDALCO=₹883.75
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #231: HINDALCO=₹882.60
+⚠️  No ticks for 61s — next full re-login allowed in 500s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: HINDALCO=₹881.80
+  📡 REST poll #251: HINDALCO=₹881.30
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1675s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+  📡 REST poll #261: HINDALCO=₹880.30
+  📡 REST poll #271: HINDALCO=₹878.55
+⚠️  No ticks for 61s — next full re-login allowed in 1059s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: HINDALCO=₹879.15
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #291: HINDALCO=₹879.45
+⚠️  No ticks for 61s — next full re-login allowed in 443s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: HINDALCO=₹878.15
+  📡 REST poll #311: HINDALCO=₹878.75
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Mon, 26 Oct 2026 06:27:53 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19756,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a50765588de40ccc-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: HINDALCO=₹878.25
+⚠️  No ticks for 61s — next full re-login allowed in 1613s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: HINDALCO=₹878.90
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+  📡 REST poll #341: HINDALCO=₹877.90
+⚠️  No ticks for 61s — next full re-login allowed in 996s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: HINDALCO=₹877.05
+  📡 REST poll #361: HINDALCO=₹877.00
+⚠️  No ticks for 61s — next full re-login allowed in 378s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: HINDALCO=₹877.25
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #381: HINDALCO=₹878.35
+⚠️  No ticks for 61s — next full re-login allowed in 1552s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: HINDALCO=₹879.10
+  📡 REST poll #401: HINDALCO=₹878.25
+⚠️  No ticks for 61s — next full re-login allowed in 934s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #411: HINDALCO=₹877.05
+  📡 REST poll #421: HINDALCO=₹876.75
+⚠️  No ticks for 61s — next full re-login allowed in 318s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: HINDALCO=₹876.95
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #441: HINDALCO=₹877.70
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: HINDALCO=₹877.60
+  📡 REST poll #461: HINDALCO=₹878.60
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: HINDALCO=₹879.90
+  📡 REST poll #481: HINDALCO=₹882.40
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+  📡 REST poll #491: HINDALCO=₹883.15
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+  📡 REST poll #501: HINDALCO=₹882.75
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: HINDALCO=₹883.00
+  📡 REST poll #521: HINDALCO=₹883.20
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: HINDALCO=₹885.20
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+  📡 REST poll #541: HINDALCO=₹885.85
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: HINDALCO=₹885.50
+  📡 REST poll #561: HINDALCO=₹885.50
+⚠️  No ticks for 64s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: HINDALCO=₹887.10
+  📡 REST poll #581: HINDALCO=₹889.00
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: HINDALCO=₹887.40
+  📡 REST poll #601: HINDALCO=₹885.80
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: HINDALCO=₹886.05
+  📡 REST poll #621: HINDALCO=₹888.65
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: HINDALCO=₹890.45
+  📡 REST poll #641: HINDALCO=₹890.45
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: HINDALCO=₹890.00
+  📡 REST poll #661: HINDALCO=₹888.20
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: HINDALCO=₹887.40
+  📡 REST poll #681: HINDALCO=₹886.35
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: HINDALCO=₹885.90
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 694 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7719.00 H=7806.50 L=7634.00 C=7802.00 V=404155 | 🟢 +1.08%
+  HINDALCO     | O=862.00 H=891.65 L=851.10 C=886.45 V=3867457 | 🟢 +2.84%
+  POWERGRID    | O=247.30 H=249.85 L=244.60 C=246.15 V=7011803 | 🔴 -0.47%
+  EICHERMOT    | O=7002.00 H=7102.00 L=6931.50 C=7092.50 V=316995 | 🟢 +1.29%
+  NTPC         | O=297.75 H=301.40 L=294.10 C=299.40 V=5850395 | 🟢 +0.55%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ HINDALCO | low=851.10 > stop=849.41 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7802.00
+  RSI      : 39.8
+  EMA20    : ₹7988.13
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹886.45
+  RSI      : 38.5
+  EMA20    : ₹912.99
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Engulfing (Chapter 6)
+    Meaning : A large bullish candle completely engulfs the previous bearish candle. Signals strong reversal of downtrend. Bulls have overpowered bears.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✓] Trend filter   -- prior trend 'pullback' favors this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 pullback
+    Trend aligned: ✅ Yes -- higher conviction
+
+  🎯 Trade Plan:
+    Entry      : ₹886.45
+    Stop Loss  : ₹868.72 (-2%)
+    Target 2:1 : ₹921.91 (+4%)
+    Target 3:1 : ₹939.64 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹246.15
+  RSI      : 34.9
+  EMA20    : ₹252.94
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7092.50
+  RSI      : 43.2
+  EMA20    : ₹7189.70
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹299.40
+  RSI      : 29.2
+  EMA20    : ₹312.06
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+  📡 REST poll #701: HINDALCO=₹888.70
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #711: HINDALCO=₹888.70
+  📡 REST poll #721: HINDALCO=₹888.70
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['HINDALCO']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
