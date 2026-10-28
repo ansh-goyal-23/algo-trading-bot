@@ -1,0 +1,332 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-28 09:00:08
+=======================================================
+Open positions in Supabase: ['HINDALCO', 'POWERGRID', 'EICHERMOT']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 874s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 28 Oct 2026 03:46:25 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19677,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a516f392687a98a7-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: HINDALCO=₹896.75, POWERGRID=₹252.10, EICHERMOT=₹7148.50
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 28 Oct 2026 03:48:31 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19392,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a516f6a71bc5606c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #11: HINDALCO=₹896.75, POWERGRID=₹250.10, EICHERMOT=₹7162.00
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: HINDALCO=₹895.05, POWERGRID=₹249.90, EICHERMOT=₹7161.00
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: HINDALCO=₹896.45, POWERGRID=₹249.25, EICHERMOT=₹7158.50
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: HINDALCO=₹892.70, POWERGRID=₹249.30, EICHERMOT=₹7172.50
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — next full re-login allowed in 707s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  📡 REST poll #51: HINDALCO=₹894.85, POWERGRID=₹250.30, EICHERMOT=₹7175.00
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  📡 REST poll #61: HINDALCO=₹894.95, POWERGRID=₹250.10, EICHERMOT=₹7193.50
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — next full re-login allowed in 94s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: HINDALCO=₹895.10, POWERGRID=₹250.75, EICHERMOT=₹7200.50
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #81: HINDALCO=₹894.50, POWERGRID=₹250.45, EICHERMOT=₹7193.50
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+  📡 REST poll #91: HINDALCO=₹894.05, POWERGRID=₹250.20, EICHERMOT=₹7162.00
+⚠️  No ticks for 61s — next full re-login allowed in 1233s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: HINDALCO=₹894.10, POWERGRID=₹250.15, EICHERMOT=₹7167.50
+  📡 REST poll #111: HINDALCO=₹893.80, POWERGRID=₹249.85, EICHERMOT=₹7164.50
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — next full re-login allowed in 617s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: HINDALCO=₹893.30, POWERGRID=₹249.55, EICHERMOT=₹7163.00
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  📡 REST poll #131: HINDALCO=₹893.30, POWERGRID=₹249.35, EICHERMOT=₹7162.00
+⚠️  No ticks for 61s — next full re-login allowed in 1s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 28 Oct 2026 04:55:25 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19432,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a51758a5b82af60c-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #141: HINDALCO=₹893.35, POWERGRID=₹249.15, EICHERMOT=₹7128.50
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  ⚠️  REST poll issues: HINDALCO: TimeoutError: quotes did not return within 10s; POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #151: HINDALCO=₹892.95, POWERGRID=₹249.70, EICHERMOT=₹7143.00
+⚠️  No ticks for 61s — next full re-login allowed in 1180s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: HINDALCO=₹893.75, POWERGRID=₹249.75, EICHERMOT=₹7149.50
+  📡 REST poll #171: HINDALCO=₹892.80, POWERGRID=₹249.45, EICHERMOT=₹7145.50
+⚠️  No ticks for 61s — next full re-login allowed in 565s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: HINDALCO=₹893.75, POWERGRID=₹249.30, EICHERMOT=₹7154.00
+  📡 REST poll #191: HINDALCO=₹894.05, POWERGRID=₹249.55, EICHERMOT=₹7151.00
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 28 Oct 2026 05:26:15 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19347,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a51785d1dc4f0002-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: HINDALCO=₹894.70, POWERGRID=₹250.45, EICHERMOT=₹7154.00
+  📡 REST poll #211: HINDALCO=₹895.25, POWERGRID=₹251.20, EICHERMOT=₹7193.50
+⚠️  No ticks for 61s — next full re-login allowed in 1121s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: HINDALCO=₹895.10, POWERGRID=₹250.80, EICHERMOT=₹7215.00
+  📡 REST poll #231: HINDALCO=₹894.20, POWERGRID=₹251.25, EICHERMOT=₹7212.00
+⚠️  No ticks for 61s — next full re-login allowed in 506s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: HINDALCO=₹894.30, POWERGRID=₹251.20, EICHERMOT=₹7228.00
+  📡 REST poll #251: HINDALCO=₹894.45, POWERGRID=₹251.45, EICHERMOT=₹7247.50
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1675s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #261: HINDALCO=₹894.55, POWERGRID=₹251.30, EICHERMOT=₹7228.00
+  📡 REST poll #271: HINDALCO=₹894.60, POWERGRID=₹251.90, EICHERMOT=₹7241.00
+⚠️  No ticks for 61s — next full re-login allowed in 1055s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: HINDALCO=₹895.50, POWERGRID=₹251.85, EICHERMOT=₹7235.00
+  📡 REST poll #291: HINDALCO=₹894.35, POWERGRID=₹251.55, EICHERMOT=₹7230.00
+⚠️  No ticks for 61s — next full re-login allowed in 440s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: HINDALCO=₹894.15, POWERGRID=₹251.65, EICHERMOT=₹7216.50
+  📡 REST poll #311: HINDALCO=₹894.30, POWERGRID=₹251.80, EICHERMOT=₹7203.00
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: Handshake status 522 <none> -+-+- {'date': 'Wed, 28 Oct 2026 06:27:54 GMT', 'content-type': 'text/plain; charset=UTF-8', 'content-length': '16', 'connection': 'keep-alive', 'cache-control': 'private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0', 'expires': 'Thu, 01 Jan 1970 00:00:01 GMT', 'referrer-policy': 'same-origin', 'server-timing': 'cfEdge;dur=19613,cfOrigin;dur=0', 'x-frame-options': 'SAMEORIGIN', 'server': 'cloudflare', 'cf-ray': 'a517e0213f09f85e-ORD'} -+-+- b'error code: 522\n'
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: HINDALCO=₹896.15, POWERGRID=₹251.95, EICHERMOT=₹7211.50
+⚠️  No ticks for 61s — next full re-login allowed in 1613s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: HINDALCO=₹896.15, POWERGRID=₹251.95, EICHERMOT=₹7225.00
+  📡 REST poll #341: HINDALCO=₹895.75, POWERGRID=₹251.80, EICHERMOT=₹7235.00
+⚠️  No ticks for 61s — next full re-login allowed in 999s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: HINDALCO=₹895.35, POWERGRID=₹251.55, EICHERMOT=₹7218.00
+  📡 REST poll #361: HINDALCO=₹895.80, POWERGRID=₹251.85, EICHERMOT=₹7219.00
+⚠️  No ticks for 61s — next full re-login allowed in 384s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: HINDALCO=₹896.15, POWERGRID=₹251.90, EICHERMOT=₹7221.00
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #381: HINDALCO=₹895.95, POWERGRID=₹251.90, EICHERMOT=₹7222.50
+⚠️  No ticks for 61s — next full re-login allowed in 1552s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: HINDALCO=₹896.05, POWERGRID=₹251.90, EICHERMOT=₹7218.50
+  📡 REST poll #401: HINDALCO=₹898.15, POWERGRID=₹252.10, EICHERMOT=₹7224.50
+⚠️  No ticks for 61s — next full re-login allowed in 932s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #411: HINDALCO=₹899.00, POWERGRID=₹252.25, EICHERMOT=₹7239.00
+  📡 REST poll #421: HINDALCO=₹898.60, POWERGRID=₹252.40, EICHERMOT=₹7239.00
+⚠️  No ticks for 61s — next full re-login allowed in 318s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: HINDALCO=₹899.30, POWERGRID=₹252.60, EICHERMOT=₹7272.50
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #441: HINDALCO=₹900.70, POWERGRID=₹253.15, EICHERMOT=₹7281.00
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: HINDALCO=₹899.65, POWERGRID=₹252.70, EICHERMOT=₹7263.00
+  📡 REST poll #461: HINDALCO=₹898.75, POWERGRID=₹252.55, EICHERMOT=₹7260.50
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: HINDALCO=₹898.10, POWERGRID=₹252.15, EICHERMOT=₹7251.00
+  📡 REST poll #481: HINDALCO=₹897.05, POWERGRID=₹251.85, EICHERMOT=₹7251.50
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: HINDALCO=₹896.95, POWERGRID=₹251.70, EICHERMOT=₹7236.00
+  📡 REST poll #501: HINDALCO=₹898.50, POWERGRID=₹252.20, EICHERMOT=₹7248.00
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: HINDALCO=₹898.25, POWERGRID=₹252.30, EICHERMOT=₹7255.00
+  📡 REST poll #521: HINDALCO=₹897.35, POWERGRID=₹252.15, EICHERMOT=₹7250.50
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: HINDALCO=₹897.80, POWERGRID=₹252.25, EICHERMOT=₹7254.50
+  📡 REST poll #541: HINDALCO=₹897.50, POWERGRID=₹251.90, EICHERMOT=₹7237.00
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: HINDALCO=₹897.15, POWERGRID=₹251.95, EICHERMOT=₹7245.50
+  📡 REST poll #561: HINDALCO=₹896.70, POWERGRID=₹251.70, EICHERMOT=₹7240.00
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: HINDALCO=₹896.80, POWERGRID=₹251.75, EICHERMOT=₹7241.00
+  📡 REST poll #581: HINDALCO=₹897.05, POWERGRID=₹251.35, EICHERMOT=₹7243.50
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: HINDALCO=₹896.50, POWERGRID=₹251.70, EICHERMOT=₹7240.00
+  📡 REST poll #601: HINDALCO=₹894.70, POWERGRID=₹251.85, EICHERMOT=₹7231.50
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: HINDALCO=₹894.50, POWERGRID=₹251.85, EICHERMOT=₹7239.50
+  📡 REST poll #621: HINDALCO=₹894.25, POWERGRID=₹251.85, EICHERMOT=₹7241.50
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: HINDALCO=₹892.70, POWERGRID=₹251.30, EICHERMOT=₹7226.50
+  📡 REST poll #641: HINDALCO=₹891.95, POWERGRID=₹251.60, EICHERMOT=₹7230.00
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: HINDALCO=₹892.55, POWERGRID=₹251.95, EICHERMOT=₹7235.50
+  📡 REST poll #661: HINDALCO=₹892.45, POWERGRID=₹252.05, EICHERMOT=₹7236.50
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: HINDALCO=₹891.60, POWERGRID=₹252.05, EICHERMOT=₹7233.50
+  📡 REST poll #681: HINDALCO=₹890.95, POWERGRID=₹251.90, EICHERMOT=₹7248.00
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: HINDALCO=₹891.90, POWERGRID=₹252.10, EICHERMOT=₹7229.50
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 694 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=7800.00 H=8149.50 L=7714.50 C=8141.50 V=714271 | 🟢 +4.38%
+  HINDALCO     | O=895.00 H=901.00 L=890.45 C=892.25 V=2715956 | 🔴 -0.31%
+  POWERGRID    | O=254.10 H=254.10 L=248.80 C=252.10 V=5030968 | 🔴 -0.79%
+  EICHERMOT    | O=7140.00 H=7283.50 L=7124.50 C=7229.00 V=343331 | 🟢 +1.25%
+  NTPC         | O=302.05 H=304.90 L=299.40 C=303.30 V=6886477 | 🟢 +0.41%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ HINDALCO | low=890.45 > stop=849.41 — position safe
+  ✅ POWERGRID | low=248.80 > stop=247.99 — position safe
+  ✅ EICHERMOT | low=7124.50 > stop=7020.72 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8141.50
+  RSI      : 51.7
+  EMA20    : ₹7989.07
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹892.25
+  RSI      : 40.6
+  EMA20    : ₹909.07
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price < EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹252.10
+  RSI      : 45.6
+  EMA20    : ₹252.83
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7229.00
+  RSI      : 49.7
+  EMA20    : ₹7191.86
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹303.30
+  RSI      : 36.0
+  EMA20    : ₹310.39
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🔴 PAPER SELL | HINDALCO @ ₹892.25 x 28 | SIGNAL_EXIT | PnL=₹714.0
+  📡 REST poll #701: POWERGRID=₹252.15, EICHERMOT=₹7242.50
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #711: POWERGRID=₹252.45, EICHERMOT=₹7280.00
+  📡 REST poll #721: POWERGRID=₹252.45, EICHERMOT=₹7280.00
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #731: POWERGRID=₹251.40, EICHERMOT=₹7300.00
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['POWERGRID', 'EICHERMOT']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
