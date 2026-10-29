@@ -1,0 +1,280 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-29 09:00:08
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'EICHERMOT']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  No ticks for 875s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹254.00, EICHERMOT=₹7247.00
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #11: POWERGRID=₹253.30, EICHERMOT=₹7265.50
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹254.80, EICHERMOT=₹7251.50
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹254.95, EICHERMOT=₹7255.00
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹254.85, EICHERMOT=₹7265.50
+⚠️  No ticks for 61s — next full re-login allowed in 707s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹255.20, EICHERMOT=₹7259.50
+  📡 REST poll #61: POWERGRID=₹255.35, EICHERMOT=₹7256.00
+⚠️  No ticks for 61s — next full re-login allowed in 92s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹255.90, EICHERMOT=₹7285.00
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹256.05, EICHERMOT=₹7277.00
+  📡 REST poll #91: POWERGRID=₹256.35, EICHERMOT=₹7288.50
+⚠️  No ticks for 61s — next full re-login allowed in 1241s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: POWERGRID=₹256.45, EICHERMOT=₹7280.00
+  📡 REST poll #111: POWERGRID=₹258.30, EICHERMOT=₹7273.50
+⚠️  No ticks for 61s — next full re-login allowed in 626s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹259.10, EICHERMOT=₹7276.50
+  📡 REST poll #131: POWERGRID=₹259.00, EICHERMOT=₹7266.50
+⚠️  No ticks for 61s — next full re-login allowed in 12s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #141: POWERGRID=₹259.85, EICHERMOT=₹7275.50
+  📡 REST poll #151: POWERGRID=₹260.20, EICHERMOT=₹7271.00
+⚠️  No ticks for 61s — next full re-login allowed in 1182s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹260.10, EICHERMOT=₹7263.00
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #171: POWERGRID=₹259.20, EICHERMOT=₹7266.00
+⚠️  No ticks for 64s — next full re-login allowed in 567s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹259.60, EICHERMOT=₹7261.50
+  📡 REST poll #191: POWERGRID=₹259.80, EICHERMOT=₹7242.00
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1736s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: POWERGRID=₹260.20, EICHERMOT=₹7227.00
+  📡 REST poll #211: POWERGRID=₹260.15, EICHERMOT=₹7231.00
+⚠️  No ticks for 61s — next full re-login allowed in 1120s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: POWERGRID=₹260.30, EICHERMOT=₹7218.00
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #231: POWERGRID=₹260.45, EICHERMOT=₹7227.00
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — next full re-login allowed in 503s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: POWERGRID=₹260.85, EICHERMOT=₹7246.00
+  📡 REST poll #251: POWERGRID=₹261.25, EICHERMOT=₹7236.50
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  No ticks for 61s — next full re-login allowed in 1674s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #261: POWERGRID=₹261.05, EICHERMOT=₹7244.50
+  📡 REST poll #271: POWERGRID=₹261.30, EICHERMOT=₹7246.50
+⚠️  No ticks for 61s — next full re-login allowed in 1055s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: POWERGRID=₹260.90, EICHERMOT=₹7224.00
+  📡 REST poll #291: POWERGRID=₹261.20, EICHERMOT=₹7225.00
+⚠️  No ticks for 61s — next full re-login allowed in 443s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: POWERGRID=₹260.95, EICHERMOT=₹7221.50
+  📡 REST poll #311: POWERGRID=₹261.20, EICHERMOT=₹7234.00
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #321: POWERGRID=₹261.15, EICHERMOT=₹7239.50
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: POWERGRID=₹261.65, EICHERMOT=₹7245.50
+  📡 REST poll #341: POWERGRID=₹261.75, EICHERMOT=₹7268.00
+⚠️  No ticks for 61s — next full re-login allowed in 998s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #351: POWERGRID=₹261.55, EICHERMOT=₹7248.00
+  📡 REST poll #361: POWERGRID=₹261.65, EICHERMOT=₹7224.00
+⚠️  No ticks for 61s — next full re-login allowed in 383s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: POWERGRID=₹261.80, EICHERMOT=₹7221.50
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #381: POWERGRID=₹261.35, EICHERMOT=₹7227.00
+⚠️  No ticks for 61s — next full re-login allowed in 1548s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: POWERGRID=₹261.50, EICHERMOT=₹7234.50
+  📡 REST poll #401: POWERGRID=₹261.40, EICHERMOT=₹7232.50
+⚠️  No ticks for 61s — next full re-login allowed in 933s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #411: POWERGRID=₹261.20, EICHERMOT=₹7228.50
+  📡 REST poll #421: POWERGRID=₹260.55, EICHERMOT=₹7230.00
+⚠️  No ticks for 61s — next full re-login allowed in 317s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: POWERGRID=₹260.85, EICHERMOT=₹7230.00
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+  📡 REST poll #441: POWERGRID=₹261.15, EICHERMOT=₹7231.50
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: POWERGRID=₹260.70, EICHERMOT=₹7234.50
+  📡 REST poll #461: POWERGRID=₹260.65, EICHERMOT=₹7235.00
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: POWERGRID=₹260.50, EICHERMOT=₹7240.00
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno 110] Connection timed out
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #481: POWERGRID=₹260.50, EICHERMOT=₹7234.50
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: POWERGRID=₹260.80, EICHERMOT=₹7238.00
+  📡 REST poll #501: POWERGRID=₹260.00, EICHERMOT=₹7235.50
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: POWERGRID=₹260.35, EICHERMOT=₹7244.00
+  📡 REST poll #521: POWERGRID=₹260.50, EICHERMOT=₹7238.50
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: POWERGRID=₹260.30, EICHERMOT=₹7235.50
+  📡 REST poll #541: POWERGRID=₹260.40, EICHERMOT=₹7237.50
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: POWERGRID=₹260.30, EICHERMOT=₹7229.50
+  📡 REST poll #561: POWERGRID=₹260.65, EICHERMOT=₹7235.50
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: POWERGRID=₹260.50, EICHERMOT=₹7245.00
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 615, in run_full_day_monitor
+    _held = [s_ for s_ in store.load_positions() if s_ in sym_to_inst]
+                          ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/state_store.py", line 81, in load_positions
+    rows = _get("positions", params={"select": "*"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/state_store.py", line 53, in _get
+    r = requests.get(f"{_base_url()}/{table}", headers=_headers(), params=params, timeout=_TIMEOUT)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
