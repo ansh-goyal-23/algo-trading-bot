@@ -1,0 +1,323 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-10-30 09:00:09
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'EICHERMOT']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 875s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹261.05, EICHERMOT=₹7266.50
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 236s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: POWERGRID=₹261.65, EICHERMOT=₹7245.50
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹262.45, EICHERMOT=₹7232.00
+🎯 TARGET 1 HIT (+4%) | POWERGRID @ ₹263.25 | Selling 37 shares | PnL ₹377.4
+🔴 PAPER SELL | POWERGRID @ ₹263.25 x 37 | TARGET_1_PARTIAL | PnL=₹377.4 | stop moved to breakeven
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: EICHERMOT=₹7263.00, POWERGRID=₹262.75
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: EICHERMOT=₹7253.00, POWERGRID=₹262.95
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: EICHERMOT=₹7287.00, POWERGRID=₹262.65
+  📡 REST poll #61: EICHERMOT=₹7259.00, POWERGRID=₹262.80
+⚠️  No ticks for 65s — next full re-login allowed in 86s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: EICHERMOT=₹7263.50, POWERGRID=₹262.90
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: EICHERMOT=₹7256.00, POWERGRID=₹261.90
+  📡 REST poll #91: EICHERMOT=₹7256.50, POWERGRID=₹261.25
+⚠️  No ticks for 61s — next full re-login allowed in 1244s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: EICHERMOT=₹7256.00, POWERGRID=₹261.80
+  📡 REST poll #111: EICHERMOT=₹7237.50, POWERGRID=₹261.55
+⚠️  No ticks for 61s — next full re-login allowed in 629s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: EICHERMOT=₹7236.00, POWERGRID=₹260.80
+  📡 REST poll #131: EICHERMOT=₹7240.00, POWERGRID=₹261.25
+⚠️  No ticks for 61s — next full re-login allowed in 15s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: EICHERMOT=₹7250.00, POWERGRID=₹261.50
+  📡 REST poll #151: EICHERMOT=₹7254.50, POWERGRID=₹262.20
+⚠️  No ticks for 61s — next full re-login allowed in 1182s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: EICHERMOT=₹7262.00, POWERGRID=₹264.75
+  📡 REST poll #171: EICHERMOT=₹7258.00, POWERGRID=₹265.10
+⚠️  No ticks for 61s — next full re-login allowed in 563s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: EICHERMOT=₹7252.50, POWERGRID=₹264.70
+  📡 REST poll #191: EICHERMOT=₹7257.50, POWERGRID=₹264.90
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: EICHERMOT=₹7278.00, POWERGRID=₹265.55
+  📡 REST poll #211: EICHERMOT=₹7288.50, POWERGRID=₹266.40
+⚠️  No ticks for 61s — next full re-login allowed in 1119s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: EICHERMOT=₹7288.00, POWERGRID=₹266.55
+  📡 REST poll #231: EICHERMOT=₹7292.00, POWERGRID=₹265.40
+⚠️  No ticks for 61s — next full re-login allowed in 503s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: EICHERMOT=₹7291.00, POWERGRID=₹266.65
+  📡 REST poll #251: EICHERMOT=₹7322.00, POWERGRID=₹267.05
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1676s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+  📡 REST poll #261: EICHERMOT=₹7315.00, POWERGRID=₹265.95
+  📡 REST poll #271: EICHERMOT=₹7325.00, POWERGRID=₹266.40
+⚠️  No ticks for 61s — next full re-login allowed in 1056s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: EICHERMOT=₹7320.50, POWERGRID=₹266.30
+  📡 REST poll #291: EICHERMOT=₹7315.50, POWERGRID=₹266.00
+⚠️  No ticks for 61s — next full re-login allowed in 441s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: EICHERMOT=₹7314.00, POWERGRID=₹266.85
+  📡 REST poll #311: EICHERMOT=₹7316.00, POWERGRID=₹266.30
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: EICHERMOT=₹7335.00, POWERGRID=₹266.20
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: EICHERMOT=₹7331.00, POWERGRID=₹266.90
+  📡 REST poll #341: EICHERMOT=₹7324.00, POWERGRID=₹266.75
+⚠️  No ticks for 61s — next full re-login allowed in 998s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: EICHERMOT=₹7322.00, POWERGRID=₹266.50
+  ⚠️  REST poll issues: POWERGRID: TimeoutError: quotes did not return within 10s
+  📡 REST poll #361: EICHERMOT=₹7339.00, POWERGRID=₹266.80
+⚠️  No ticks for 61s — next full re-login allowed in 380s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: EICHERMOT=₹7332.00, POWERGRID=₹266.60
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #381: EICHERMOT=₹7324.00, POWERGRID=₹266.40
+⚠️  No ticks for 61s — next full re-login allowed in 1552s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: EICHERMOT=₹7324.50, POWERGRID=₹266.40
+  📡 REST poll #401: EICHERMOT=₹7320.50, POWERGRID=₹266.35
+⚠️  No ticks for 61s — next full re-login allowed in 933s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: EICHERMOT=₹7338.50, POWERGRID=₹266.00
+  📡 REST poll #421: EICHERMOT=₹7329.00, POWERGRID=₹266.10
+⚠️  No ticks for 61s — next full re-login allowed in 317s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: EICHERMOT=₹7332.50, POWERGRID=₹266.10
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #441: EICHERMOT=₹7327.50, POWERGRID=₹265.90
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: EICHERMOT=₹7322.00, POWERGRID=₹265.85
+  📡 REST poll #461: EICHERMOT=₹7322.00, POWERGRID=₹266.15
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: EICHERMOT=₹7315.00, POWERGRID=₹265.75
+  📡 REST poll #481: EICHERMOT=₹7296.00, POWERGRID=₹265.40
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: EICHERMOT=₹7280.50, POWERGRID=₹265.05
+  📡 REST poll #501: EICHERMOT=₹7277.50, POWERGRID=₹264.70
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: EICHERMOT=₹7273.00, POWERGRID=₹264.45
+  📡 REST poll #521: EICHERMOT=₹7271.00, POWERGRID=₹264.40
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: EICHERMOT=₹7272.50, POWERGRID=₹264.00
+  📡 REST poll #541: EICHERMOT=₹7288.00, POWERGRID=₹263.60
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: EICHERMOT=₹7269.00, POWERGRID=₹262.80
+  📡 REST poll #561: EICHERMOT=₹7258.00, POWERGRID=₹262.55
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: EICHERMOT=₹7255.00, POWERGRID=₹263.10
+  📡 REST poll #581: EICHERMOT=₹7264.00, POWERGRID=₹263.35
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: EICHERMOT=₹7259.00, POWERGRID=₹263.30
+  📡 REST poll #601: EICHERMOT=₹7260.00, POWERGRID=₹263.10
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: EICHERMOT=₹7255.50, POWERGRID=₹263.10
+  📡 REST poll #621: EICHERMOT=₹7245.00, POWERGRID=₹262.90
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: EICHERMOT=₹7233.00, POWERGRID=₹263.00
+  📡 REST poll #641: EICHERMOT=₹7229.50, POWERGRID=₹262.95
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: EICHERMOT=₹7226.50, POWERGRID=₹262.20
+  📡 REST poll #661: EICHERMOT=₹7216.50, POWERGRID=₹262.75
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: EICHERMOT=₹7216.50, POWERGRID=₹263.20
+  📡 REST poll #681: EICHERMOT=₹7214.50, POWERGRID=₹263.15
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: EICHERMOT=₹7210.50, POWERGRID=₹263.40
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 693 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=8195.00 H=8348.00 L=8176.00 C=8335.50 V=333576 | 🟢 +1.71%
+  HINDALCO     | O=882.30 H=892.50 L=876.10 C=885.00 V=2286755 | 🟢 +0.31%
+  POWERGRID    | O=260.05 H=267.30 L=259.25 C=263.45 V=12040172 | 🟢 +1.31%
+  EICHERMOT    | O=7239.00 H=7343.00 L=7203.00 C=7211.00 V=344079 | 🔴 -0.39%
+  NTPC         | O=310.50 H=318.00 L=308.15 C=316.30 V=14466581 | 🟢 +1.87%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ EICHERMOT | low=7203.00 > stop=7020.72 — position safe
+  ✅ POWERGRID | low=259.25 > stop=253.30 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8335.50
+  RSI      : 57.0
+  EMA20    : ₹8039.89
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹885.00
+  RSI      : 38.9
+  EMA20    : ₹904.93
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹263.45
+  RSI      : 61.0
+  EMA20    : ₹254.40
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7211.00
+  RSI      : 48.7
+  EMA20    : ₹7203.19
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  ⚠️  Near-miss only: a bearish pattern fired but the score below didn't reach the 3/5 threshold -- no trade was taken.
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price < EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 2/5 (⚠️  Weak signal)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹316.30
+  RSI      : 53.4
+  EMA20    : ₹311.00
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+  📡 REST poll #701: EICHERMOT=₹7206.00, POWERGRID=₹263.15
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #711: EICHERMOT=₹7206.50, POWERGRID=₹263.00
+  📡 REST poll #721: EICHERMOT=₹7206.50, POWERGRID=₹263.00
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #731: EICHERMOT=₹7220.00, POWERGRID=₹265.00
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['EICHERMOT', 'POWERGRID']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
