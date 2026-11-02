@@ -1,0 +1,272 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-02 09:00:08
+=======================================================
+Open positions in Supabase: ['EICHERMOT', 'POWERGRID']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 872s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: EICHERMOT=₹7253.50, POWERGRID=₹268.00
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+🎯 TARGET 2 HIT (+6%) | POWERGRID @ ₹268.70 | Full exit | PnL ₹594.7
+🔴 PAPER SELL | POWERGRID @ ₹268.70 x 38 | TARGET_2_FULL | PnL=₹594.7
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: EICHERMOT=₹7267.00
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: EICHERMOT=₹7218.00
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: EICHERMOT=₹7195.00
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: EICHERMOT=₹7178.00
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: EICHERMOT=₹7144.00
+  📡 REST poll #61: EICHERMOT=₹7173.00
+⚠️  No ticks for 61s — next full re-login allowed in 87s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: EICHERMOT=₹7189.00
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: EICHERMOT=₹7189.50
+  📡 REST poll #91: EICHERMOT=₹7182.00
+⚠️  No ticks for 61s — next full re-login allowed in 1244s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: EICHERMOT=₹7194.00
+  📡 REST poll #111: EICHERMOT=₹7205.00
+⚠️  No ticks for 61s — next full re-login allowed in 627s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: EICHERMOT=₹7200.00
+  📡 REST poll #131: EICHERMOT=₹7195.00
+⚠️  No ticks for 61s — next full re-login allowed in 11s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: EICHERMOT=₹7190.50
+  📡 REST poll #151: EICHERMOT=₹7182.50
+⚠️  No ticks for 61s — next full re-login allowed in 1181s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: EICHERMOT=₹7185.00
+  📡 REST poll #171: EICHERMOT=₹7186.00
+⚠️  No ticks for 61s — next full re-login allowed in 564s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: EICHERMOT=₹7165.00
+  📡 REST poll #191: EICHERMOT=₹7167.00
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1736s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: EICHERMOT=₹7166.00
+  📡 REST poll #211: EICHERMOT=₹7171.50
+⚠️  No ticks for 61s — next full re-login allowed in 1120s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: EICHERMOT=₹7170.00
+  📡 REST poll #231: EICHERMOT=₹7188.00
+⚠️  No ticks for 61s — next full re-login allowed in 502s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: EICHERMOT=₹7185.50
+  📡 REST poll #251: EICHERMOT=₹7179.00
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1675s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+  📡 REST poll #261: EICHERMOT=₹7179.00
+  📡 REST poll #271: EICHERMOT=₹7176.00
+⚠️  No ticks for 61s — next full re-login allowed in 1059s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: EICHERMOT=₹7179.50
+  📡 REST poll #291: EICHERMOT=₹7189.00
+⚠️  No ticks for 61s — next full re-login allowed in 443s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: EICHERMOT=₹7177.00
+  📡 REST poll #311: EICHERMOT=₹7188.00
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: EICHERMOT=₹7183.00
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: EICHERMOT=₹7180.00
+  📡 REST poll #341: EICHERMOT=₹7186.50
+⚠️  No ticks for 61s — next full re-login allowed in 997s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: EICHERMOT=₹7183.50
+  📡 REST poll #361: EICHERMOT=₹7176.00
+⚠️  No ticks for 61s — next full re-login allowed in 380s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: EICHERMOT=₹7183.00
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #381: EICHERMOT=₹7188.00
+⚠️  No ticks for 61s — next full re-login allowed in 1550s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  ⚠️  REST poll issues: EICHERMOT: TimeoutError: quotes did not return within 10s
+  📡 REST poll #391: EICHERMOT=₹7188.00
+  📡 REST poll #401: EICHERMOT=₹7187.00
+⚠️  No ticks for 61s — next full re-login allowed in 936s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: EICHERMOT=₹7181.00
+  📡 REST poll #421: EICHERMOT=₹7183.50
+⚠️  No ticks for 61s — next full re-login allowed in 321s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+ERROR msg (0)
+Reason: ConnectionError
+HTTPSConnectionPool(host='e22.kotaksecurities.com', port=443): Max retries exceeded with url: /script-details/1.0/quotes/neosymbol/nse_cm%7C910/ltp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+ERROR msg (0)
+Reason: ConnectionError
+HTTPSConnectionPool(host='e22.kotaksecurities.com', port=443): Max retries exceeded with url: /script-details/1.0/quotes/neosymbol/nse_cm%7C910/ltp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+ERROR msg (0)
+Reason: ConnectionError
+HTTPSConnectionPool(host='e22.kotaksecurities.com', port=443): Max retries exceeded with url: /script-details/1.0/quotes/neosymbol/nse_cm%7C910/ltp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 95, in create_connection
+    raise err
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/connection.py", line 85, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 358, in connect
+    self.sock = conn = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='e22.kotaksecurities.com', port=443): Max retries exceeded with url: /script-details/1.0/quotes/neosymbol/nse_cm%7C910/ltp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 71, in request
+    response = requests.get(url=url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='e22.kotaksecurities.com', port=443): Max retries exceeded with url: /script-details/1.0/quotes/neosymbol/nse_cm%7C910/ltp (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fcd717ca890>: Failed to establish a new connection: [Errno 101] Network is unreachable'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 145, in poll
+    px = fetch_ltp(sym)
+         ^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 499, in rest_ltp
+    resp = rest_fallback.call_with_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 64, in call_with_timeout
+    raise box["error"]
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 54, in runner
+    box["value"] = fn(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/neo_api.py", line 823, in quotes
+    quotes_response = neo_api_client.QuotesAPI(self.api_client).get_quotes(instrument_tokens=instrument_tokens, quote_type=quote_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/api/quotes_neo_symbol_api.py", line 23, in get_quotes
+    quotes = self.rest_client.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 77, in request
+    raise ApiException(status=0, reason=msg)
+neo_api_client.exceptions.ApiException: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 617, in run_full_day_monitor
+    _prices = rest.poll(_t, _held, rest_ltp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 147, in poll
+    self.last_errors.append(f"{sym}: {type(e).__name__}: {e}")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
