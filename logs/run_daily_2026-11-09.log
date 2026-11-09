@@ -1,0 +1,112 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-09 09:00:09
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22181s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=8499.00 H=8575.00 L=8457.00 C=8499.50 V=465424 | 🟢 +0.01%
+  HINDALCO     | O=947.90 H=967.70 L=919.30 C=964.70 V=8504006 | 🟢 +1.77%
+  POWERGRID    | O=261.00 H=262.00 L=257.00 C=257.95 V=12220075 | 🔴 -1.17%
+  EICHERMOT    | O=7651.00 H=7661.50 L=7554.00 C=7629.00 V=349641 | 🔴 -0.29%
+  NTPC         | O=323.10 H=328.00 L=322.10 C=326.70 V=8908618 | 🟢 +1.11%
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8499.50
+  RSI      : 58.3
+  EMA20    : ₹8239.55
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹964.70
+  RSI      : 63.6
+  EMA20    : ₹921.02
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹257.95
+  RSI      : 53.9
+  EMA20    : ₹255.04
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹7629.00
+  RSI      : 62.3
+  EMA20    : ₹7355.11
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Hanging Man (Chapter 6)
+    Meaning : Hammer shape appearing in an uptrend. Warning that bulls are losing control. Potential top formation.
+    Bias    : Bearish Warning — EXIT signal
+    Pattern : Bearish Harami (Chapter 7)
+    Meaning : Small bearish candle inside a larger bullish candle. Uptrend losing momentum. Early reversal warning.
+    Bias    : Mildly Bearish — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price < EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✓] Trend filter   -- prior trend 'rally' favors this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 rally
+    Trend aligned: ✅ Yes -- higher conviction
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹326.70
+  RSI      : 63.2
+  EMA20    : ₹313.71
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+  ℹ️  EICHERMOT: SELL signal but no open position — no action (long-only)
+
+✅ Scan complete. Open positions: None
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
