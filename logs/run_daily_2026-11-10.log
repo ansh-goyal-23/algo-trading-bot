@@ -1,0 +1,6 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-10 09:00:11
+=======================================================
+🛑 NSE holiday: Diwali (Balipratipada) — market closed today. Skipping run (no monitoring, no scan, no trades).
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
