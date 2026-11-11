@@ -1,0 +1,126 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-11 09:00:09
+=======================================================
+Open positions in Supabase: None
+No open positions — waiting 22188s until the 15:10:00 signal window...
+Logged in successfully
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=8595.00 H=8595.00 L=8477.00 C=8505.00 V=377016 | 🔴 -1.05%
+  HINDALCO     | O=946.05 H=965.25 L=946.00 C=957.40 V=9317923 | 🟢 +1.20%
+  POWERGRID    | O=262.20 H=266.50 L=261.25 C=263.15 V=12009323 | 🟢 +0.36%
+  EICHERMOT    | O=7761.00 H=7837.00 L=7510.00 C=7552.50 V=652908 | 🔴 -2.69%
+  NTPC         | O=328.50 H=333.85 L=325.75 C=326.35 V=14981102 | 🔴 -0.65%
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8505.00
+  RSI      : 57.9
+  EMA20    : ₹8269.14
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹957.40
+  RSI      : 61.4
+  EMA20    : ₹924.08
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹263.15
+  RSI      : 59.6
+  EMA20    : ₹255.81
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price < EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹7552.50
+  RSI      : 58.4
+  EMA20    : ₹7373.91
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : 🔴 SELL/EXIT
+  Price    : ₹326.35
+  RSI      : 61.6
+  EMA20    : ₹315.09
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Shooting Star (Chapter 6)
+    Meaning : Small body at bottom, long upper wick. Buyers tried to push price up but sellers crushed the rally. Bearish reversal at resistance.
+    Bias    : Bearish Reversal — EXIT signal
+    Pattern : Bearish Harami (Chapter 7)
+    Meaning : Small bearish candle inside a larger bullish candle. Uptrend losing momentum. Early reversal warning.
+    Bias    : Mildly Bearish — EXIT signal
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price < EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI > 40 → momentum not yet oversold enough to hold
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✓] Trend filter   -- prior trend 'uptrend' favors this direction
+
+  Conditions met: 4/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📈 uptrend
+    Trend aligned: ✅ Yes -- higher conviction
+
+
+  ℹ️  POWERGRID: SELL signal but no open position — no action (long-only)
+  ℹ️  NTPC: SELL signal but no open position — no action (long-only)
+
+✅ Scan complete. Open positions: None
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
