@@ -1,0 +1,190 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-17 09:00:07
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'NTPC']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 877s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹260.30, NTPC=₹320.95
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 236s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: POWERGRID=₹261.10, NTPC=₹321.10
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹260.80, NTPC=₹320.35
+⚠️  No ticks for 61s — next full re-login allowed in 167s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹260.40, NTPC=₹320.30
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹259.70, NTPC=₹319.30
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹260.35, NTPC=₹320.00
+  📡 REST poll #61: POWERGRID=₹260.35, NTPC=₹320.10
+⚠️  No ticks for 61s — next full re-login allowed in 93s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹260.05, NTPC=₹319.85
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹259.90, NTPC=₹319.90
+  📡 REST poll #91: POWERGRID=₹259.75, NTPC=₹319.55
+⚠️  No ticks for 61s — next full re-login allowed in 1242s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: POWERGRID=₹259.55, NTPC=₹319.35
+  📡 REST poll #111: POWERGRID=₹259.40, NTPC=₹319.10
+⚠️  No ticks for 61s — next full re-login allowed in 629s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹259.95, NTPC=₹319.55
+  📡 REST poll #131: POWERGRID=₹260.05, NTPC=₹320.10
+⚠️  No ticks for 61s — next full re-login allowed in 13s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: POWERGRID=₹259.85, NTPC=₹319.85
+  📡 REST poll #151: POWERGRID=₹258.80, NTPC=₹319.45
+⚠️  No ticks for 61s — next full re-login allowed in 1186s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹258.40, NTPC=₹319.40
+  📡 REST poll #171: POWERGRID=₹258.55, NTPC=₹319.25
+⚠️  No ticks for 61s — next full re-login allowed in 571s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹258.60, NTPC=₹319.30
+  📡 REST poll #191: POWERGRID=₹258.65, NTPC=₹319.45
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: POWERGRID=₹258.50, NTPC=₹319.30
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1403, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 323, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 284, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1324, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1180, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/packages/six.py", line 770, in reraise
+    raise value
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 451, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='itenopojyephpeuzwaho.supabase.co', port=443): Read timed out. (read timeout=15)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 619, in run_full_day_monitor
+    check_stop_loss(_sym, _px)
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 507, in check_stop_loss
+    _check_stop_loss_impl(symbol, ltp)
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 510, in _check_stop_loss_impl
+    positions = store.load_positions()
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/state_store.py", line 81, in load_positions
+    rows = _get("positions", params={"select": "*"})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/state_store.py", line 53, in _get
+    r = requests.get(f"{_base_url()}/{table}", headers=_headers(), params=params, timeout=_TIMEOUT)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 713, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='itenopojyephpeuzwaho.supabase.co', port=443): Read timed out. (read timeout=15)
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
