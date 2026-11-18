@@ -1,0 +1,317 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-18 09:00:09
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'NTPC']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 875s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹257.95, NTPC=₹319.85
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: POWERGRID=₹257.65, NTPC=₹319.40
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹256.75, NTPC=₹318.50
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹256.85, NTPC=₹318.20
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹256.60, NTPC=₹318.10
+⚠️  No ticks for 61s — next full re-login allowed in 708s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹256.35, NTPC=₹318.00
+  📡 REST poll #61: POWERGRID=₹256.30, NTPC=₹318.65
+⚠️  No ticks for 61s — next full re-login allowed in 94s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹256.25, NTPC=₹319.00
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹256.55, NTPC=₹319.05
+  📡 REST poll #91: POWERGRID=₹256.95, NTPC=₹320.10
+⚠️  No ticks for 61s — next full re-login allowed in 1242s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: POWERGRID=₹257.10, NTPC=₹319.75
+  📡 REST poll #111: POWERGRID=₹257.15, NTPC=₹319.40
+⚠️  No ticks for 61s — next full re-login allowed in 626s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹256.70, NTPC=₹318.75
+  📡 REST poll #131: POWERGRID=₹256.65, NTPC=₹318.50
+⚠️  No ticks for 61s — next full re-login allowed in 13s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: POWERGRID=₹256.80, NTPC=₹318.30
+  📡 REST poll #151: POWERGRID=₹256.55, NTPC=₹317.90
+⚠️  No ticks for 61s — next full re-login allowed in 1181s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹256.70, NTPC=₹318.25
+  📡 REST poll #171: POWERGRID=₹256.80, NTPC=₹318.60
+⚠️  No ticks for 64s — next full re-login allowed in 563s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹257.30, NTPC=₹319.50
+  📡 REST poll #191: POWERGRID=₹257.35, NTPC=₹319.10
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1738s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: POWERGRID=₹257.10, NTPC=₹318.05
+  📡 REST poll #211: POWERGRID=₹256.90, NTPC=₹318.00
+⚠️  No ticks for 61s — next full re-login allowed in 1124s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: POWERGRID=₹256.95, NTPC=₹317.35
+  📡 REST poll #231: POWERGRID=₹256.45, NTPC=₹317.35
+⚠️  No ticks for 61s — next full re-login allowed in 510s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: POWERGRID=₹256.65, NTPC=₹317.90
+  📡 REST poll #251: POWERGRID=₹256.60, NTPC=₹318.40
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1676s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+  📡 REST poll #261: POWERGRID=₹257.20, NTPC=₹319.10
+  📡 REST poll #271: POWERGRID=₹257.70, NTPC=₹319.10
+⚠️  No ticks for 64s — next full re-login allowed in 1058s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: POWERGRID=₹257.60, NTPC=₹319.05
+  📡 REST poll #291: POWERGRID=₹257.90, NTPC=₹319.05
+⚠️  No ticks for 61s — next full re-login allowed in 441s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: POWERGRID=₹257.90, NTPC=₹319.15
+  📡 REST poll #311: POWERGRID=₹257.55, NTPC=₹319.20
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: POWERGRID=₹257.30, NTPC=₹319.15
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: POWERGRID=₹257.55, NTPC=₹318.45
+  📡 REST poll #341: POWERGRID=₹257.40, NTPC=₹318.70
+⚠️  No ticks for 61s — next full re-login allowed in 1001s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: POWERGRID=₹257.55, NTPC=₹318.70
+  📡 REST poll #361: POWERGRID=₹257.30, NTPC=₹318.50
+⚠️  No ticks for 61s — next full re-login allowed in 386s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: POWERGRID=₹257.00, NTPC=₹318.45
+⚠️  No ticks for 64s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #381: POWERGRID=₹257.05, NTPC=₹318.35
+⚠️  No ticks for 61s — next full re-login allowed in 1552s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: POWERGRID=₹256.55, NTPC=₹318.10
+  📡 REST poll #401: POWERGRID=₹256.75, NTPC=₹317.90
+⚠️  No ticks for 61s — next full re-login allowed in 939s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: POWERGRID=₹256.60, NTPC=₹317.85
+  📡 REST poll #421: POWERGRID=₹256.50, NTPC=₹317.60
+⚠️  No ticks for 61s — next full re-login allowed in 325s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: POWERGRID=₹257.00, NTPC=₹317.75
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #441: POWERGRID=₹257.15, NTPC=₹317.75
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: POWERGRID=₹257.10, NTPC=₹317.65
+  📡 REST poll #461: POWERGRID=₹257.00, NTPC=₹317.35
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: POWERGRID=₹257.05, NTPC=₹318.20
+  📡 REST poll #481: POWERGRID=₹257.30, NTPC=₹318.25
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: POWERGRID=₹257.35, NTPC=₹318.25
+  📡 REST poll #501: POWERGRID=₹257.30, NTPC=₹318.55
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: POWERGRID=₹257.15, NTPC=₹317.50
+  📡 REST poll #521: POWERGRID=₹257.00, NTPC=₹317.45
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: POWERGRID=₹257.15, NTPC=₹317.90
+  📡 REST poll #541: POWERGRID=₹257.25, NTPC=₹318.70
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 71, in request
+    response = requests.get(url=url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 145, in poll
+    px = fetch_ltp(sym)
+         ^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 499, in rest_ltp
+    resp = rest_fallback.call_with_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 64, in call_with_timeout
+    raise box["error"]
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 54, in runner
+    box["value"] = fn(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/neo_api.py", line 823, in quotes
+    quotes_response = neo_api_client.QuotesAPI(self.api_client).get_quotes(instrument_tokens=instrument_tokens, quote_type=quote_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/api/quotes_neo_symbol_api.py", line 23, in get_quotes
+    quotes = self.rest_client.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 77, in request
+    raise ApiException(status=0, reason=msg)
+neo_api_client.exceptions.ApiException: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 617, in run_full_day_monitor
+    _prices = rest.poll(_t, _held, rest_ltp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 147, in poll
+    self.last_errors.append(f"{sym}: {type(e).__name__}: {e}")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
