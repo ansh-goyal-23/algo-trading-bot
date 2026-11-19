@@ -1,0 +1,366 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-19 09:00:08
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'NTPC']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 876s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹258.50, NTPC=₹320.20
+⚠️  No ticks for 61s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 236s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: POWERGRID=₹257.90, NTPC=₹318.70
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹258.00, NTPC=₹318.90
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹257.90, NTPC=₹318.35
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹257.85, NTPC=₹318.75
+⚠️  No ticks for 61s — next full re-login allowed in 708s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹258.15, NTPC=₹319.00
+  📡 REST poll #61: POWERGRID=₹258.45, NTPC=₹319.20
+⚠️  No ticks for 61s — next full re-login allowed in 90s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹258.75, NTPC=₹319.30
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹258.85, NTPC=₹320.50
+  📡 REST poll #91: POWERGRID=₹259.45, NTPC=₹321.35
+⚠️  No ticks for 61s — next full re-login allowed in 1245s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: POWERGRID=₹259.40, NTPC=₹320.95
+  📡 REST poll #111: POWERGRID=₹259.80, NTPC=₹321.20
+⚠️  No ticks for 61s — next full re-login allowed in 632s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹259.45, NTPC=₹321.05
+  📡 REST poll #131: POWERGRID=₹259.80, NTPC=₹320.70
+⚠️  No ticks for 61s — next full re-login allowed in 18s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: POWERGRID=₹260.20, NTPC=₹321.15
+  📡 REST poll #151: POWERGRID=₹260.25, NTPC=₹321.15
+⚠️  No ticks for 61s — next full re-login allowed in 1184s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹260.55, NTPC=₹322.15
+  📡 REST poll #171: POWERGRID=₹260.80, NTPC=₹322.70
+⚠️  No ticks for 61s — next full re-login allowed in 567s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹261.15, NTPC=₹322.30
+  📡 REST poll #191: POWERGRID=₹261.10, NTPC=₹321.95
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: POWERGRID=₹261.25, NTPC=₹322.25
+  📡 REST poll #211: POWERGRID=₹261.35, NTPC=₹322.20
+⚠️  No ticks for 61s — next full re-login allowed in 1122s (failures=109 relogins=6/10 held_back=101); REST fallback ON.
+  📡 REST poll #221: POWERGRID=₹261.35, NTPC=₹322.40
+  📡 REST poll #231: POWERGRID=₹261.20, NTPC=₹322.15
+⚠️  No ticks for 61s — next full re-login allowed in 506s (failures=119 relogins=6/10 held_back=111); REST fallback ON.
+  📡 REST poll #241: POWERGRID=₹261.10, NTPC=₹322.00
+  📡 REST poll #251: POWERGRID=₹261.05, NTPC=₹322.05
+⚠️  No ticks for 61s — 128 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (7/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1672s (failures=130 relogins=7/10 held_back=121); REST fallback ON.
+  📡 REST poll #261: POWERGRID=₹261.05, NTPC=₹322.10
+  📡 REST poll #271: POWERGRID=₹261.20, NTPC=₹322.10
+⚠️  No ticks for 61s — next full re-login allowed in 1056s (failures=140 relogins=7/10 held_back=131); REST fallback ON.
+  📡 REST poll #281: POWERGRID=₹261.25, NTPC=₹322.05
+  📡 REST poll #291: POWERGRID=₹261.20, NTPC=₹322.20
+⚠️  No ticks for 61s — next full re-login allowed in 444s (failures=150 relogins=7/10 held_back=141); REST fallback ON.
+  📡 REST poll #301: POWERGRID=₹261.50, NTPC=₹322.45
+  📡 REST poll #311: POWERGRID=₹261.45, NTPC=₹322.00
+⚠️  No ticks for 61s — 158 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (8/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #321: POWERGRID=₹261.35, NTPC=₹321.80
+⚠️  No ticks for 61s — next full re-login allowed in 1614s (failures=161 relogins=8/10 held_back=151); REST fallback ON.
+  📡 REST poll #331: POWERGRID=₹261.30, NTPC=₹322.20
+  📡 REST poll #341: POWERGRID=₹261.15, NTPC=₹322.05
+⚠️  No ticks for 61s — next full re-login allowed in 1001s (failures=171 relogins=8/10 held_back=161); REST fallback ON.
+  📡 REST poll #351: POWERGRID=₹261.20, NTPC=₹322.35
+  📡 REST poll #361: POWERGRID=₹261.00, NTPC=₹321.60
+⚠️  No ticks for 61s — next full re-login allowed in 388s (failures=181 relogins=8/10 held_back=171); REST fallback ON.
+  📡 REST poll #371: POWERGRID=₹260.80, NTPC=₹321.55
+⚠️  No ticks for 61s — 188 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (9/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #381: POWERGRID=₹261.10, NTPC=₹321.45
+⚠️  No ticks for 61s — next full re-login allowed in 1553s (failures=192 relogins=9/10 held_back=181); REST fallback ON.
+  📡 REST poll #391: POWERGRID=₹261.25, NTPC=₹322.15
+  📡 REST poll #401: POWERGRID=₹261.55, NTPC=₹322.15
+⚠️  No ticks for 61s — next full re-login allowed in 938s (failures=202 relogins=9/10 held_back=191); REST fallback ON.
+  📡 REST poll #411: POWERGRID=₹261.50, NTPC=₹322.15
+  📡 REST poll #421: POWERGRID=₹261.10, NTPC=₹321.70
+⚠️  No ticks for 61s — next full re-login allowed in 322s (failures=212 relogins=9/10 held_back=201); REST fallback ON.
+  📡 REST poll #431: POWERGRID=₹260.95, NTPC=₹321.75
+⚠️  No ticks for 61s — 218 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (10/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #441: POWERGRID=₹261.20, NTPC=₹321.20
+⚠️  No ticks for 61s — re-login cap reached (failures=223 relogins=10/10 held_back=211); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #451: POWERGRID=₹261.05, NTPC=₹320.90
+  📡 REST poll #461: POWERGRID=₹261.10, NTPC=₹321.50
+⚠️  No ticks for 61s — re-login cap reached (failures=233 relogins=10/10 held_back=221); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #471: POWERGRID=₹261.45, NTPC=₹321.35
+  📡 REST poll #481: POWERGRID=₹261.10, NTPC=₹321.00
+⚠️  No ticks for 61s — re-login cap reached (failures=243 relogins=10/10 held_back=231); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #491: POWERGRID=₹261.55, NTPC=₹321.20
+  📡 REST poll #501: POWERGRID=₹261.75, NTPC=₹321.50
+⚠️  No ticks for 61s — re-login cap reached (failures=253 relogins=10/10 held_back=241); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #511: POWERGRID=₹261.70, NTPC=₹321.60
+  📡 REST poll #521: POWERGRID=₹262.00, NTPC=₹321.40
+⚠️  No ticks for 61s — re-login cap reached (failures=263 relogins=10/10 held_back=251); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #531: POWERGRID=₹261.85, NTPC=₹321.25
+  📡 REST poll #541: POWERGRID=₹261.90, NTPC=₹321.30
+⚠️  No ticks for 61s — re-login cap reached (failures=273 relogins=10/10 held_back=261); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #551: POWERGRID=₹261.90, NTPC=₹321.35
+  📡 REST poll #561: POWERGRID=₹262.25, NTPC=₹322.85
+⚠️  No ticks for 61s — re-login cap reached (failures=283 relogins=10/10 held_back=271); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #571: POWERGRID=₹262.55, NTPC=₹323.20
+  📡 REST poll #581: POWERGRID=₹262.90, NTPC=₹323.40
+⚠️  No ticks for 61s — re-login cap reached (failures=293 relogins=10/10 held_back=281); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #591: POWERGRID=₹263.00, NTPC=₹324.20
+  📡 REST poll #601: POWERGRID=₹262.95, NTPC=₹323.95
+⚠️  No ticks for 61s — re-login cap reached (failures=303 relogins=10/10 held_back=291); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #611: POWERGRID=₹263.10, NTPC=₹324.15
+  📡 REST poll #621: POWERGRID=₹263.20, NTPC=₹324.25
+⚠️  No ticks for 61s — re-login cap reached (failures=313 relogins=10/10 held_back=301); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #631: POWERGRID=₹263.50, NTPC=₹324.25
+  📡 REST poll #641: POWERGRID=₹263.25, NTPC=₹324.15
+⚠️  No ticks for 61s — re-login cap reached (failures=323 relogins=10/10 held_back=311); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #651: POWERGRID=₹262.75, NTPC=₹323.90
+  📡 REST poll #661: POWERGRID=₹262.95, NTPC=₹324.05
+⚠️  No ticks for 61s — re-login cap reached (failures=333 relogins=10/10 held_back=321); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #671: POWERGRID=₹262.80, NTPC=₹323.95
+  📡 REST poll #681: POWERGRID=₹262.50, NTPC=₹323.70
+⚠️  No ticks for 61s — re-login cap reached (failures=343 relogins=10/10 held_back=331); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #691: POWERGRID=₹263.50, NTPC=₹324.35
+
+⏰ 3:10 PM — running signal scan from today's aggregated ticks...
+📡 Websocket coverage insufficient today (fallback active 353 min, 695 REST polls, 1 activation(s)) — building the scan from REST quotes instead of ticks...
+
+📡 Fetching today's OHLC from Kotak Neo...
+
+  Today's OHLC:
+  APOLLOHOSP   | O=8777.00 H=8810.00 L=8690.00 C=8735.50 V=298178 | 🔴 -0.47%
+  HINDALCO     | O=879.50 H=907.85 L=879.50 C=907.20 V=9921757 | 🟢 +3.15%
+  POWERGRID    | O=257.00 H=263.60 L=257.00 C=263.55 V=6676690 | 🟢 +2.55%
+  EICHERMOT    | O=7700.00 H=8069.00 L=7675.00 C=8038.50 V=819363 | 🟢 +4.40%
+  NTPC         | O=318.35 H=324.90 L=317.80 C=324.90 V=7399830 | 🟢 +2.06%
+
+🛡️  Checking stop losses and targets on open positions...
+  ✅ POWERGRID | low=257.00 > stop=255.83 — position safe
+  ✅ NTPC | low=317.80 > stop=313.26 — position safe
+
+============================================================
+  SIGNAL INTERPRETATION: APOLLOHOSP
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹8735.50
+  RSI      : 60.9
+  EMA20    : ₹8466.83
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+============================================================
+  SIGNAL INTERPRETATION: HINDALCO
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹907.20
+  RSI      : 43.8
+  EMA20    : ₹924.44
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Marubozu (Chapter 5)
+    Meaning : A long bullish candle with no wicks. Opens at low, closes at high. Bulls in complete control throughout the session.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✗] Price > EMA20  -- Price is below the 20-day EMA → stock is in a short-term downtrend
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✓] Trend filter   -- prior trend 'pullback' favors this direction
+
+  Conditions met: 4/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 🔄 pullback
+    Trend aligned: ✅ Yes -- higher conviction
+
+  🎯 Trade Plan:
+    Entry      : ₹907.20
+    Stop Loss  : ₹889.06 (-2%)
+    Target 2:1 : ₹943.49 (+4%)
+    Target 3:1 : ₹961.63 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: POWERGRID
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹263.55
+  RSI      : 57.6
+  EMA20    : ₹257.80
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Marubozu (Chapter 5)
+    Meaning : A long bullish candle with no wicks. Opens at low, closes at high. Bulls in complete control throughout the session.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✓] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✗] Volume filter  -- Volume below average → weak conviction, treat signal with caution
+    [✗] Trend filter   -- prior trend 'sideways' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : ➡️ sideways
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹263.55
+    Stop Loss  : ₹258.28 (-2%)
+    Target 2:1 : ₹274.09 (+4%)
+    Target 3:1 : ₹279.36 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: EICHERMOT
+============================================================
+  Signal   : 🟢 BUY
+  Price    : ₹8038.50
+  RSI      : 68.5
+  EMA20    : ₹7546.37
+  Volume   : Above average ✓
+
+  📖 Candlestick Pattern:
+    Pattern : Bullish Engulfing (Chapter 6)
+    Meaning : A large bullish candle completely engulfs the previous bearish candle. Signals strong reversal of downtrend. Bulls have overpowered bears.
+    Bias    : Strongly Bullish
+
+  📊 Indicator Checklist (need 3/5, pattern mandatory):
+    [✓] Candlestick pattern
+    [✓] Price > EMA20  -- Price is above the 20-day EMA → stock is in a short-term uptrend (Varsity Ch.13)
+    [✗] RSI filter     -- RSI < 60 → momentum not yet overbought, room to run (Varsity Ch.14)
+    [✓] Volume filter  -- Volume above 20-day average → institutional participation confirms the move (Varsity Ch.12)
+    [✗] Trend filter   -- prior trend 'uptrend' does not favor this direction
+
+  Conditions met: 3/5 (✅ Signal valid)
+
+  📈 Trend Context:
+    Prior Trend  : 📈 uptrend
+    Trend aligned: ⚠️  No -- trade against trend context
+
+  🎯 Trade Plan:
+    Entry      : ₹8038.50
+    Stop Loss  : ₹7877.73 (-2%)
+    Target 2:1 : ₹8360.04 (+4%)
+    Target 3:1 : ₹8520.81 (+6%)
+    Risk/Reward: Follow the 2:1 minimum rule (Varsity Ch.18)
+
+
+============================================================
+  SIGNAL INTERPRETATION: NTPC
+============================================================
+  Signal   : ⚪ HOLD -- no signal
+  Price    : ₹324.90
+  RSI      : 58.5
+  EMA20    : ₹318.19
+  Volume   : Below average ✗
+
+  📖 Candlestick Pattern:
+    No named pattern detected -- no directional signal today
+
+  ℹ️  No candlestick pattern fired in either direction -- the mandatory gate wasn't met, so BUY/SELL scoring doesn't apply. Price/RSI/volume/trend above are shown for reference only.
+
+
+🟢 PAPER BUY | HINDALCO @ ₹907.20 x 27 | SIGNAL | stop@889.06 | RSI=43.8
+🟢 PAPER BUY | EICHERMOT @ ₹8038.50 x 1 | SIGNAL | stop@7877.73 | RSI=68.5
+  📡 REST poll #701: POWERGRID=₹263.65, NTPC=₹325.05, HINDALCO=₹907.65, EICHERMOT=₹8060.00
+⚠️  No ticks for 61s — re-login cap reached (failures=353 relogins=10/10 held_back=341); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #711: POWERGRID=₹263.90, NTPC=₹325.20, HINDALCO=₹908.00, EICHERMOT=₹8065.00
+  📡 REST poll #721: POWERGRID=₹263.90, NTPC=₹325.20, HINDALCO=₹908.00, EICHERMOT=₹8065.00
+⚠️  No ticks for 61s — re-login cap reached (failures=363 relogins=10/10 held_back=351); not retrying the feed again today (REST fallback ON).
+  📡 REST poll #731: POWERGRID=₹263.90, NTPC=₹325.20, HINDALCO=₹908.00, EICHERMOT=₹8065.00
+
+✅ Market closed. Run ending.
+Open positions carried forward: ['POWERGRID', 'NTPC', 'HINDALCO', 'EICHERMOT']
+[shutdown_guard] main() finished (exit code 0) — exiting without waiting for stray threads.
