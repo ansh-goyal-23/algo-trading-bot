@@ -1,0 +1,229 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-23 09:00:09
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'NTPC', 'HINDALCO', 'EICHERMOT', 'APOLLOHOSP']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 873s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+  📡 REST poll #1: POWERGRID=₹270.45, NTPC=₹322.30, HINDALCO=₹911.90, EICHERMOT=₹8234.00, APOLLOHOSP=₹9356.00
+⚠️  No ticks for 63s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 237s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+  📡 REST poll #11: POWERGRID=₹268.20, NTPC=₹320.45, HINDALCO=₹911.35, EICHERMOT=₹8231.50, APOLLOHOSP=₹9404.50
+⚠️  No ticks for 61s — 8 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (2/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #21: POWERGRID=₹267.50, NTPC=₹319.55, HINDALCO=₹907.25, EICHERMOT=₹8141.00, APOLLOHOSP=₹9345.50
+⚠️  No ticks for 61s — next full re-login allowed in 168s (failures=15 relogins=2/10 held_back=11); REST fallback ON.
+  📡 REST poll #31: POWERGRID=₹267.60, NTPC=₹319.35, HINDALCO=₹912.55, EICHERMOT=₹8154.00, APOLLOHOSP=₹9324.00
+⚠️  No ticks for 61s — 18 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (3/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #41: POWERGRID=₹267.30, NTPC=₹319.40, HINDALCO=₹909.85, EICHERMOT=₹8164.50, APOLLOHOSP=₹9293.50
+⚠️  No ticks for 61s — next full re-login allowed in 706s (failures=26 relogins=3/10 held_back=21); REST fallback ON.
+  📡 REST poll #51: POWERGRID=₹266.95, NTPC=₹319.45, HINDALCO=₹909.85, EICHERMOT=₹8172.00, APOLLOHOSP=₹9291.00
+  📡 REST poll #61: POWERGRID=₹267.30, NTPC=₹319.60, HINDALCO=₹911.00, EICHERMOT=₹8201.50, APOLLOHOSP=₹9304.50
+⚠️  No ticks for 61s — next full re-login allowed in 91s (failures=36 relogins=3/10 held_back=31); REST fallback ON.
+  📡 REST poll #71: POWERGRID=₹266.90, NTPC=₹319.85, HINDALCO=₹911.30, EICHERMOT=₹8197.50, APOLLOHOSP=₹9297.50
+⚠️  No ticks for 61s — 38 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (4/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #81: POWERGRID=₹266.85, NTPC=₹320.30, HINDALCO=₹908.30, EICHERMOT=₹8208.50, APOLLOHOSP=₹9315.00
+  📡 REST poll #91: POWERGRID=₹266.55, NTPC=₹320.40, HINDALCO=₹906.65, EICHERMOT=₹8198.00, APOLLOHOSP=₹9327.00
+⚠️  No ticks for 61s — next full re-login allowed in 1238s (failures=47 relogins=4/10 held_back=41); REST fallback ON.
+  📡 REST poll #101: POWERGRID=₹266.70, NTPC=₹320.25, HINDALCO=₹908.30, EICHERMOT=₹8185.00, APOLLOHOSP=₹9307.00
+  📡 REST poll #111: POWERGRID=₹266.25, NTPC=₹319.90, HINDALCO=₹908.50, EICHERMOT=₹8172.00, APOLLOHOSP=₹9295.00
+⚠️  No ticks for 61s — next full re-login allowed in 623s (failures=57 relogins=4/10 held_back=51); REST fallback ON.
+  📡 REST poll #121: POWERGRID=₹266.50, NTPC=₹320.20, HINDALCO=₹909.25, EICHERMOT=₹8164.50, APOLLOHOSP=₹9278.00
+  📡 REST poll #131: POWERGRID=₹265.55, NTPC=₹319.75, HINDALCO=₹908.10, EICHERMOT=₹8161.00, APOLLOHOSP=₹9280.50
+⚠️  No ticks for 61s — next full re-login allowed in 9s (failures=67 relogins=4/10 held_back=61); REST fallback ON.
+⚠️  No ticks for 61s — 68 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (5/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+  📡 REST poll #141: POWERGRID=₹265.75, NTPC=₹319.80, HINDALCO=₹908.00, EICHERMOT=₹8165.50, APOLLOHOSP=₹9281.50
+  📡 REST poll #151: POWERGRID=₹266.40, NTPC=₹320.30, HINDALCO=₹908.50, EICHERMOT=₹8151.50, APOLLOHOSP=₹9277.00
+⚠️  No ticks for 61s — next full re-login allowed in 1184s (failures=78 relogins=5/10 held_back=71); REST fallback ON.
+  📡 REST poll #161: POWERGRID=₹266.90, NTPC=₹320.35, HINDALCO=₹908.50, EICHERMOT=₹8165.00, APOLLOHOSP=₹9260.00
+  📡 REST poll #171: POWERGRID=₹267.60, NTPC=₹320.75, HINDALCO=₹911.15, EICHERMOT=₹8154.00, APOLLOHOSP=₹9263.50
+⚠️  No ticks for 61s — next full re-login allowed in 569s (failures=88 relogins=5/10 held_back=81); REST fallback ON.
+  📡 REST poll #181: POWERGRID=₹267.45, NTPC=₹320.65, HINDALCO=₹910.95, EICHERMOT=₹8155.00, APOLLOHOSP=₹9269.50
+  📡 REST poll #191: POWERGRID=₹267.70, NTPC=₹320.70, HINDALCO=₹911.50, EICHERMOT=₹8158.50, APOLLOHOSP=₹9284.00
+⚠️  No ticks for 61s — 98 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (6/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 1737s (failures=99 relogins=6/10 held_back=91); REST fallback ON.
+  📡 REST poll #201: POWERGRID=₹267.25, NTPC=₹320.75, HINDALCO=₹911.10, EICHERMOT=₹8175.00, APOLLOHOSP=₹9267.50
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1403, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 323, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 292, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 1403, in getresponse
+    response.begin()
+  File "/usr/lib/python3.11/http/client.py", line 323, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/http/client.py", line 292, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 71, in request
+    response = requests.get(url=url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 145, in poll
+    px = fetch_ltp(sym)
+         ^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 499, in rest_ltp
+    resp = rest_fallback.call_with_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 64, in call_with_timeout
+    raise box["error"]
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 54, in runner
+    box["value"] = fn(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/neo_api.py", line 823, in quotes
+    quotes_response = neo_api_client.QuotesAPI(self.api_client).get_quotes(instrument_tokens=instrument_tokens, quote_type=quote_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/api/quotes_neo_symbol_api.py", line 23, in get_quotes
+    quotes = self.rest_client.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 77, in request
+    raise ApiException(status=0, reason=msg)
+neo_api_client.exceptions.ApiException: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 617, in run_full_day_monitor
+    _prices = rest.poll(_t, _held, rest_ltp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 147, in poll
+    self.last_errors.append(f"{sym}: {type(e).__name__}: {e}")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
