@@ -1,0 +1,186 @@
+=======================================================
+  RUN DAILY — unattended entry point (Render)
+  2026-11-25 09:00:06
+=======================================================
+Open positions in Supabase: ['POWERGRID', 'NTPC', 'HINDALCO', 'EICHERMOT', 'APOLLOHOSP']
+Open position(s) found — running full-day monitor from now until market close...
+Logged in successfully
+Resolved APOLLOHOSP -> APOLLOHOSP-EQ (token 157)
+Resolved HINDALCO -> HINDALCO-EQ (token 1363)
+Resolved POWERGRID -> POWERGRID-EQ (token 14977)
+Resolved EICHERMOT -> EICHERMOT-EQ (token 910)
+Resolved NTPC -> NTPC-EQ (token 11630)
+Live feed started
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 878s — reconnecting (attempt 0)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — reconnecting (attempt 1)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+📡 Websocket delivered <5 ticks in the last 120s — REST fallback ON (polling LTP every 30s for held positions)
+🚨 STOP LOSS HIT | HINDALCO @ ₹886.65 | PnL ₹-554.85
+🔴 PAPER SELL | HINDALCO @ ₹886.65 x 27 | STOP_LOSS | PnL=₹-554.85
+  📡 REST poll #1: POWERGRID=₹262.85, NTPC=₹315.40, HINDALCO=₹886.65, EICHERMOT=₹8230.50, APOLLOHOSP=₹9263.50
+⚠️  No ticks for 65s — reconnecting (attempt 2)...
+Socket Connection has been closed, So! The scripts are already un-subscribed!
+The Data has been Un-Subscribed
+  subscribe() returned OK (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — 3 consecutive reconnect attempts produced no sustained ticks — forcing full re-login + resubscribe (1/10)...
+Logged in successfully
+✅ Re-logged in and resubscribed (will confirm ticks resume next cycle)
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  Feed error: [Errno -2] Name or service not known
+⚠️  WebSocket closed: The Session has been Closed!
+⚠️  No ticks for 61s — next full re-login allowed in 236s (failures=4 relogins=1/10 held_back=1); REST fallback ON.
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+ERROR msg (0)
+Reason: ConnectionError
+('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+                ^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/urllib3/util/ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/ssl.py", line 1121, in _create
+    self.do_handshake()
+  File "/usr/lib/python3.11/ssl.py", line 1392, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 71, in request
+    response = requests.get(url=url, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/requests/adapters.py", line 682, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 145, in poll
+    px = fetch_ltp(sym)
+         ^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 499, in rest_ltp
+    resp = rest_fallback.call_with_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 64, in call_with_timeout
+    raise box["error"]
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 54, in runner
+    box["value"] = fn(*args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/neo_api.py", line 823, in quotes
+    quotes_response = neo_api_client.QuotesAPI(self.api_client).get_quotes(instrument_tokens=instrument_tokens, quote_type=quote_type)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/api/quotes_neo_symbol_api.py", line 23, in get_quotes
+    quotes = self.rest_client.request(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/venv/lib/python3.11/site-packages/neo_api_client/rest.py", line 77, in request
+    raise ApiException(status=0, reason=msg)
+neo_api_client.exceptions.ApiException: <exception str() failed>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/shutdown_guard.py", line 47, in run_and_exit
+    main_fn()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 723, in main
+    run_full_day_monitor()
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/run_daily.py", line 617, in run_full_day_monitor
+    _prices = rest.poll(_t, _held, rest_ltp)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/anshgoyal_personal/algo-trading-bot/execution/rest_fallback.py", line 147, in poll
+    self.last_errors.append(f"{sym}: {type(e).__name__}: {e}")
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: __str__ returned non-string (type NoneType)
+[shutdown_guard] main() finished (exit code 1) — exiting without waiting for stray threads.
